@@ -9,16 +9,16 @@ book:
       orcid: 0000-0003-1689-0557
       email: janru.muller@edu.vlerick.com
       affiliations:
-    - name: Amsterdam University of Applied Sciences
-      address: Fraijlemaborg 133
-      city: Amsterdam
-      country: The Netherlands
-      postal-code: 1102 CV
-    - name: Vlerick Business School
-      address: Reep 1
-      city: Ghent
-      country: Belgium
-      postal-code: 9000
+        - name: Amsterdam University of Applied Sciences
+          address: Fraijlemaborg 133
+          city: Amsterdam
+          country: The Netherlands
+          postal-code: 1102 CV
+        - name: Vlerick Business School
+          address: Reep 1
+          city: Ghent
+          country: Belgium
+          postal-code: 9000
 
   date: "4/11/2024"
   date-format: "DD/MM/YYYY"
@@ -46,6 +46,7 @@ format:
   html: 
     title-block-banner: true
     number-sections: true
+    date-modified: "5/2/2024"
   #  comments:
   #    hypothesis: true
   docx: default
