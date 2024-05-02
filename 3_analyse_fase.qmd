@@ -2,8 +2,6 @@
 title: "Analyse-fase"
 ---
 
-## Inleiding Analyse-fase
-
 aan bod komen:
 
 ## Proces Selectie
