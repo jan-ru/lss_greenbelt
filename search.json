@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Green Belt",
     "section": "",
-    "text": "Introduction\nBehalve als html is dit rapport ook beschikbaar in pdf en docx:\n\nLink naar pdf document\nLink naar docx document",
+    "text": "Introduction\nBehalve als html is dit rapport ook beschikbaar als pdf document en als docx document.",
     "crumbs": [
       "Introduction"
     ]
@@ -44,7 +44,7 @@
     "href": "1_definitie_fase.html#sipoc",
     "title": "1  Definitie-fase",
     "section": "1.3 SIPOC",
-    "text": "1.3 SIPOC\nMet een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.\n\n\n\nOnderwijsuitvoering\n\n\nTer algemene toelichting:\n\nHet coördinatieteam zorgt ondermeer voor het samenstellen van het rooster.\nOnderwijs & onderzoek ondersteunt o.a. bij de inrichting en het gebruik van het LMS2.\nDe externe dienstverlener is in dit geval Skoledo waar de studenten de e-learnings volgen.\nHet examenburo verzorgt de logistiek rondom de afname van examens.\nOnder management wordt hier verstaan het hoofd van de opleiding Finance & Control.",
+    "text": "1.3 SIPOC\nMet een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.\n{#fig-onderwijs}\nTer algemene toelichting:\n\nHet coördinatieteam zorgt ondermeer voor het samenstellen van het rooster.\nOnderwijs & onderzoek ondersteunt o.a. bij de inrichting en het gebruik van het LMS2.\nDe externe dienstverlener is in dit geval Skoledo waar de studenten de e-learnings volgen.\nHet examenburo verzorgt de logistiek rondom de afname van examens.\nOnder management wordt hier verstaan het hoofd van de opleiding Finance & Control.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
     ]
@@ -84,7 +84,7 @@
     "href": "2_measure_fase.html",
     "title": "2  Measure-fase",
     "section": "",
-    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staan, ter algemene informatie, een aantal gegevensbronnen weergegeven waarmee men tijdens het proces “onderwijsuitvoering” te maken heef.\nHet lessenplan, onderdeel van de studiehandleiding, staat op Brightspace. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld. Skoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten. Het rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet. Aan het eind van de module vind met het docententeam een evaluatie plaats aan de hand van een “PDCA” formulier. Tenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.\nHet kernbegrip uit de doelstelling is de “doorlooptijd”. Meer specifiek: de doorlooptijd van de e-learnings.\nReferentie (Skoledo, 2024)\nDe output van het proces (cyclustijd)",
+    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.\n{#fig-gegevensbronnen}",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -94,7 +94,7 @@
     "href": "2_measure_fase.html#gegevens---verzamelen",
     "title": "2  Measure-fase",
     "section": "",
-    "text": "Gegevensbronnen",
+    "text": "SIS, het studenten informaties ysteem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.\nSkoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.\nBrightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.\nHet rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.\nTenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -104,7 +104,7 @@
     "href": "2_measure_fase.html#meetplan",
     "title": "2  Measure-fase",
     "section": "2.2 Meetplan",
-    "text": "2.2 Meetplan\n\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de gegevens\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\na\n\n\n\n\n\n\n\nb\n\n\n\n\n\n\n\nc\n\n\n\n\n\n\n\nd",
+    "text": "2.2 Meetplan\n\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de data\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\na\nCTQ1\n\niedere week\n\n\n\n\nb\nCTQ2\n\niedere week\n\n\n\n\nc\nCTQ3\nexport &gt; excel\nin week 9\nvoor processtap 3.2\nVakdocent\n\n\nd\n\n\n\nvoor processtap 3.5\nSkoledo",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "2_measure_fase.html#gegevens---verwerken",
     "title": "2  Measure-fase",
     "section": "2.4 Gegevens - verwerken",
-    "text": "2.4 Gegevens - verwerken\nDe gegevens zullen worden verwerkt met Excel.",
+    "text": "2.4 Gegevens - verwerken\nDe gegevens zullen worden verwerkt met Excel. Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -214,7 +214,7 @@
     "href": "5_control_fase.html",
     "title": "5  Control-fase",
     "section": "",
-    "text": "5.1 Borgingsinstrumenten",
+    "text": "5.1 Borgingsinstrumenten\nAan het eind van de module vind met het docententeam een evaluatie plaats aan de hand van een “PDCA” formulier.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Control-fase</span>"
     ]
@@ -259,6 +259,17 @@
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Studiebelasting</span>"
+    ]
+  },
+  {
+    "objectID": "8_dataset.html",
+    "href": "8_dataset.html",
+    "title": "Appendix C — Partiele dataset",
+    "section": "",
+    "text": "Tabel met in te leveren deelproducten per sprint en ook uren per fase.\nDe totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo). In de tabel hieronder staat de inhoud van de zes modules en de studiebelasting per module.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Partiele dataset</span>"
     ]
   }
 ]
