@@ -9,7 +9,12 @@ aan bod komen:
 
 
 ## Meetplan
-
+|Wat meten we|Waarom meten we|Hoe verzamelen we de gegevens|Wanneer verzamelen|Waar in het proces|Wie verzamelt ze|
+|------------|---------------|-----------------------------|------------------|------------------|----------------|
+|      a     |               |                             |                  |                  |                |
+|      b     |               |                             |                  |                  |                |
+|      c     |               |                             |                  |                  |                |
+|      d     |               |                             |                  |                  |                |
 
 ## Gegevens - betrouwbaarheid
 
