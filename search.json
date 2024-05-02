@@ -44,7 +44,7 @@
     "href": "1_definitie_fase.html#sipoc",
     "title": "1  Definitie-fase",
     "section": "1.3 SIPOC",
-    "text": "1.3 SIPOC\nMet een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.\n{#fig-onderwijs}\nTer algemene toelichting:\n\nHet coördinatieteam zorgt ondermeer voor het samenstellen van het rooster.\nOnderwijs & onderzoek ondersteunt o.a. bij de inrichting en het gebruik van het LMS2.\nDe externe dienstverlener is in dit geval Skoledo waar de studenten de e-learnings volgen.\nHet examenburo verzorgt de logistiek rondom de afname van examens.\nOnder management wordt hier verstaan het hoofd van de opleiding Finance & Control.",
+    "text": "1.3 SIPOC\nMet een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.\n\n\n\n\n\n\nFigure 1.1: Onderwijsuitvoering\n\n\n\nTer algemene toelichting:\n\nHet coördinatieteam zorgt ondermeer voor het samenstellen van het rooster.\nOnderwijs & onderzoek ondersteunt o.a. bij de inrichting en het gebruik van het LMS2.\nDe externe dienstverlener is in dit geval Skoledo waar de studenten de e-learnings volgen.\nHet examenburo verzorgt de logistiek rondom de afname van examens.\nOnder management wordt hier verstaan het hoofd van de opleiding Finance & Control.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
     ]
@@ -54,7 +54,7 @@
     "href": "1_definitie_fase.html#voc-ctq",
     "title": "1  Definitie-fase",
     "section": "1.4 VOC-CTQ",
-    "text": "1.4 VOC-CTQ\nDe Voice of the Customer, is de klantenvraag waardoor het project geïnitieerd is. In dit project is het de Voice of the Business aangezien de vraag (of opdracht) afkomstig is van de HvA academy, het interne opleidingsinstituut van de HvA.\nIn de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Bloom: onthouden, toepassen en reproduceren. De taxonomie van Bloom is een referentie waarnaar, binnen de HvA, regelmatig wordt verwezen. In de taxonomie worden zes nivo’s van leren onderscheiden. Omdat het onderwerp van dit project een module is uit jaar 2, worden alleen de onderste drie nivo’s van de taxonomie benoemd.\n\n\n\n\n\n\nflowchart TD\n    A[\"VOB: wij willen dat studenten\n     aan de hand van leeruitkomsten\n     aantonen dat zij de leerdoelen\n     beheersen\"] \n        A --&gt;B[\"CTQ1: aantonen door \n        onthouden\"]\n        B --&gt;C[\"Instrument: \n        quiz\"]\n        C --&gt;D[\"ME1: Datum, Cijfer\"]\n        A --&gt;E[\"CTQ2: aantonen door \n        toepassen\"]\n        E --&gt;F[\"Instrument: \n        praktijkopdracht\"]\n        F --&gt;G[\"ME2: Datum, Cijfer\"]\n        A --&gt;H[\"CTQ3: aantonen door \n        reproduceren\"]\n        H --&gt;I[\"Instrument: \n        kennistoets\"]\n        I --&gt;J[\"ME3: Datum, Cijfer\"]\n\n\n\n\nFigure 1.1: Voice of the Business\n\n\n\n\n\nWaarschijnlijke toekomstige verbeteringen:\n\nIn deze versie van de VOB-CTQ staan drie meetinstrumenten (quiz, praktijkopdracht, kennistoets) genoemd. In een latere versie wordt het instrument “assessment” daaraan toegevoegd en zullen de instrumenten (dan vier) verplaatst worden naar de meetfase.\nIn deze versie van de VOB-CTQ staan de meetbare eenheden (ME) appart genoemd per CTQ. In een latere versie kunnen alle drie de CTQ’s verwijzen naar twee meetbare eenheden: datum en cijfer.\nEr dient nog een CTQ over “volgordelijkheid” te worden toegevoegd. Hiervoor dient de VOB nog te worden aangepast (met een statement over effectiviteit).",
+    "text": "1.4 VOC-CTQ\nDe Voice of the Customer, is de klantenvraag waardoor het project geïnitieerd is. In dit project is het de Voice of the Business aangezien de vraag (of opdracht) afkomstig is van de HvA academy, het interne opleidingsinstituut van de HvA.\nIn de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Bloom: onthouden, toepassen en reproduceren. De taxonomie van Bloom is een referentie waarnaar, binnen de HvA, regelmatig wordt verwezen. In de taxonomie worden zes nivo’s van leren onderscheiden. Omdat het onderwerp van dit project een module is uit jaar 2, worden alleen de onderste drie nivo’s van de taxonomie benoemd.\n\n\n\n\n\n\nflowchart TD\n    A[\"VOB: wij willen dat studenten\n     aan de hand van leeruitkomsten\n     aantonen dat zij de leerdoelen\n     beheersen\"] \n        A --&gt;B[\"CTQ1: aantonen door \n        onthouden\"]\n        B --&gt;C[\"Instrument: \n        quiz\"]\n        C --&gt;D[\"ME1: Datum, Cijfer\"]\n        A --&gt;E[\"CTQ2: aantonen door \n        toepassen\"]\n        E --&gt;F[\"Instrument: \n        praktijkopdracht\"]\n        F --&gt;G[\"ME2: Datum, Cijfer\"]\n        A --&gt;H[\"CTQ3: aantonen door \n        reproduceren\"]\n        H --&gt;I[\"Instrument: \n        kennistoets\"]\n        I --&gt;J[\"ME3: Datum, Cijfer\"]\n\n\n\n\nFigure 1.2: Voice of the Business\n\n\n\n\n\nWaarschijnlijke toekomstige verbeteringen:\n\nIn deze versie van de VOB-CTQ staan drie meetinstrumenten (quiz, praktijkopdracht, kennistoets) genoemd. In een latere versie wordt het instrument “assessment” daaraan toegevoegd en zullen de instrumenten (dan vier) verplaatst worden naar de meetfase.\nIn deze versie van de VOB-CTQ staan de meetbare eenheden (ME) appart genoemd per CTQ. In een latere versie kunnen alle drie de CTQ’s verwijzen naar twee meetbare eenheden: datum en cijfer.\nEr dient nog een CTQ over “volgordelijkheid” te worden toegevoegd. Hiervoor dient de VOB nog te worden aangepast (met een statement over effectiviteit).",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
     ]
@@ -64,7 +64,7 @@
     "href": "1_definitie_fase.html#prestatie-indicator",
     "title": "1  Definitie-fase",
     "section": "1.5 Prestatie indicator",
-    "text": "1.5 Prestatie indicator\nDe grafische prestatie indicator dient weer te geven wat:\n\nde ideale doorlooptijd van de e-learnings is\nwat de feitelijke doorlooptijd van de e-learnings is.\n\nVoor de ideale doorlooptijd van de e-learnings is de studiegids leidend in combinatie met de daadwerkelijke opdrachten op Brightspace. Voorwat betreft de feitelijke doorlooptijd van de e-learnings is de rapportage van Skoledo leidend.\n\n\n\n\n\n\n\nFigure 1.2: A line plot showing progress on the e-learnings\n\n\n\n\nDe totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.\nVooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.\n\nDe blauwe lijn geeft de huidige doorlooptijd van de e-learnings weer.\nDe rode lijn geeft de nieuwe beoogde doorlooptijd van de e-learnings weer (10% korter).\n\nDe twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.",
+    "text": "1.5 Prestatie indicator\nDe grafische prestatie indicator dient weer te geven wat:\n\nde ideale doorlooptijd van de e-learnings is\nwat de feitelijke doorlooptijd van de e-learnings is.\n\nVoor de ideale doorlooptijd van de e-learnings is de studiegids leidend in combinatie met de daadwerkelijke opdrachten op Brightspace. Voorwat betreft de feitelijke doorlooptijd van de e-learnings is de rapportage van Skoledo leidend.\n\n\n\n\n\n\n\nFigure 1.3: A line plot showing progress on the e-learnings\n\n\n\n\nDe totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.\nVooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.\n\nDe blauwe lijn geeft de huidige doorlooptijd van de e-learnings weer.\nDe rode lijn geeft de nieuwe beoogde doorlooptijd van de e-learnings weer (10% korter).\n\nDe twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
     ]
@@ -84,7 +84,7 @@
     "href": "2_measure_fase.html",
     "title": "2  Measure-fase",
     "section": "",
-    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.\n{#fig-gegevensbronnen}",
+    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -94,7 +94,7 @@
     "href": "2_measure_fase.html#gegevens---verzamelen",
     "title": "2  Measure-fase",
     "section": "",
-    "text": "SIS, het studenten informaties ysteem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.\nSkoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.\nBrightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.\nHet rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.\nTenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.",
+    "text": "Figure 2.1: Gegevensbronnen\n\n\n\n\nSIS, het studenten informaties ysteem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.\nSkoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.\nBrightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.\nHet rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.\nTenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -264,12 +264,12 @@
   {
     "objectID": "8_dataset.html",
     "href": "8_dataset.html",
-    "title": "Appendix C — Partiele dataset",
+    "title": "Appendix C — Partiële dataset",
     "section": "",
     "text": "Tabel met in te leveren deelproducten per sprint en ook uren per fase.\nDe totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo). In de tabel hieronder staat de inhoud van de zes modules en de studiebelasting per module.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Partiele dataset</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Partiële dataset</span>"
     ]
   }
 ]
