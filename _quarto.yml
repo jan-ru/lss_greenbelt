@@ -15,11 +15,15 @@ book:
           city: Amsterdam
           country: The Netherlands
           postal-code: 1102 CV
+          isni: 0000 0001 0685 7679
         - name: Vlerick Business School
           address: Reep 1
           city: Ghent
           country: Belgium
           postal-code: 9000
+          isni: 0000 0000 9057 8332
+    - role:
+        - writing 
 
   date: "4/11/2024"
   date-format: "DD/MM/YYYY"
@@ -35,6 +39,7 @@ book:
   appendices:
     - 6_kosten.qmd
     - 7_studiebelasting.qmd
+    - 8_dataset.qmd
 
 format-links: [pdf, docx]
 

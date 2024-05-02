@@ -88,7 +88,7 @@ Ik vind sterk van de charter dat ik mij in de business case een voorstelling heb
 
 Met een SIPOC wordt ingezoomt op het subproces "Uitvoeren van onderwijs" en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.
 
-![Onderwijsuitvoering](./static/onderwijs_geven.jpg){fig-align="left"}
+![Onderwijsuitvoering](./static/onderwijs_geven.jpg){fig-align="left"}{#fig-onderwijs}
 
 Ter algemene toelichting:  
 
