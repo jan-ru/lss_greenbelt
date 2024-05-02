@@ -1,5 +1,5 @@
 ---
-book:
+manuscript:
   title: "Green Belt"
   subtitle: "Lean / Six Sigma"
   author:
@@ -20,17 +20,6 @@ book:
 
   date: "4/11/2024"
   date-format: "DD/MM/YYYY"
-  chapters:
-    - index.qmd
-    - 1_definitie_fase.qmd
-    - 2_measure_fase.qmd
-    - 3_analyse_fase.qmd
-    - 4_improve_fase.qmd
-    - 5_control_fase.qmd
-
-  appendices:
-    - 6_kosten.qmd
-    - 7_studiebelasting.qmd
 
 format:
   pdf:
@@ -45,6 +34,7 @@ format:
     title-block-banner: true
     number-sections: true
     date-modified: "5/2/2024"
+    toc: true
   #  comments:
   #    hypothesis: true
   docx: default
