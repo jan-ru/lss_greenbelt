@@ -37,7 +37,7 @@ book:
     - 7_studiebelasting.qmd
 
 format:
-  pdf: default
+  pdf:
     papersize: a4
     mermaid:
       theme: neutral
@@ -53,6 +53,8 @@ format:
   #  comments:
   #    hypothesis: true
   docx: default
+
+format-links: [pdf]
 
 execute:
   echo: false
