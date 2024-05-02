@@ -2,6 +2,7 @@
 title: "Measure-fase"
 ---
 
+In de measure fase ...
 aan bod komen:
 
 ## Gegevens - verzamelen
@@ -12,6 +13,9 @@ aan bod komen:
 
 ## Gegevens - betrouwbaarheid
 
+De gegevens v.w.b. de voortgang van de e-learnings is afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan:
+- Zijn de data oplopend
+- Is de voortgang deze week niet lager dan vorige week
 
 ## Gegevens - verwerken
 
