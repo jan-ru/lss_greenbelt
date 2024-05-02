@@ -155,7 +155,7 @@ De totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). D
 
 Vooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen. 
 
-- De <span style="color:blue;">blauwe</span> lijn is bedoeld de huidige ideale doorlooptijd van de e-learnings weer te geven. 
-- De <span style="color:red;">rode</span> lijn is bedoeld de nieuwe ideale doorlooptijd van de e-learnings weer te geven (10% korter). 
+- De <span style="color:blue;">blauwe</span> lijn geeft de huidige doorlooptijd van de e-learnings weer. 
+- De <span style="color:red;">rode</span> lijn geeft de nieuwe beoogde doorlooptijd van de e-learnings weer (10% korter). 
  
 De twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.

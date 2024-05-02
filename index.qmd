@@ -1,1 +1,7 @@
 # Introduction {.unnumbered}
+
+
+Behalve als html is dit rapport ook beschikbaar in pdf en docx:
+
+- Link naar [pdf](https://jan-ru.github.io/lss_greenbelt/Green-Belt.pdf) document
+- Link naar [docx](https://jan-ru.github.io/lss_greenbelt/Green-Belt.docx) document
