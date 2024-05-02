@@ -1,0 +1,17 @@
+# Kosten
+
+Aanname 1: De kosten van de module zijn als volgt berekend:
+
+In 2022 realiseerde de HvA een omzet van €513,5 miljoen en een netto resultaat van €13,2 miljoen (bron:[jaarverslag 2022](https://www.hva.nl/over-de-hva/organisatie/plannen-feiten-en-verslagen/feiten-en-cijfers/financien/financien.html)). De kostenbasis van de HvA is daarmee €500,3 miljoen. In 2022 studeerden er 46.928 studenten aan de HvA. De kosten per student zijn daarmee €10.661 per jaar. Een regulier studiejaar bestaat uit 4 blokken. De koster per student zijn €2.665 per blok.
+
+Aanname 2: Een klas bestaat uit 25 studenten. De kosten van een klas/blok zijn daarmee 25*€2.665 = €66.625
+
+Aanname 3: aangenomen is dat 45% van de kosten van 1 blok/klas toe te wijzen zijn aan het vak Operations. Deze aanname is gebasseerd op het feit dat Operations 45% meetelt in het eindcijfer. De 45% bestaat uit 30% beroepsproduct en 15% kennistoets. 45% van €66.625 is €29.881, afgerond €30.000
+
+![Beoordeling Module](./static/beoordeling.jpg){fig-align="left"}
+
+<!--
+##Code
+
+##Data
+-->

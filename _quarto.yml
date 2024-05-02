@@ -1,10 +1,25 @@
 project:
   type: book
   output-dir: output
-Book:
+book:
   title: "Green Belt"
   subtitle: "Lean / Six Sigma"
-  author: Jan-Ru Muller
+  author:
+    - name: "Jan-Ru Muller"
+      orcid: 0000-0003-1689-0557
+      email: janru.muller@edu.vlerick.com
+      affiliations:
+    - name: Amsterdam University of Applied Sciences
+      address: Fraijlemaborg 133
+      city: Amsterdam
+      country: The Netherlands
+      postal-code: 1102 CV
+    - name: Vlerick Business School
+      address: Reep 1
+      city: Ghent
+      country: Belgium
+      postal-code: 9000
+
   date: "4/11/2024"
   date-format: "DD/MM/YYYY"
   chapters:
@@ -16,7 +31,8 @@ Book:
     - 5_control_fase.qmd
 
   appendices:
-    - 6_bijlagen.qmd
+    - 6_kosten.qmd
+    - 7_studiebelasting.qmd
 
 format:
   pdf:
@@ -39,3 +55,8 @@ execute:
   warning: false
   output: asis
 
+crossref: false
+fig-prefix: figure   # (default is "Figure")
+tbl-prefix: table    # (default is "Table")
+appendix-title: "App."
+appendix-delim: ":"
