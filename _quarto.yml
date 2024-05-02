@@ -1,5 +1,5 @@
 project:
-  type: bookr
+  type: book
   output-dir: output
 
 book:
