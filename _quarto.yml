@@ -1,36 +1,22 @@
 project:
   type: book
   output-dir: output
-title: "Green Belt"
-subtitle: "Lean / Six Sigma"
-author: 
-  - name: "Jan-Ru Muller"
-    orcid: 0000-0003-1689-0557
-    email: janru.muller@edu.vlerick.com
-    affiliations:
-    - name: Amsterdam University of Applied Sciences
-      address: Fraijlemaborg 133
-      city: Amsterdam
-      country: The Netherlands
-      postal-code: 1102 CV
-    - name: Vlerick Business School
-      address: Reep 1
-      city: Ghent
-      country: Belgium
-      postal-code: 9000
-date: "4/11/2024"
-date-format: "DD/MM/YYYY"
-  
-chapters:
-  - index.qmd
-  - 1_definitie_fase.qmd
-  - 2_measure_fase.qmd
-  - 3_analyse_fase.qmd
-  - 4_improve_fase.qmd
-  - 5_control_fase.qmd
+Book:
+  title: "Green Belt"
+  subtitle: "Lean / Six Sigma"
+  author: Jan-Ru Muller
+  date: "4/11/2024"
+  date-format: "DD/MM/YYYY"
+  chapters:
+    - index.qmd
+    - 1_definitie_fase.qmd
+    - 2_measure_fase.qmd
+    - 3_analyse_fase.qmd
+    - 4_improve_fase.qmd
+    - 5_control_fase.qmd
 
-appendices:
-  - 6_bijlagen.qmd
+  appendices:
+    - 6_bijlagen.qmd
 
 format:
   pdf:
