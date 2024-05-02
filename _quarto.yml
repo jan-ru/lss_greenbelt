@@ -4,7 +4,6 @@ project:
 
 manuscript: 
   article: 1_definitie_fase.qmd
-  article: 2_measure_fase.qmd
 
 format:
   pdf:
