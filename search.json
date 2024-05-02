@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Green Belt",
     "section": "",
-    "text": "Introduction",
+    "text": "Introduction\nBehalve als html is dit rapport ook beschikbaar in pdf en docx:\n\nLink naar pdf document\nLink naar docx document",
     "crumbs": [
       "Introduction"
     ]
@@ -64,7 +64,7 @@
     "href": "1_definitie_fase.html#prestatie-indicator",
     "title": "1  Definitie-fase",
     "section": "1.5 Prestatie indicator",
-    "text": "1.5 Prestatie indicator\nDe grafische prestatie indicator dient weer te geven wat:\n\nde ideale doorlooptijd van de e-learnings is\nwat de feitelijke doorlooptijd van de e-learnings is.\n\nVoor de ideale doorlooptijd van de e-learnings is de studiegids leidend in combinatie met de daadwerkelijke opdrachten op Brightspace. Voorwat betreft de feitelijke doorlooptijd van de e-learnings is de rapportage van Skoledo leidend.\n\n\n\n\n\n\n\nFigure 1.2: A line plot showing progress on the e-learnings\n\n\n\n\nDe totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.\nVooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.\n\nDe blauwe lijn is bedoeld de huidige ideale doorlooptijd van de e-learnings weer te geven.\nDe rode lijn is bedoeld de nieuwe ideale doorlooptijd van de e-learnings weer te geven (10% korter).\n\nDe twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.",
+    "text": "1.5 Prestatie indicator\nDe grafische prestatie indicator dient weer te geven wat:\n\nde ideale doorlooptijd van de e-learnings is\nwat de feitelijke doorlooptijd van de e-learnings is.\n\nVoor de ideale doorlooptijd van de e-learnings is de studiegids leidend in combinatie met de daadwerkelijke opdrachten op Brightspace. Voorwat betreft de feitelijke doorlooptijd van de e-learnings is de rapportage van Skoledo leidend.\n\n\n\n\n\n\n\nFigure 1.2: A line plot showing progress on the e-learnings\n\n\n\n\nDe totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.\nVooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.\n\nDe blauwe lijn geeft de huidige doorlooptijd van de e-learnings weer.\nDe rode lijn geeft de nieuwe beoogde doorlooptijd van de e-learnings weer (10% korter).\n\nDe twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
     ]
@@ -84,7 +84,17 @@
     "href": "2_measure_fase.html",
     "title": "2  Measure-fase",
     "section": "",
-    "text": "2.1 Gegevens - verzamelen",
+    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staan, ter algemene informatie, een aantal gegevensbronnen weergegeven waarmee men tijdens het proces “onderwijsuitvoering” te maken heef.\nHet lessenplan, onderdeel van de studiehandleiding, staat op Brightspace. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld. Skoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten. Het rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet. Aan het eind van de module vind met het docententeam een evaluatie plaats aan de hand van een “PDCA” formulier. Tenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.\nHet kernbegrip uit de doelstelling is de “doorlooptijd”. Meer specifiek: de doorlooptijd van de e-learnings.\nReferentie (Skoledo, 2024)\nDe output van het proces (cyclustijd)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
+    ]
+  },
+  {
+    "objectID": "2_measure_fase.html#gegevens---verzamelen",
+    "href": "2_measure_fase.html#gegevens---verzamelen",
+    "title": "2  Measure-fase",
+    "section": "",
+    "text": "Gegevensbronnen",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -114,7 +124,7 @@
     "href": "2_measure_fase.html#gegevens---verwerken",
     "title": "2  Measure-fase",
     "section": "2.4 Gegevens - verwerken",
-    "text": "2.4 Gegevens - verwerken",
+    "text": "2.4 Gegevens - verwerken\nDe gegevens zullen worden verwerkt met Excel.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
