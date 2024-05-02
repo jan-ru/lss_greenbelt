@@ -36,6 +36,8 @@ book:
     - 6_kosten.qmd
     - 7_studiebelasting.qmd
 
+format-links: [pdf, docx]
+
 format:
   pdf:
     papersize: a4
@@ -53,8 +55,6 @@ format:
   #  comments:
   #    hypothesis: true
   docx: default
-
-format-links: [pdf]
 
 execute:
   echo: false
