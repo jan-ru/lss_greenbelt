@@ -37,7 +37,7 @@ book:
     - 7_studiebelasting.qmd
 
 format:
-  pdf:
+  pdf: default
     papersize: a4
     mermaid:
       theme: neutral
