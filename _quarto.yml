@@ -1,5 +1,5 @@
 project:
-  type: book
+  type: manuscript
   output-dir: output
 book:
   title: "Green Belt"

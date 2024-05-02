@@ -8,8 +8,11 @@ Inleiding
 ## Borgingsinstrumenten
 
 
-## Instrument 1
+
+## Control instrument 1 
 
 
-## Instrument 2
+
+## Control instrument 2
+
 
