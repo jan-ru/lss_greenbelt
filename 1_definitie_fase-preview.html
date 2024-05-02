@@ -19,6 +19,40 @@
         margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
         vertical-align: middle;
       }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
     </style>
 
     <style>
@@ -128,13 +162,15 @@
      <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">  
-      </head>
+      <meta name="citation_title" content="Definitie-fase">
+<meta name="citation_language" content="en">
+</head>
 
   <body class="quarto-notebook">
     <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
       
       <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
-      <h6><i class="bi bi-journal-code"></i> Definitie-fase</h6>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
             <a href="./1_definitie_fase.qmd" class="btn btn-primary quarto-download-embed" download="1_definitie_fase.qmd">Download Source</a>
           </div>
@@ -153,6 +189,12 @@
 
                 
           
+                <div>
+            <div class="quarto-title-meta-heading">Modified</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date-modified">May 2, 2024</p>
+            </div>
+          </div>
                 
               </div>
       </div>
@@ -172,10 +214,10 @@
 </div>
 <main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-     <div id="199a9fbb" class="cell markdown">
+     <div id="3cffa8e1" class="cell markdown">
 <p>Sinds 2,5 jaar geef ik les op de Hogeschool van Amsterdam (HvA) op de Faculteit Business en Economie (FBE) binnen het cluster Finance &amp; Control (F&amp;C). In dit hoofdstuk, de “Define Fase”, ligt ik hieronder eerst toe hoe ik gekomen ben tot het procesverbeter voorstel.</p>
-<section id="proces-selectie" class="level2">
-<h2 class="anchored" data-anchor-id="proces-selectie">Proces-selectie</h2>
+<section id="proces-selectie" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="proces-selectie"><span class="header-section-number">1</span> <span class="header-section-number">1</span> Proces-selectie</h2>
 <p>Mijn verzoek om de opdracht t.b.v. het Green Belt Certificaat te kunnen doen is goedgekeurd door de Finance &amp; Control coördinator Nadine Steverink. Met de goedkeuring kwam de vraag om een onderwerp te kiezen dat te maken heeft met de opleiding. Ik had toen het idee om het project te doen over een onderdeel van de opleiding waarin ik zelf actief ben. Hierna heb ik mondeling overleg gehad met mijn collega’s Gert de Jong en Paul te Riele. De collega’s stonden niet afwijzend tegenover het idee. Ons regulier periodiek overleg geeft mij de gelegenheid om terugkoppeling te vragen op de deelproducten van het project.</p>
 <p>Hieronder is staat een generiek proces van een onderwijs module weergegeven. Dit LSS project situeert zich in de processtap “Het uitvoeren van onderwijs”. Hieronder wordt verstaan het geven van lessen, het begeleiden van studenten en het beoordelen van leerresultaten.</p>
 <div class="quarto-figure quarto-figure-left">
@@ -211,8 +253,8 @@ Onderstaand is een GANTT chart waarin de 10 weken van het blok weergegeven staan
 \newpage
 -->
 </section>
-<section id="project-charter" class="level2">
-<h2 class="anchored" data-anchor-id="project-charter">Project Charter</h2>
+<section id="project-charter" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="project-charter"><span class="header-section-number">2</span> <span class="header-section-number">2</span> Project Charter</h2>
 <p>Het project charter heeft als doel een éénduidige beschrijving van het project te geven zodat betrokkenen het doel, de rijkwijdte en de planning kennen. De werktitel van het project is “verbeteren door versnellen” (van de e-learnings).</p>
 <table class="table table-sm table-striped small">
 <caption>Project Charter</caption>
@@ -347,8 +389,8 @@ Onderstaand is een GANTT chart waarin de 10 weken van het blok weergegeven staan
 </table>
 <p>Ik vind sterk van de charter dat ik mij in de business case een voorstelling heb geprobeerd te maken een ordegrootte van de “kosten &amp; baten”. We spreken over een mogelijke “verbetering” ad. €3.000 per blok. Op dit moment heb ik over de charter geen vragen.</p>
 </section>
-<section id="sipoc" class="level2">
-<h2 class="anchored" data-anchor-id="sipoc">SIPOC</h2>
+<section id="sipoc" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sipoc"><span class="header-section-number">3</span> <span class="header-section-number">3</span> SIPOC</h2>
 <p>Met een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
@@ -365,8 +407,8 @@ Onderstaand is een GANTT chart waarin de 10 weken van het blok weergegeven staan
 <li>Onder management wordt hier verstaan het hoofd van de opleiding Finance &amp; Control.</li>
 </ul>
 </section>
-<section id="voc-ctq" class="level2">
-<h2 class="anchored" data-anchor-id="voc-ctq">VOC-CTQ</h2>
+<section id="voc-ctq" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="voc-ctq"><span class="header-section-number">4</span> <span class="header-section-number">4</span> VOC-CTQ</h2>
 <p>De Voice of the Customer, is de klantenvraag waardoor het project geïnitieerd is. In dit project is het de Voice of the Business aangezien de vraag (of opdracht) afkomstig is van de HvA academy, het interne opleidingsinstituut van de HvA.<br>
 In de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Bloom: onthouden, toepassen en reproduceren. De taxonomie van Bloom is een referentie waarnaar, binnen de HvA, regelmatig wordt verwezen. In de taxonomie worden zes nivo’s van leren onderscheiden. Omdat het onderwerp van dit project een module is uit jaar 2, worden alleen de onderste drie nivo’s van de taxonomie benoemd.</p>
 <div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell" data-layout-align="default">
@@ -399,7 +441,7 @@ In de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Blo
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-voc-ctq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Voice of the Business
+Figure&nbsp;1: Voice of the Business
 </figcaption>
 </figure>
 </div>
@@ -412,8 +454,8 @@ Voice of the Business
 <li>Er dient nog een CTQ over “volgordelijkheid” te worden toegevoegd. Hiervoor dient de VOB nog te worden aangepast (met een statement over effectiviteit).</li>
 </ol>
 </section>
-<section id="prestatie-indicator" class="level2">
-<h2 class="anchored" data-anchor-id="prestatie-indicator">Prestatie indicator</h2>
+<section id="prestatie-indicator" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="prestatie-indicator"><span class="header-section-number">5</span> <span class="header-section-number">5</span> Prestatie indicator</h2>
 <p>De grafische prestatie indicator dient weer te geven wat:</p>
 <ul>
 <li>de ideale doorlooptijd van de e-learnings is</li>
@@ -423,63 +465,61 @@ Voice of the Business
 </section>
 </div>
 <div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="cell-fig-lineplot" class="cell" data-execution_count="1">
-<pre><code>#| label: fig-lineplot
-#| fig-cap: A line plot showing progress on the e-learnings
-import matplotlib.pyplot as plt
-
-# Data for plotting
-weeks_first_line = [0,10]  # Week 1 through 10
-hours_first_line = [0,25]  # 0 to 25 hours, linear increase
-
-weeks_second_line = [0,9]  # Week 1 through 9
-hours_second_line = [0,25]  # 0 to 25 hours, linear increase ending at week 9
-
-# Create a line plot
-plt.figure(figsize=(10, 5))  # Set the figure size
-plt.plot(weeks_first_line, hours_first_line, marker='o', linestyle='-', color='b', label="huidige doorlooptijd")  # First line
-plt.plot(weeks_second_line, hours_second_line, marker='o', linestyle='-', color='r', label="gewenste doorlooptijd")  # Second line
-
-# Setting the labels for the axes
-plt.xlabel('Doorlooptijd (weken)')
-plt.ylabel('Studiebelasting (uren/blok)')
-
-# Setting the range for the axes
-plt.xlim(0, 10)  # X-axis from week 1 to 10
-plt.ylim(0, 25)  # Y-axis from 0 to 25 hours
-plt.xticks(range(1, 11))  # X-axis ticks at every week from 1 to 10
-
-# Adding a title
-plt.title('Doorlooptijd e-learnings')
-
-# Adding an arrow with a label
-plt.annotate(
-    'doelstelling:\n10% verlagen',  # text to display
-    xy=(8, 22.5),  # point to annotate (arrow head)
-    xytext=(9, 22.5),  # start point of the text (arrow tail)
-    arrowprops=dict(arrowstyle='-&gt;', lw=1.5, color='green'),  # style of the arrow
-    ha='left',  # horizontal alignment of the text
-    va='center',  # vertical alignment
-    # rotation=45  # text angle
-)
-
-# Display the grid and legend
-plt.grid(True)
-plt.legend()
-
-# Show the plot
-plt.show()</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Data for plotting</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>weeks_first_line <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">10</span>]  <span class="co"># Week 1 through 10</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>hours_first_line <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">25</span>]  <span class="co"># 0 to 25 hours, linear increase</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>weeks_second_line <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">9</span>]  <span class="co"># Week 1 through 9</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>hours_second_line <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">25</span>]  <span class="co"># 0 to 25 hours, linear increase ending at week 9</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a line plot</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))  <span class="co"># Set the figure size</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.plot(weeks_first_line, hours_first_line, marker<span class="op">=</span><span class="st">'o'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>, color<span class="op">=</span><span class="st">'b'</span>, label<span class="op">=</span><span class="st">"huidige doorlooptijd"</span>)  <span class="co"># First line</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.plot(weeks_second_line, hours_second_line, marker<span class="op">=</span><span class="st">'o'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>, color<span class="op">=</span><span class="st">'r'</span>, label<span class="op">=</span><span class="st">"gewenste doorlooptijd"</span>)  <span class="co"># Second line</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting the labels for the axes</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Doorlooptijd (weken)'</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Studiebelasting (uren/blok)'</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting the range for the axes</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>plt.xlim(<span class="dv">0</span>, <span class="dv">10</span>)  <span class="co"># X-axis from week 1 to 10</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="dv">25</span>)  <span class="co"># Y-axis from 0 to 25 hours</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>plt.xticks(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>))  <span class="co"># X-axis ticks at every week from 1 to 10</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding a title</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Doorlooptijd e-learnings'</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding an arrow with a label</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>plt.annotate(</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">'doelstelling:</span><span class="ch">\n</span><span class="st">10% verlagen'</span>,  <span class="co"># text to display</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    xy<span class="op">=</span>(<span class="dv">8</span>, <span class="fl">22.5</span>),  <span class="co"># point to annotate (arrow head)</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    xytext<span class="op">=</span>(<span class="dv">9</span>, <span class="fl">22.5</span>),  <span class="co"># start point of the text (arrow tail)</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    arrowprops<span class="op">=</span><span class="bu">dict</span>(arrowstyle<span class="op">=</span><span class="st">'-&gt;'</span>, lw<span class="op">=</span><span class="fl">1.5</span>, color<span class="op">=</span><span class="st">'green'</span>),  <span class="co"># style of the arrow</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    ha<span class="op">=</span><span class="st">'left'</span>,  <span class="co"># horizontal alignment of the text</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    va<span class="op">=</span><span class="st">'center'</span>,  <span class="co"># vertical alignment</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># rotation=45  # text angle</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the grid and legend</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the plot</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-lineplot" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-lineplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <a href="1_definitie_fase_files/figure-html/fig-lineplot-output-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="1_definitie_fase_files/figure-html/fig-lineplot-output-1.png" width="826" height="449" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lineplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-A line plot showing progress on the e-learnings
+Figure&nbsp;2: A line plot showing progress on the e-learnings
 </figcaption>
 </figure>
 </div>
 </div></div>
-<div id="857e12e4" class="cell markdown">
+<div id="179d7f36" class="cell markdown">
 <p>De totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.</p>
 <p>Vooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.</p>
 <ul>
@@ -491,7 +531,7 @@ A line plot showing progress on the e-learnings
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">Generiek Module Proces</span>
 <span class="glightbox-desc lightbox-desc-2">Onderwijsuitvoering</span>
-<span class="glightbox-desc lightbox-desc-3">A line plot showing progress on the e-learnings</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;2: A line plot showing progress on the e-learnings</span>
 </div>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
@@ -887,7 +927,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom"});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
