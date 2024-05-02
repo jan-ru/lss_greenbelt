@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Green Belt",
     "section": "",
-    "text": "crossref: false fig-prefix: figure # (default is “Figure”) tbl-prefix: table # (default is “Table”) appendix-title: “App.” appendix-delim: “:”\n\n\nIntroduction",
+    "text": "Introduction",
     "crumbs": [
       "Introduction"
     ]
@@ -210,14 +210,25 @@
     ]
   },
   {
-    "objectID": "6_bijlagen.html",
-    "href": "6_bijlagen.html",
+    "objectID": "6_kosten.html",
+    "href": "6_kosten.html",
     "title": "Appendix A — Kosten",
     "section": "",
-    "text": "Aanname 1: De kosten van de module zijn als volgt berekend:\nIn 2022 realiseerde de HvA een omzet van €513,5 miljoen en een netto resultaat van €13,2 miljoen (bron:jaarverslag 2022). De kostenbasis van de HvA is daarmee €500,3 miljoen. In 2022 studeerden er 46.928 studenten aan de HvA. De kosten per student zijn daarmee €10.661 per jaar. Een regulier studiejaar bestaat uit 4 blokken. De koster per student zijn €2.665 per blok.\nAanname 2: Een klas bestaat uit 25 studenten. De kosten van een klas/blok zijn daarmee 25*€2.665 = €66.625\nAanname 3: aangenomen is dat 45% van de kosten van 1 blok/klas toe te wijzen zijn aan het vak Operations. Deze aanname is gebasseerd op het feit dat Operations 45% meetelt in het eindcijfer. De 45% bestaat uit 30% beroepsproduct en 15% kennistoets. 45% van €66.625 is €29.881, afgerond €30.000\n\n\n\nBeoordeling Module\n\n\n\n\nB Studiebelasting\nTabel met in te leveren deelproducten per sprint en ook uren per fase.\nDe totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo). In de tabel hieronder staat de inhoud van de zes modules en de studiebelasting per module.\n\nStudiebelasting\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nWat is Lean Six Sigma?\nWat is Lean?\n2,5 uur\n\n\n\nWat is Six Sigma?\n\n\n\n\nWat is Lean Six Sigma?\n\n\n\n\n\n\n\n\nDefine-fase\nSelecteren verbeterproject\n2,5 uur\n\n\n\nHet proces definiëren\n\n\n\n\nWat wil je bereiken?\n\n\n\n\n\n\n\n\nMeasure-fase\nWaarom welke data verzamelen?\n4,0 uur\n\n\n\nHoe data verzamelen?\n\n\n\n\nZorg voor goede data.\n\n\n\n\nLean Six Sigma maatstaven.\n\n\n\n\n\n\n\n\nAnalyse-fase\nWat zijn de prestaties van het proces?\n3,5 uur\n\n\n\nWat zijn de invloedsfactoren?\n\n\n\n\nToetsen invloedsfactoren: is het\n\n\n\n\necht een knelpunt?\n\n\n\n\n\n\n\n\nImprove-fase\nGenereer oplossingen\n2,0 uur\n\n\n\nSelecteer oplossingen\n\n\n\n\nImplementeer oplossingen\n\n\n\n\nLean6Sigma improve-tools\n\n\n\n\n\n\n\n\nControl-fase\nHet proces borgen\n2,5 uur\n\n\n\nIn control zijn en blijven\n\n\n\n\nVerankering in het DNA\n\n\n\n\nProject afsluiten\n\n\n\n\n\n\n\n\nSubtotaal (circa)\n\n16,0 uur\n\n\nProef examen\n\n2,0 uur\n\n\nExamen\n\n2,0 uur\n\n\nTotaal (circa)\n\n20,0 uur\n\n\n\n\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nMinitab introductie\nMinitab: introductie\n4,0 uur\n\n\n\nData verzamelen\n\n\n\n\nPrestaties weergeven\n\n\n\n\nPrestaties toetsen\n\n\n\n\n\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nMinitab introductie\nWat is kwaliteit?\n1,5 uur\n\n\n\nWat is kwaliteitsmanagement?\n\n\n\n\nKwaliteitsmanagementsysteem\n\n\n\n\nKwaliteitsgoeroes",
+    "text": "Aanname 1: De kosten van de module zijn als volgt berekend:\nIn 2022 realiseerde de HvA een omzet van €513,5 miljoen en een netto resultaat van €13,2 miljoen (bron:jaarverslag 2022). De kostenbasis van de HvA is daarmee €500,3 miljoen. In 2022 studeerden er 46.928 studenten aan de HvA. De kosten per student zijn daarmee €10.661 per jaar. Een regulier studiejaar bestaat uit 4 blokken. De koster per student zijn €2.665 per blok.\nAanname 2: Een klas bestaat uit 25 studenten. De kosten van een klas/blok zijn daarmee 25*€2.665 = €66.625\nAanname 3: aangenomen is dat 45% van de kosten van 1 blok/klas toe te wijzen zijn aan het vak Operations. Deze aanname is gebasseerd op het feit dat Operations 45% meetelt in het eindcijfer. De 45% bestaat uit 30% beroepsproduct en 15% kennistoets. 45% van €66.625 is €29.881, afgerond €30.000\n\n\n\nBeoordeling Module",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Kosten</span>"
+    ]
+  },
+  {
+    "objectID": "7_studiebelasting.html",
+    "href": "7_studiebelasting.html",
+    "title": "Appendix B — Studiebelasting",
+    "section": "",
+    "text": "Tabel met in te leveren deelproducten per sprint en ook uren per fase.\nDe totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo). In de tabel hieronder staat de inhoud van de zes modules en de studiebelasting per module.\n\nStudiebelasting\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nWat is Lean Six Sigma?\nWat is Lean?\n2,5 uur\n\n\n\nWat is Six Sigma?\n\n\n\n\nWat is Lean Six Sigma?\n\n\n\n\n\n\n\n\nDefine-fase\nSelecteren verbeterproject\n2,5 uur\n\n\n\nHet proces definiëren\n\n\n\n\nWat wil je bereiken?\n\n\n\n\n\n\n\n\nMeasure-fase\nWaarom welke data verzamelen?\n4,0 uur\n\n\n\nHoe data verzamelen?\n\n\n\n\nZorg voor goede data.\n\n\n\n\nLean Six Sigma maatstaven.\n\n\n\n\n\n\n\n\nAnalyse-fase\nWat zijn de prestaties van het proces?\n3,5 uur\n\n\n\nWat zijn de invloedsfactoren?\n\n\n\n\nToetsen invloedsfactoren: is het\n\n\n\n\necht een knelpunt?\n\n\n\n\n\n\n\n\nImprove-fase\nGenereer oplossingen\n2,0 uur\n\n\n\nSelecteer oplossingen\n\n\n\n\nImplementeer oplossingen\n\n\n\n\nLean6Sigma improve-tools\n\n\n\n\n\n\n\n\nControl-fase\nHet proces borgen\n2,5 uur\n\n\n\nIn control zijn en blijven\n\n\n\n\nVerankering in het DNA\n\n\n\n\nProject afsluiten\n\n\n\n\n\n\n\n\nSubtotaal (circa)\n\n16,0 uur\n\n\nProef examen\n\n2,0 uur\n\n\nExamen\n\n2,0 uur\n\n\nTotaal (circa)\n\n20,0 uur\n\n\n\n\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nMinitab introductie\nMinitab: introductie\n4,0 uur\n\n\n\nData verzamelen\n\n\n\n\nPrestaties weergeven\n\n\n\n\nPrestaties toetsen\n\n\n\n\n\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nMinitab introductie\nWat is kwaliteit?\n1,5 uur\n\n\n\nWat is kwaliteitsmanagement?\n\n\n\n\nKwaliteitsmanagementsysteem\n\n\n\n\nKwaliteitsgoeroes",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Studiebelasting</span>"
     ]
   }
 ]
