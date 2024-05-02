@@ -2,6 +2,28 @@ project:
   type: manuscript
   output-dir: output
 
+manuscript: 
+  article: 1_definitie_fase.qmd
+  article: 2_measure_fase.qmd
+
+format:
+  pdf:
+    papersize: a4
+    mermaid:
+      theme: neutral
+    cite-method: citeproc
+    toc: true
+    lof: true
+    lot: true
+  html: 
+    title-block-banner: true
+    number-sections: true
+    date-modified: "5/2/2024"
+    toc: true
+  #  comments:
+  #    hypothesis: true
+  docx: default
+
 execute:
   echo: false
   warning: false
