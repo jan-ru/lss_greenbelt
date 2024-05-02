@@ -4,15 +4,25 @@ title: "Analyse-fase"
 
 aan bod komen:
 
-## Proces Selectie
 
-### Analyse technieken
+## Analyse technieken
 
 Benoemen dat er momenteel meerdere interpretaties zijn:  
 - De e-learnings moeten af voor het einde van het blok
 - De e-learnings moeten af voor het examen
 - De e-learnings ...
 
-### Prestaties van het proces
+## Prestaties van het proces
 
-### Invloedsfactoren
+
+## Inventarisatie invloedsfactoren
+
+Visgraat
+
+## Meeste Impact
+
+- aanwezigheid
+- e-learning op tijd maken
+- groepsgenoten
+- vakdocent
+- procesdocent
