@@ -11,7 +11,7 @@ Mijn verzoek om de opdracht t.b.v. het Green Belt Certificaat te kunnen doen is 
 Hieronder is staat een generiek proces van een onderwijs module weergegeven. Dit LSS project situeert zich in de processtap "Het uitvoeren van onderwijs". Hieronder wordt verstaan het geven van lessen, het begeleiden van studenten en het beoordelen van leerresultaten.
 
 
-![Generiek Module Proces](./static/module_generiek.jpg){fig-align="left"}
+![Generiek Module Proces](./static/module_generiek.jpg){fig-align="left" #fig-module-proces}
 
 \newpage
 <!--
