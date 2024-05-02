@@ -76,7 +76,7 @@ Het project charter heeft als doel een éénduidige beschrijving van het project
 |de e-learnings verlagen met 10%    |15-06-2024 Control  -                  |
 |van [70] dagen naar [63] dagen[^1].|                                       |
 
-: Project Charter
+: Project Charter{#tbl-projectcharter}
 
 [^1]: de doelstelling zal na de analyse fase worden aangepast omdat dan pas duidelijk zal zijn wat momenteel de gemiddelde doorlooptijd is.
 
