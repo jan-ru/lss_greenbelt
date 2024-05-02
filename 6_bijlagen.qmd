@@ -1,0 +1,79 @@
+# Kosten
+
+Aanname 1: De kosten van de module zijn als volgt berekend:
+
+In 2022 realiseerde de HvA een omzet van €513,5 miljoen en een netto resultaat van €13,2 miljoen (bron:[jaarverslag 2022](https://www.hva.nl/over-de-hva/organisatie/plannen-feiten-en-verslagen/feiten-en-cijfers/financien/financien.html)). De kostenbasis van de HvA is daarmee €500,3 miljoen. In 2022 studeerden er 46.928 studenten aan de HvA. De kosten per student zijn daarmee €10.661 per jaar. Een regulier studiejaar bestaat uit 4 blokken. De koster per student zijn €2.665 per blok.
+
+Aanname 2: Een klas bestaat uit 25 studenten. De kosten van een klas/blok zijn daarmee 25*€2.665 = €66.625
+
+Aanname 3: aangenomen is dat 45% van de kosten van 1 blok/klas toe te wijzen zijn aan het vak Operations. Deze aanname is gebasseerd op het feit dat Operations 45% meetelt in het eindcijfer. De 45% bestaat uit 30% beroepsproduct en 15% kennistoets. 45% van €66.625 is €29.881, afgerond €30.000
+
+![Beoordeling Module](./static/beoordeling.jpg){fig-align="left"}
+
+<!--
+##Code
+
+##Data
+-->
+
+# Studiebelasting
+
+\newpage
+
+Tabel met in te leveren deelproducten per sprint en ook uren per fase.
+
+De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo). In de tabel hieronder staat de inhoud van de zes modules en de studiebelasting per module.
+
+
+|module                | onderwerpen                           |studiebelasting|
+|----------------------|---------------------------------------|--------------:|
+|Wat is Lean Six Sigma?| Wat is Lean?                          | 2,5 uur       |
+|                      | Wat is Six Sigma?                     |               |
+|                      | Wat is Lean Six Sigma?                |               |
+|                      |                                       |               |
+|Define-fase           | Selecteren verbeterproject            | 2,5 uur       |
+|                      | Het proces definiëren                 |               |
+|                      | Wat wil je bereiken?                  |               |
+|                      |                                       |               |
+|Measure-fase          | Waarom welke data verzamelen?         | 4,0 uur       |
+|                      | Hoe data verzamelen?                  |               |
+|                      | Zorg voor goede data.                 |               |
+|                      | Lean Six Sigma maatstaven.            |               |
+|                      |                                       |               |
+|Analyse-fase          | Wat zijn de prestaties van het proces?| 3,5 uur       |
+|                      | Wat zijn de invloedsfactoren?         |               |
+|                      | Toetsen invloedsfactoren: is het      |               |
+|                      | echt een knelpunt?                    |               |
+|                      |                                       |               |
+|Improve-fase          | Genereer oplossingen                  | 2,0 uur       |
+|                      | Selecteer oplossingen                 |               |
+|                      | Implementeer oplossingen              |               |
+|                      | Lean6Sigma improve-tools              |               |
+|                      |                                       |               |
+|Control-fase          | Het proces borgen                     | 2,5 uur       |
+|                      | In control zijn en blijven            |               |
+|                      | Verankering in het DNA                |               |
+|                      | Project afsluiten                     |               |
+|                      |                                       |               |
+|Subtotaal (circa)     |                                       |16,0 uur       |
+|Proef examen          |                                       | 2,0 uur       |
+|Examen                |                                       | 2,0 uur       |
+|Totaal (circa)        |                                       |20,0 uur       |
+
+: Studiebelasting
+
+
+|module                | onderwerpen                           |studiebelasting|
+|----------------------|---------------------------------------|--------------:|
+|Minitab introductie   | Minitab: introductie                  | 4,0 uur       |
+|                      | Data verzamelen                       |               |
+|                      | Prestaties weergeven                  |               |
+|                      | Prestaties toetsen                    |               |
+
+
+|module                | onderwerpen                           |studiebelasting|
+|----------------------|---------------------------------------|--------------:|
+|Minitab introductie   | Wat is kwaliteit?                     | 1,5 uur       |
+|                      | Wat is kwaliteitsmanagement?          |               |
+|                      | Kwaliteitsmanagementsysteem           |               |
+|                      | Kwaliteitsgoeroes                     |               |
