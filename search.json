@@ -124,17 +124,37 @@
     "href": "3_analyse_fase.html",
     "title": "3  Analyse-fase",
     "section": "",
-    "text": "3.1 Proces Selectie",
+    "text": "3.1 Analyse technieken\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
   },
   {
-    "objectID": "3_analyse_fase.html#proces-selectie",
-    "href": "3_analyse_fase.html#proces-selectie",
+    "objectID": "3_analyse_fase.html#prestaties-van-het-proces",
+    "href": "3_analyse_fase.html#prestaties-van-het-proces",
     "title": "3  Analyse-fase",
-    "section": "",
-    "text": "3.1.1 Analyse technieken\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …\n\n\n3.1.2 Prestaties van het proces\n\n\n3.1.3 Invloedsfactoren",
+    "section": "3.2 Prestaties van het proces",
+    "text": "3.2 Prestaties van het proces",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
+    "href": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
+    "title": "3  Analyse-fase",
+    "section": "3.3 Inventarisatie invloedsfactoren",
+    "text": "3.3 Inventarisatie invloedsfactoren\nVisgraat",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#meeste-impact",
+    "href": "3_analyse_fase.html#meeste-impact",
+    "title": "3  Analyse-fase",
+    "section": "3.4 Meeste Impact",
+    "text": "3.4 Meeste Impact\n\naanwezigheid\ne-learning op tijd maken\ngroepsgenoten\nvakdocent\nprocesdocent",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
@@ -190,21 +210,21 @@
     ]
   },
   {
-    "objectID": "5_control_fase.html#instrument-1",
-    "href": "5_control_fase.html#instrument-1",
+    "objectID": "5_control_fase.html#control-instrument-1",
+    "href": "5_control_fase.html#control-instrument-1",
     "title": "5  Control-fase",
-    "section": "5.2 Instrument 1",
-    "text": "5.2 Instrument 1",
+    "section": "5.2 Control instrument 1",
+    "text": "5.2 Control instrument 1",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Control-fase</span>"
     ]
   },
   {
-    "objectID": "5_control_fase.html#instrument-2",
-    "href": "5_control_fase.html#instrument-2",
+    "objectID": "5_control_fase.html#control-instrument-2",
+    "href": "5_control_fase.html#control-instrument-2",
     "title": "5  Control-fase",
-    "section": "5.3 Instrument 2",
-    "text": "5.3 Instrument 2",
+    "section": "5.3 Control instrument 2",
+    "text": "5.3 Control instrument 2",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Control-fase</span>"
     ]
