@@ -6,3 +6,5 @@
 /output
 /static
 /temp.yaml
+/.quarto/
+.gitignore
