@@ -235,10 +235,10 @@ Figure&nbsp;2.1: Gegevensbronnen
 <li>SIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.</li>
 <li>Skoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.</li>
 <li>Brightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.</li>
-<li>Het rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.</li>
-<li>Tenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.</li>
+<li>Testvision is het programma waarin de kennistoets wordt samengesteld en waarin de studenten de toets maken.</li>
+<li>Rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.</li>
 </ol>
-<p>Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1. Het idee is om</p>
+<p>Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend de gegevensbron Skoledo.</p>
 <!--Het kernbegrip uit de doelstelling is de "doorlooptijd". Meer specifiek: de doorlooptijd van de e-learnings.
 Referentie (Skoledo, 2024)
 De output van het proces (cyclustijd) -->
@@ -279,7 +279,7 @@ Figure&nbsp;2.2: Module detail
 </thead>
 <tbody>
 <tr class="odd">
-<td>datum&amp;cijfer</td>
+<td>datum &amp; cijfer</td>
 <td>CTQ1</td>
 <td>Automatisch door het volgen van de e-learnings</td>
 <td>iedere week</td>
@@ -287,7 +287,7 @@ Figure&nbsp;2.2: Module detail
 <td>Skoledo</td>
 </tr>
 <tr class="even">
-<td>datum&amp;cijfer</td>
+<td>datum &amp; cijfer</td>
 <td>CTQ2</td>
 <td>Handmatig door beoordeling praktijkopddracht</td>
 <td>iedere week</td>
@@ -295,7 +295,7 @@ Figure&nbsp;2.2: Module detail
 <td>Vakdocent</td>
 </tr>
 <tr class="odd">
-<td>datum&amp;cijfer</td>
+<td>datum &amp; cijfer</td>
 <td>CTQ3</td>
 <td>Semi-automatisch door maken examen en de beoordeling daarvan</td>
 <td>in week 9</td>
@@ -304,22 +304,29 @@ Figure&nbsp;2.2: Module detail
 </tr>
 </tbody>
 </table>
-<p>De doelstelling, het verlagen van de doorlooptijd van de e-learnings betreft slechts één, albeit belangrijk, onderdeel van het vak operations.</p>
-<p>Ten behoeve van dit rapport worden de volgende definities gehanteerd:</p>
-<ul>
-<li>Cyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken.</li>
-<li>Doorlooptijd: de totale tijd om het vak af te ronden is 9 weken, gerekend vanaf de start van het blok.</li>
-<li>Taktijd: de maximale tijd om de e-learnings af te ronden is 8 weken, gerekend vanaf de start van het blok.</li>
-</ul>
-<p>De redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken. De waardes voor de doorlooptijd en taktijd zijn afgerond op hele weken.</p>
+<p>Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1.</p>
 </section>
 <section id="gegevens---betrouwbaarheid" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="gegevens---betrouwbaarheid"><span class="header-section-number">2.3</span> Gegevens - betrouwbaarheid</h2>
-<p>De gegevens v.w.b. de voortgang van de e-learnings zijn afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan: - Zijn de data oplopend - Is de voortgang deze week niet lager dan vorige week</p>
-<p>Betrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.</p>
-<p>De nauwkeurigheid van het meetsysteem.</p>
-<p>Absoluut of relatief?</p>
-<p>Unit of analysis. Populatie Steekproefomvang Representatief</p>
+<p>De gegevens v.w.b. de voortgang van de e-learnings zijn afkomstig van Skoledo. De gegevens worden uit de Skoledo database geexporteerd. Wekelijk wordt er een rapportage samengesteld en opgestuurd naar de docenten van het vak Operations. Er worden door de ontvanger een paar checks gedaan:</p>
+<ul>
+<li>Zijn de data oplopend</li>
+<li>Is de voortgang deze week hoger dan vorige week</li>
+<li>Zijn alle studenten begonnen met de e-learnings</li>
+<li>Welke studenten hebben de e-learnings afgerond</li>
+</ul>
+<p>De docent meldt de (tussentijdse) resultaten terug aan de klas. Hierdoor kunnen de studenten zelf ook checken of de gerapporteerde voortgang en (tussentijdse) resultaten overeenkomt met de gerealiseerde voortgang en (tussentijdse) resultaten.</p>
+<div id="fig-checks" class="quarto-figure quarto-figure-left quarto-float anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./static/betrouwbaarheid.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Vakdocent en student checks
+</figcaption>
+</figure>
+</div>
+<p>Hoewel er dus de nodige checks en balances zijn kan niet gegarandeerd worden dat de gegevens betrouwbaar zijn. Studenten kunnen frauderen en de e-learnings door een ander laten maken. Er is geen aanleiding om te denken dat dit gebeurd. Voorzover het de student zou helpen de e-learnings te behalen helpt het de student niet om andere toetsen, zoals de praktijkopdrachten, de assessment en de kennistoets te halen.</p>
 </section>
 <section id="gegevens---verwerken" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="gegevens---verwerken"><span class="header-section-number">2.4</span> Gegevens - verwerken</h2>
@@ -332,17 +339,8 @@ Figure&nbsp;2.2: Module detail
 <li>Voldoende grafische mogelijkheden om een control-chart te kunnen maken</li>
 <li>En, last but not least, goede kennis van Excel bij de auteur van dit rapport</li>
 </ul>
-<div id="fig-linkedin-excel" class="quarto-figure quarto-figure-left quarto-float anchored" data-fig-align="left">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-linkedin-excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<embed src="./static/20210815_LinkedIn_Excel.pdf" class="img-fluid quarto-figure quarto-figure-left">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linkedin-excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.3: Excel score op LinkedIn (2021)
-</figcaption>
-</figure>
-</div>
 <p>Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.</p>
+<!-- Bijlage? ![Excel score op LinkedIn (2021)](./static/20210815_LinkedIn_Excel.pdf){fig-align="left" #fig-linkedin-excel}-->
 
 
 </section>
