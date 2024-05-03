@@ -8,7 +8,7 @@ Het doel van de measure-fase is om te komen tot een meetplan. In dit hoofdstuk k
 
 In de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces "onderwijsuitvoering" te maken heeft.
 
-![Gegevensbronnen](./static/gegevensbronnen.jpg){fig-align="left" #fig-gegevensbronnen}
+![Gegevensbronnen](./static/gegevensbronnen2.jpg){fig-align="left" #fig-gegevensbronnen}
 
 1. SIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.
 2. Skoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten. 
@@ -24,37 +24,60 @@ De output van het proces (cyclustijd) -->
 
 ## Meetplan
 
-In de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige
-
-Cycle time
+In de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige processtappen herhaald worden. In onderstaand schema wordt dat verduidelijkt.
 
 ![Module detail](./static/module_detail.jpg){fig-align="left" #fig-module-detail}
 
-Het bovenstaande detail helpt ter verduidelijking van onderstaand meetplan.
+De duur van de module is 1 blok, ofwel 10 weken. De voorbereiding voor het blok, waaronder het maken van het lessenplan wordt voor de aanvang van de module gedaan. Er zijn 8 lesweken, 1 assessment en examenweek, en 1 week voor herkansingen (en voorbereiding volgend blok). In het schema worden stap 3.2 t/m 3.4 in het totaal 8 keer uitgevoerd.
 
 |Wat meten we|Waarom meten we|Hoe verzamelen we de data|Wanneer verzamelen|Waar in het proces |Wie verzamelt ze|
 |------------|---------------|-------------------------|------------------|-------------------|----------------|
-|      a     |  CTQ1 |Automatisch door het volgen van de e-learnings     | iedere week      |                   |  Skoledo       |
-|      b     |  CTQ2 |Handmatig door beoordeling van de praktijkopddracht| iedere week      |voor processtap 3.5|                |
-|      c     |  CTQ3 |Semi-automatisch door het maken van het examen en de beoordeling daarvan| in week 9        |voor processtap 3.2|  Vakdocent     |
+|datum&cijfer|CTQ1|Automatisch door het volgen van de e-learnings | iedere week      |voor processtap 3.4|  Skoledo      |
+|datum&cijfer|CTQ2|Handmatig door beoordeling praktijkopddracht   | iedere week      |voor processtap 3.4|  Vakdocent    |
+|datum&cijfer|CTQ3|Semi-automatisch door maken examen en de beoordeling daarvan| in week 9 |voor processtap 3.5|Vakdocent|
 
-: Meetplan{#tbl-meetplan}
+: Meetplan
 
-De doelstelling, het verlagen van de doorlooptijd van de e-learnings, betreft 
+De doelstelling, het verlagen van de doorlooptijd van de e-learnings betreft slechts één, albeit belangrijk, onderdeel van het vak operations.
+
+Ten behoeve van dit rapport worden de volgende definities gehanteerd:
+
+- Cyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken. 
+- Doorlooptijd: de totale tijd om het vak af te ronden is 9 weken, gerekend vanaf de start van het blok.
+- Taktijd: de maximale tijd om de e-learnings af te ronden is 8 weken, gerekend vanaf de start van het blok.
+
+De redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken. De waardes voor de doorlooptijd en taktijd zijn afgerond op hele weken.
 
 ## Gegevens - betrouwbaarheid
 
-De gegevens v.w.b. de voortgang van de e-learnings is afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan:
+De gegevens v.w.b. de voortgang van de e-learnings zijn afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan:
 - Zijn de data oplopend
 - Is de voortgang deze week niet lager dan vorige week
 
 Betrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.
 
+De nauwkeurigheid van het meetsysteem.
+
 Absoluut of relatief?
+
+Unit of analysis.
+Populatie
+Steekproefomvang
+Representatief
 
 ## Gegevens - verwerken
 
-De gegevens zullen worden verwerkt met Excel. Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.
+In de analyse-fase wordt gebruik gemaakt van secundaire data. De data wordt aangeleverd door Skoledo. De gegevens zullen worden verwerkt met Excel. De overwegingen om de gegevens in excel te verwerken zijn:
+
+- De gegevens worden aangeleverd in Excel
+- Excel is voor iedereen (docenten en studenten) beschikbaar
+- Brede bekendheid met Excel onder de docenten
+- Voldoende statistische functies om een analyse te kunnen doen
+- Voldoende grafische mogelijkheden om een control-chart te kunnen maken
+- En, last but not least, goede kennis van Excel bij de auteur van dit rapport
+
+![Excel score op LinkedIn (2021)](./static/20210815_LinkedIn_Excel.pdf){fig-align="left" #fig-linkedin-excel}
+
+Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.
 
 
-Unit of analysis.
