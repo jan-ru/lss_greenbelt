@@ -10,11 +10,13 @@ In de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijf
 
 ![Gegevensbronnen](./static/gegevensbronnen.jpg){fig-align="left" #fig-gegevensbronnen}
 
-1. SIS, het studenten informaties ysteem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.
+1. SIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.
 2. Skoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten. 
 3. Brightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld. 
 4. Het rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet. 
 5. Tenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.
+
+Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1. Het idee is om 
 
 <!--Het kernbegrip uit de doelstelling is de "doorlooptijd". Meer specifiek: de doorlooptijd van de e-learnings.
 Referentie (Skoledo, 2024)
@@ -22,14 +24,23 @@ De output van het proces (cyclustijd) -->
 
 ## Meetplan
 
+In de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige
 
+Cycle time
+
+![Module detail](./static/module_detail.jpg){fig-align="left" #fig-module-detail}
+
+Het bovenstaande detail helpt ter verduidelijking van onderstaand meetplan.
 
 |Wat meten we|Waarom meten we|Hoe verzamelen we de data|Wanneer verzamelen|Waar in het proces |Wie verzamelt ze|
 |------------|---------------|-------------------------|------------------|-------------------|----------------|
-|      a     |      CTQ1     |                         | iedere week      |                   |                |
-|      b     |      CTQ2     |                         | iedere week      |                   |                |
-|      c     |      CTQ3     |  export > excel         | in week 9        |voor processtap 3.2|  Vakdocent     |
-|      d     |               |                         |                  |voor processtap 3.5|  Skoledo       |
+|      a     |  CTQ1 |Automatisch door het volgen van de e-learnings     | iedere week      |                   |  Skoledo       |
+|      b     |  CTQ2 |Handmatig door beoordeling van de praktijkopddracht| iedere week      |voor processtap 3.5|                |
+|      c     |  CTQ3 |Semi-automatisch door het maken van het examen en de beoordeling daarvan| in week 9        |voor processtap 3.2|  Vakdocent     |
+
+: Meetplan{#tbl-meetplan}
+
+De doelstelling, het verlagen van de doorlooptijd van de e-learnings, betreft 
 
 ## Gegevens - betrouwbaarheid
 
@@ -37,7 +48,13 @@ De gegevens v.w.b. de voortgang van de e-learnings is afkomstig van Skoledo. De 
 - Zijn de data oplopend
 - Is de voortgang deze week niet lager dan vorige week
 
+Betrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.
+
+Absoluut of relatief?
 
 ## Gegevens - verwerken
 
 De gegevens zullen worden verwerkt met Excel. Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.
+
+
+Unit of analysis.
