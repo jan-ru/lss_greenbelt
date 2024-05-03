@@ -11,7 +11,7 @@ Mijn verzoek om de opdracht t.b.v. het Green Belt Certificaat te kunnen doen is 
 Hieronder is staat een generiek proces van een onderwijs module weergegeven. Dit LSS project situeert zich in de processtap "Het uitvoeren van onderwijs". Hieronder wordt verstaan het geven van lessen, het begeleiden van studenten en het beoordelen van leerresultaten.
 
 
-![Generiek Module Proces](./static/module_generiek.jpg){fig-align="left" #fig-module-proces}
+![Generiek Module Proces](./static/11_module_generiek.jpg){fig-align="left" #fig-module-proces}
 
 \newpage
 <!--
@@ -44,6 +44,7 @@ Onderstaand is een GANTT chart waarin de 10 weken van het blok weergegeven staan
 
 Het project charter heeft als doel een éénduidige beschrijving van het project te geven zodat betrokkenen het doel, de rijkwijdte en de planning kennen. De werktitel van het project is "verbeteren door versnellen" (van de e-learnings).
 
+<!--
 |**Business Case**                  |**Scope**                              |
 |-----------------------------------|---------------------------------------|
 |                                   |                                       |
@@ -77,6 +78,8 @@ Het project charter heeft als doel een éénduidige beschrijving van het project
 |van [70] dagen naar [63] dagen[^1].|                                       |
 
 : Project Charter
+-->
+![Project Charter](./static/12_project_charter.jpg){fig-align="left" #fig-project-charter}
 
 [^1]: de doelstelling zal na de analyse fase worden aangepast omdat dan pas duidelijk zal zijn wat momenteel de gemiddelde doorlooptijd is.
 
@@ -88,7 +91,7 @@ Ik vind sterk van de charter dat ik mij in de business case een voorstelling heb
 
 Met een SIPOC wordt ingezoomt op het subproces "Uitvoeren van onderwijs" en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.
 
-![Onderwijsuitvoering](./static/onderwijs_geven.jpg){fig-align="left" #fig-onderwijs}
+![Onderwijsuitvoering](./static/13_onderwijs_geven.jpg){fig-align="left" #fig-onderwijs}
 
 Ter algemene toelichting:  
 

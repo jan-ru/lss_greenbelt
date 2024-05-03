@@ -26,7 +26,7 @@ De output van het proces (cyclustijd) -->
 
 In de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige processtappen herhaald worden. In onderstaand schema wordt dat verduidelijkt.
 
-![Module detail](./static/module_detail.jpg){fig-align="left" #fig-module-detail}
+![Module detail](./static/22_module_detail.jpg){fig-align="left" #fig-module-detail}
 
 De duur van de module is 1 blok, ofwel 10 weken. De voorbereiding voor het blok, waaronder het maken van het lessenplan wordt voor de aanvang van de module gedaan. Er zijn 8 lesweken, 1 assessment en examenweek, en 1 week voor herkansingen (en voorbereiding volgend blok). In het schema worden stap 3.2 t/m 3.4 in het totaal 8 keer uitgevoerd.
 
@@ -53,7 +53,7 @@ V.w.b. de gegevens aangaande de e-learnings wordt gewerkt met secundaire data. D
 
 De docent meldt de (tussentijdse) resultaten terug aan de klas. Hierdoor kunnen de studenten zelf ook checken of de gerapporteerde voortgang en (tussentijdse) resultaten overeenkomt met de gerealiseerde voortgang en (tussentijdse) resultaten.
 
-![Vakdocent en student checks](./static/betrouwbaarheid.jpg){fig-align="left" #fig-checks}
+![Vakdocent en student checks](./static/24_betrouwbaarheid.jpg){fig-align="left" #fig-checks}
 
 Hoewel er dus de nodige checks en balances zijn kan niet gegarandeerd worden dat de gegevens betrouwbaar zijn. Studenten kunnen frauderen en de e-learnings door een ander laten maken. Er is geen aanleiding om te denken dat dit gebeurd. Voorzover het de student zou helpen de e-learnings te behalen helpt het de student niet om andere toetsen, zoals de praktijkopdrachten, de assessment en de kennistoets te halen.
 

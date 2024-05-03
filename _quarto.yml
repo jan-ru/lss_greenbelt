@@ -59,6 +59,7 @@ format:
     number-sections: true
     date-modified: "5/2/2024"
     toc: true
+    output-dir: output
   #  comments:
   #    hypothesis: true
   docx: default
