@@ -104,7 +104,7 @@
     "href": "2_measure_fase.html#meetplan",
     "title": "2  Measure-fase",
     "section": "2.2 Meetplan",
-    "text": "2.2 Meetplan\nIn de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige\nCycle time\n\n\n\n\n\n\nFigure 2.2: Module detail\n\n\n\nHet bovenstaande detail helpt ter verduidelijking van onderstaand meetplan.\n\nMeetplan{#tbl-meetplan}\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de data\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\na\nCTQ1\nAutomatisch door het volgen van de e-learnings\niedere week\n\nSkoledo\n\n\nb\nCTQ2\nHandmatig door beoordeling van de praktijkopddracht\niedere week\nvoor processtap 3.5\n\n\n\nc\nCTQ3\nSemi-automatisch door het maken van het examen en de beoordeling daarvan\nin week 9\nvoor processtap 3.2\nVakdocent\n\n\n\nDe doelstelling, het verlagen van de doorlooptijd van de e-learnings, betreft",
+    "text": "2.2 Meetplan\nIn de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige processtappen herhaald worden. In onderstaand schema wordt dat verduidelijkt.\n\n\n\n\n\n\nFigure 2.2: Module detail\n\n\n\nDe duur van de module is 1 blok, ofwel 10 weken. De voorbereiding voor het blok, waaronder het maken van het lessenplan wordt voor de aanvang van de module gedaan. Er zijn 8 lesweken, 1 assessment en examenweek, en 1 week voor herkansingen (en voorbereiding volgend blok). In het schema worden stap 3.2 t/m 3.4 in het totaal 8 keer uitgevoerd.\n\nMeetplan\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de data\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\ndatum&cijfer\nCTQ1\nAutomatisch door het volgen van de e-learnings\niedere week\nvoor processtap 3.4\nSkoledo\n\n\ndatum&cijfer\nCTQ2\nHandmatig door beoordeling praktijkopddracht\niedere week\nvoor processtap 3.4\nVakdocent\n\n\ndatum&cijfer\nCTQ3\nSemi-automatisch door maken examen en de beoordeling daarvan\nin week 9\nvoor processtap 3.5\nVakdocent\n\n\n\nDe doelstelling, het verlagen van de doorlooptijd van de e-learnings betreft slechts één, albeit belangrijk, onderdeel van het vak operations.\nTen behoeve van dit rapport worden de volgende definities gehanteerd:\n\nCyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken.\nDoorlooptijd: de totale tijd om het vak af te ronden is 9 weken, gerekend vanaf de start van het blok.\nTaktijd: de maximale tijd om de e-learnings af te ronden is 8 weken, gerekend vanaf de start van het blok.\n\nDe redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken. De waardes voor de doorlooptijd en taktijd zijn afgerond op hele weken.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "2_measure_fase.html#gegevens---betrouwbaarheid",
     "title": "2  Measure-fase",
     "section": "2.3 Gegevens - betrouwbaarheid",
-    "text": "2.3 Gegevens - betrouwbaarheid\nDe gegevens v.w.b. de voortgang van de e-learnings is afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan: - Zijn de data oplopend - Is de voortgang deze week niet lager dan vorige week\nBetrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.\nAbsoluut of relatief?",
+    "text": "2.3 Gegevens - betrouwbaarheid\nDe gegevens v.w.b. de voortgang van de e-learnings zijn afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan: - Zijn de data oplopend - Is de voortgang deze week niet lager dan vorige week\nBetrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.\nDe nauwkeurigheid van het meetsysteem.\nAbsoluut of relatief?\nUnit of analysis. Populatie Steekproefomvang Representatief",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "2_measure_fase.html#gegevens---verwerken",
     "title": "2  Measure-fase",
     "section": "2.4 Gegevens - verwerken",
-    "text": "2.4 Gegevens - verwerken\nDe gegevens zullen worden verwerkt met Excel. Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.\nUnit of analysis.",
+    "text": "2.4 Gegevens - verwerken\nIn de analyse-fase wordt gebruik gemaakt van secundaire data. De data wordt aangeleverd door Skoledo. De gegevens zullen worden verwerkt met Excel. De overwegingen om de gegevens in excel te verwerken zijn:\n\nDe gegevens worden aangeleverd in Excel\nExcel is voor iedereen (docenten en studenten) beschikbaar\nBrede bekendheid met Excel onder de docenten\nVoldoende statistische functies om een analyse te kunnen doen\nVoldoende grafische mogelijkheden om een control-chart te kunnen maken\nEn, last but not least, goede kennis van Excel bij de auteur van dit rapport\n\n\n\n\n\n\n\nFigure 2.3: Excel score op LinkedIn (2021)\n\n\n\nEen voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
