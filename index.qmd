@@ -1,5 +1,29 @@
 # Introduction {.unnumbered}
 
 
-Behalve als html is dit rapport ook beschikbaar als [pdf document](https://jan-ru.github.io/lss_greenbelt/Green-Belt.pdf) en als [docx document](https://jan-ru.github.io/lss_greenbelt/Green-Belt.docx).
+Behalve als html is dit rapport ook beschikbaar als:
+
+- [pdf document](https://jan-ru.github.io/lss_greenbelt/Green-Belt.pdf) en als 
+- [docx document](https://jan-ru.github.io/lss_greenbelt/Green-Belt.docx).
+
+Ten behoeve van dit rapport worden de volgende definities gehanteerd:
+
+- Cyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken. 
+- Doorlooptijd: de totale tijd om het vak af te ronden is 9 weken, gerekend vanaf de start van het blok.
+- Taktijd: de maximale tijd om de e-learnings af te ronden is 8 weken, gerekend vanaf de start van het blok.
+
+De redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken. De waardes voor de doorlooptijd en taktijd zijn afgerond op hele weken.
+
+- Unit of analysis.
+- Populatie
+- Steekproefomvang
+- Representatief
+
+<!--
+Betrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.
+
+De nauwkeurigheid van het meetsysteem.
+
+Absoluut of relatief?
+-->
 
