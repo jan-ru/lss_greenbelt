@@ -84,7 +84,7 @@
     "href": "2_measure_fase.html",
     "title": "2  Measure-fase",
     "section": "",
-    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.",
+    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.\nIndachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1. Het idee is om",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -94,7 +94,7 @@
     "href": "2_measure_fase.html#gegevens---verzamelen",
     "title": "2  Measure-fase",
     "section": "",
-    "text": "Figure 2.1: Gegevensbronnen\n\n\n\n\nSIS, het studenten informaties ysteem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.\nSkoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.\nBrightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.\nHet rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.\nTenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.",
+    "text": "Figure 2.1: Gegevensbronnen\n\n\n\n\nSIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.\nSkoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.\nBrightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.\nHet rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.\nTenslotte worden de cijfers, zodra deze bepaald zijn, ingevoerd in SIS. SIS staat ook als input getekend omdat aan het begin van het blok wordt gechecked dat alle studenten die in SIS bij het vak geregistreerd staan, ook in Brightspace geregistreerd staan.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -104,7 +104,7 @@
     "href": "2_measure_fase.html#meetplan",
     "title": "2  Measure-fase",
     "section": "2.2 Meetplan",
-    "text": "2.2 Meetplan\n\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de data\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\na\nCTQ1\n\niedere week\n\n\n\n\nb\nCTQ2\n\niedere week\n\n\n\n\nc\nCTQ3\nexport &gt; excel\nin week 9\nvoor processtap 3.2\nVakdocent\n\n\nd\n\n\n\nvoor processtap 3.5\nSkoledo",
+    "text": "2.2 Meetplan\nIn de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige\nCycle time\n\n\n\n\n\n\nFigure 2.2: Module detail\n\n\n\nHet bovenstaande detail helpt ter verduidelijking van onderstaand meetplan.\n\nMeetplan{#tbl-meetplan}\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de data\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\na\nCTQ1\nAutomatisch door het volgen van de e-learnings\niedere week\n\nSkoledo\n\n\nb\nCTQ2\nHandmatig door beoordeling van de praktijkopddracht\niedere week\nvoor processtap 3.5\n\n\n\nc\nCTQ3\nSemi-automatisch door het maken van het examen en de beoordeling daarvan\nin week 9\nvoor processtap 3.2\nVakdocent\n\n\n\nDe doelstelling, het verlagen van de doorlooptijd van de e-learnings, betreft",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "2_measure_fase.html#gegevens---betrouwbaarheid",
     "title": "2  Measure-fase",
     "section": "2.3 Gegevens - betrouwbaarheid",
-    "text": "2.3 Gegevens - betrouwbaarheid\nDe gegevens v.w.b. de voortgang van de e-learnings is afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan: - Zijn de data oplopend - Is de voortgang deze week niet lager dan vorige week",
+    "text": "2.3 Gegevens - betrouwbaarheid\nDe gegevens v.w.b. de voortgang van de e-learnings is afkomstig van Skoledo. De gegevens worden wekelijks samengesteld en opgestuurd. Er worden door de ontvanger een paar checks gedaan: - Zijn de data oplopend - Is de voortgang deze week niet lager dan vorige week\nBetrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.\nAbsoluut of relatief?",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "2_measure_fase.html#gegevens---verwerken",
     "title": "2  Measure-fase",
     "section": "2.4 Gegevens - verwerken",
-    "text": "2.4 Gegevens - verwerken\nDe gegevens zullen worden verwerkt met Excel. Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.",
+    "text": "2.4 Gegevens - verwerken\nDe gegevens zullen worden verwerkt met Excel. Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.\nUnit of analysis.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
     ]
