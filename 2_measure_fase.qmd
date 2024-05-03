@@ -8,7 +8,7 @@ Het doel van de measure-fase is om te komen tot een meetplan. In dit hoofdstuk k
 
 In de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces "onderwijsuitvoering" te maken heeft.
 
-![Gegevensbronnen](./static/gegevensbronnen2.jpg){fig-align="left" #fig-gegevensbronnen}
+![Gegevensbronnen](./static/gegevensbronnen.jpg){fig-align="left" #fig-gegevensbronnen}
 
 1. SIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.
 2. Skoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten. 
@@ -44,7 +44,7 @@ Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, 
 
 ## Gegevens - betrouwbaarheid
 
-De gegevens v.w.b. de voortgang van de e-learnings zijn afkomstig van Skoledo. De gegevens worden uit de Skoledo database geexporteerd. Wekelijk wordt er een rapportage  samengesteld en opgestuurd naar de docenten van het vak Operations. Er worden door de ontvanger een paar checks gedaan:
+V.w.b. de gegevens aangaande de e-learnings wordt gewerkt met secundaire data. Deze gegevens zijn afkomstig van Skoledo. De gegevens worden uit de Skoledo database geexporteerd. Wekelijk wordt er een rapportage  samengesteld en opgestuurd naar de docenten van het vak Operations. Er worden door de ontvanger een paar checks gedaan:
 
 - Zijn de data oplopend
 - Is de voortgang deze week hoger dan vorige week
@@ -70,6 +70,6 @@ In de analyse-fase wordt gebruik gemaakt van secundaire data. De data wordt aang
 - Voldoende grafische mogelijkheden om een control-chart te kunnen maken
 - En, last but not least, goede kennis van Excel bij de auteur van dit rapport
 
-Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.
+<!-- Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.-->
 
 <!-- Bijlage? ![Excel score op LinkedIn (2021)](./static/20210815_LinkedIn_Excel.pdf){fig-align="left" #fig-linkedin-excel}-->
