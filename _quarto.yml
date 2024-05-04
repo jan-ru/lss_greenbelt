@@ -5,6 +5,9 @@ project:
 book:
   title: "Green Belt"
   subtitle: "Lean / Six Sigma"
+  downloads: [pdf,docx]
+  search: true
+  repo-url: https://github.com/jan-ru/lss_greenbelt
   author:
     - name: "Jan-Ru Muller"
       orcid: 0000-0003-1689-0557
