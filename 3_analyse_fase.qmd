@@ -2,27 +2,88 @@
 title: "Analyse-fase"
 ---
 
-aan bod komen:
+De eerste analyse gaat erom de elementen te vinden die van invloed zijn op de taktijd. De vragen die we daartoe willen beantwoorden zijn:
 
+- Hoe is de taktijd nu verdeeld (descriptive statistics)?
+- Wat zijn de variabelen (X) die de taktijd verklaren (Y)?
 
 ## Analyse technieken
+
+- Timeseries analyse
+- Cluster
+- 
 
 Benoemen dat er momenteel meerdere interpretaties zijn:  
 - De e-learnings moeten af voor het einde van het blok
 - De e-learnings moeten af voor het examen
 - De e-learnings ...
 
+timeseries en causaliteit
+
+\newpage
 ## Prestaties van het proces
 
+In het studiejaar '23-'24 is het vak Operations voor Finance & Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok3. Hieronder staan vier scatterplots weergegeven. Horizontaal staat de taktijd in dagen (einddatum - begindatum). Verticaal staat het aantal studenten (n=x). De plot linksboven betreft klas FC2_ (blok 3). De plot rechtsboven betreft klas FC2_ (blok3). Linksonder staat FC2_ (blok1). Rechtsonder staat FC2_ (blok1).
 
+```{python}
+
+```
+
+Scatterplot opnemen eindtijd of scatterplot taktijd (dagen).
+
+Ten bhe
+
+Startdatum:
+Einddatum:
+Gemiddelde taktijd:
+Minimum taktijd:
+Maximum taktijd:
+
+
+\newpage
 ## Inventarisatie invloedsfactoren
 
-Visgraat
+Het Ishikawa diagram, ofwel visgraat diagram, is gebruikt als "kapstok" om mogelijke invloedsfactoren te identificeren. Iedere graad van de vis heeft als label 1 van de 6 M's gekregen (Mens, Methode, Machine, Materiaal, Millieu, ). Het resultaat van deze brainstrom 
 
+![Visgraat diagram](./static/33_visgraatdiagram.jpg){fig-align="left" #fig-visgraatdiagram}
+
+Er worden in het visgraat diagram 13 variabelen geïdentificeerd. Van de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten. 
+
+- Leeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze nog niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.
+
+- Lokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele "lokaal" en de variabele "tijdstip" hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.
+
+- Brightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten.
+
+| varialele          | mogelijke waardes       | type data | readily available |
+|--------------------|-------------------------|-----------|-------------------|
+| 1 blok             | 1,2,3,4                 |categorical| Y |
+| 2 klas             | FC2A, FC2B, FC2C, FC2D  |categorical| Y |
+| 3 groep            | 1,2,3,4,5,6,7,8,9       |categorical| Y |
+| 4 lokaal           |                         |categorical| Y |
+| 5 tijdstip         |                         |continue   | Y |
+| 6 procesdocent     | Docent A, Docent B      |categorical| Y |
+| 7 vakdocent        | Docent C, Docent D      |categorical| Y |
+| 8 brightspace      | J/N                     |categorical| Y |
+| 9 studiehandleiding| J/N                     |categorical| Y |
+| 10 vooropleiding   | MBO,HAVO,VWO            |categorical| N |
+| 11 leeftijd        | Nummeriek positief      |discreet   | N |
+| 12 studie achterstand| J/N                   |categorical| N |
+| 13 programma fout  | J/N                     |categorical| N |
+
+<!-- | xx aanwezigheid    |                         |           | Y | -->
+
+: Mogelijke x'en
+
+
+\newpage
 ## Meeste Impact
 
-- aanwezigheid
-- e-learning op tijd maken
-- groepsgenoten
-- vakdocent
-- procesdocent
+H0: gemiddelde taktijd klas = gemiddelde taktijd populatie
+H1: gemiddelde taktijd klas < gemiddelde taktijd populatie
+
+H0: 
+H1: 
+
+H0: 
+H1: 

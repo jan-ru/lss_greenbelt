@@ -2,10 +2,28 @@
 title: "Improve-fase"
 ---
 
+In het vorige hoordstuk zijn er __ variabelen geïdentificeerd die mogelijk van invloed zijn op de taktijd.
+Door voor elk van deze variabelen de correlatiecoefficiënt uit te rekenen is gekeken naar het relatieve belang van deze __ variabelen.
+De variabelen waarbij de correlatiecoefficient lager uitviel dan x.x zijn buiten beschouwing gelaten.
+De variabelen waarbij de correlatiecoefficient hoger uitviel dan x.x zijn aangemerkt als relevante invloedsfactoren.
+
 ## Mogelijke oplossingen
+
+Methode om oplossingen te genereren:
+In het vorige 
+
+- Eerder beginnen
+- 
 
 ## Generatie van oplossingen
 
+
+
 ## Korte termijn oplossing
 
+
+
 ## Implementatieplan
+
+
+plaatje van een kalender (zoals voorbereiding jaarverslag)

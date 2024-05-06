@@ -1,11 +1,5 @@
 # Introduction {.unnumbered}
 
-
-Behalve als html is dit rapport ook beschikbaar als:
-
-- [pdf document](https://jan-ru.github.io/lss_greenbelt/Green-Belt.pdf) en als 
-- [docx document](https://jan-ru.github.io/lss_greenbelt/Green-Belt.docx).
-
 Ten behoeve van dit rapport worden de volgende definities gehanteerd:
 
 - Cyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken. 

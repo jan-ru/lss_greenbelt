@@ -4,6 +4,7 @@
 /lss.code-workspace
 /output
 /static
+/notebooks
 /temp.yaml
 /.quarto/
 .gitignore

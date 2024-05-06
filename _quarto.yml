@@ -46,8 +46,6 @@ book:
     - 7_studiebelasting.qmd
     - 8_dataset.qmd
 
-format-links: [pdf, docx]
-
 format:
   pdf:
     papersize: a4
