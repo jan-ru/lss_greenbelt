@@ -237,28 +237,152 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>aan bod komen:</p>
+<p>De eerste analyse gaat erom de elementen te vinden die van invloed zijn op de taktijd. De vragen die we daartoe willen beantwoorden zijn:</p>
+<ul>
+<li>Hoe is de taktijd nu verdeeld (descriptive statistics)?</li>
+<li>Wat zijn de variabelen (X) die de taktijd verklaren (Y)?</li>
+</ul>
 <section id="analyse-technieken" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="analyse-technieken"><span class="header-section-number">3.1</span> Analyse technieken</h2>
+<ul>
+<li>Timeseries analyse</li>
+<li>Cluster</li>
+<li></li>
+</ul>
 <p>Benoemen dat er momenteel meerdere interpretaties zijn:<br>
 - De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …</p>
+<p>timeseries en causaliteit</p>
 </section>
 <section id="prestaties-van-het-proces" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="prestaties-van-het-proces"><span class="header-section-number">3.2</span> Prestaties van het proces</h2>
+<p>In het studiejaar ’23-’24 is het vak Operations voor Finance &amp; Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok3. Hieronder staan vier scatterplots weergegeven. Horizontaal staat de taktijd in dagen (einddatum - begindatum). Verticaal staat het aantal studenten (n=x). De plot linksboven betreft klas FC2_ (blok 3). De plot rechtsboven betreft klas FC2_ (blok3). Linksonder staat FC2_ (blok1). Rechtsonder staat FC2_ (blok1).</p>
+<p>Scatterplot opnemen eindtijd of scatterplot taktijd (dagen).</p>
+<p>Ten bhe</p>
+<p>Startdatum: Einddatum: Gemiddelde taktijd: Minimum taktijd: Maximum taktijd:</p>
 </section>
 <section id="inventarisatie-invloedsfactoren" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="inventarisatie-invloedsfactoren"><span class="header-section-number">3.3</span> Inventarisatie invloedsfactoren</h2>
-<p>Visgraat</p>
+<p>Het Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Iedere graad van de vis heeft als label 1 van de 6 M’s gekregen (Mens, Methode, Machine, Materiaal, Millieu, ). Het resultaat van deze brainstrom</p>
+<div id="fig-visgraatdiagram" class="quarto-figure quarto-figure-left quarto-float anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-visgraatdiagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./static/33_visgraatdiagram.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-visgraatdiagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Visgraat diagram
+</figcaption>
+</figure>
+</div>
+<p>Er worden in het visgraat diagram 13 variabelen geïdentificeerd. Van de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten.</p>
+<ul>
+<li><p>Leeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze nog niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.</p></li>
+<li><p>Lokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele “lokaal” en de variabele “tijdstip” hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.</p></li>
+<li><p>Brightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten.</p></li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 33%">
+<col style="width: 14%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>varialele</th>
+<th>mogelijke waardes</th>
+<th>type data</th>
+<th>readily available</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 blok</td>
+<td>1,2,3,4</td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>2 klas</td>
+<td>FC2A, FC2B, FC2C, FC2D</td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>3 groep</td>
+<td>1,2,3,4,5,6,7,8,9</td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>4 lokaal</td>
+<td></td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>5 tijdstip</td>
+<td></td>
+<td>continue</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>6 procesdocent</td>
+<td>Docent A, Docent B</td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>7 vakdocent</td>
+<td>Docent C, Docent D</td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>8 brightspace</td>
+<td>J/N</td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>9 studiehandleiding</td>
+<td>J/N</td>
+<td>categorical</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>10 vooropleiding</td>
+<td>MBO,HAVO,VWO</td>
+<td>categorical</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>11 leeftijd</td>
+<td>Nummeriek positief</td>
+<td>discreet</td>
+<td>N</td>
+</tr>
+<tr class="even">
+<td>12 studie achterstand</td>
+<td>J/N</td>
+<td>categorical</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>13 programma fout</td>
+<td>J/N</td>
+<td>categorical</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+<!-- | xx aanwezigheid    |                         |           | Y | -->
+<p>: Mogelijke x’en</p>
 </section>
 <section id="meeste-impact" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="meeste-impact"><span class="header-section-number">3.4</span> Meeste Impact</h2>
-<ul>
-<li>aanwezigheid</li>
-<li>e-learning op tijd maken</li>
-<li>groepsgenoten</li>
-<li>vakdocent</li>
-<li>procesdocent</li>
-</ul>
+<p>H0: gemiddelde taktijd klas = gemiddelde taktijd populatie H1: gemiddelde taktijd klas &lt; gemiddelde taktijd populatie</p>
+<p>H0: H1:</p>
+<p>H0: H1:</p>
 
 
 </section>

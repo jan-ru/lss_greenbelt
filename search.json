@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Green Belt",
     "section": "",
-    "text": "Introduction\nBehalve als html is dit rapport ook beschikbaar als:\n\npdf document en als\ndocx document.\n\nTen behoeve van dit rapport worden de volgende definities gehanteerd:\n\nCyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken.\nDoorlooptijd: de totale tijd om het vak af te ronden is 9 weken, gerekend vanaf de start van het blok.\nTaktijd: de maximale tijd om de e-learnings af te ronden is 8 weken, gerekend vanaf de start van het blok.\n\nDe redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken. De waardes voor de doorlooptijd en taktijd zijn afgerond op hele weken.\n\nUnit of analysis.\nPopulatie\nSteekproefomvang\nRepresentatief",
+    "text": "Introduction\nTen behoeve van dit rapport worden de volgende definities gehanteerd:\n\nCyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken.\nDoorlooptijd: de totale tijd om het vak af te ronden is 9 weken, gerekend vanaf de start van het blok.\nTaktijd: de maximale tijd om de e-learnings af te ronden is 8 weken, gerekend vanaf de start van het blok.\n\nDe redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken. De waardes voor de doorlooptijd en taktijd zijn afgerond op hele weken.\n\nUnit of analysis.\nPopulatie\nSteekproefomvang\nRepresentatief",
     "crumbs": [
       "Introduction"
     ]
@@ -134,7 +134,17 @@
     "href": "3_analyse_fase.html",
     "title": "3  Analyse-fase",
     "section": "",
-    "text": "3.1 Analyse technieken\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …",
+    "text": "3.1 Analyse technieken\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …\ntimeseries en causaliteit",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#analyse-technieken",
+    "href": "3_analyse_fase.html#analyse-technieken",
+    "title": "3  Analyse-fase",
+    "section": "",
+    "text": "Timeseries analyse\nCluster",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
@@ -144,7 +154,7 @@
     "href": "3_analyse_fase.html#prestaties-van-het-proces",
     "title": "3  Analyse-fase",
     "section": "3.2 Prestaties van het proces",
-    "text": "3.2 Prestaties van het proces",
+    "text": "3.2 Prestaties van het proces\nIn het studiejaar ’23-’24 is het vak Operations voor Finance & Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok3. Hieronder staan vier scatterplots weergegeven. Horizontaal staat de taktijd in dagen (einddatum - begindatum). Verticaal staat het aantal studenten (n=x). De plot linksboven betreft klas FC2_ (blok 3). De plot rechtsboven betreft klas FC2_ (blok3). Linksonder staat FC2_ (blok1). Rechtsonder staat FC2_ (blok1).\nScatterplot opnemen eindtijd of scatterplot taktijd (dagen).\nTen bhe\nStartdatum: Einddatum: Gemiddelde taktijd: Minimum taktijd: Maximum taktijd:",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
@@ -154,7 +164,7 @@
     "href": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
     "title": "3  Analyse-fase",
     "section": "3.3 Inventarisatie invloedsfactoren",
-    "text": "3.3 Inventarisatie invloedsfactoren\nVisgraat",
+    "text": "3.3 Inventarisatie invloedsfactoren\nHet Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Iedere graad van de vis heeft als label 1 van de 6 M’s gekregen (Mens, Methode, Machine, Materiaal, Millieu, ). Het resultaat van deze brainstrom\n\n\n\n\n\n\nFigure 3.1: Visgraat diagram\n\n\n\nEr worden in het visgraat diagram 13 variabelen geïdentificeerd. Van de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten.\n\nLeeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze nog niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.\nLokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele “lokaal” en de variabele “tijdstip” hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.\nBrightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten.\n\n\n\n\n\n\n\n\n\n\nvarialele\nmogelijke waardes\ntype data\nreadily available\n\n\n\n\n1 blok\n1,2,3,4\ncategorical\nY\n\n\n2 klas\nFC2A, FC2B, FC2C, FC2D\ncategorical\nY\n\n\n3 groep\n1,2,3,4,5,6,7,8,9\ncategorical\nY\n\n\n4 lokaal\n\ncategorical\nY\n\n\n5 tijdstip\n\ncontinue\nY\n\n\n6 procesdocent\nDocent A, Docent B\ncategorical\nY\n\n\n7 vakdocent\nDocent C, Docent D\ncategorical\nY\n\n\n8 brightspace\nJ/N\ncategorical\nY\n\n\n9 studiehandleiding\nJ/N\ncategorical\nY\n\n\n10 vooropleiding\nMBO,HAVO,VWO\ncategorical\nN\n\n\n11 leeftijd\nNummeriek positief\ndiscreet\nN\n\n\n12 studie achterstand\nJ/N\ncategorical\nN\n\n\n13 programma fout\nJ/N\ncategorical\nN\n\n\n\n\n: Mogelijke x’en",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
@@ -164,7 +174,7 @@
     "href": "3_analyse_fase.html#meeste-impact",
     "title": "3  Analyse-fase",
     "section": "3.4 Meeste Impact",
-    "text": "3.4 Meeste Impact\n\naanwezigheid\ne-learning op tijd maken\ngroepsgenoten\nvakdocent\nprocesdocent",
+    "text": "3.4 Meeste Impact\nH0: gemiddelde taktijd klas = gemiddelde taktijd populatie H1: gemiddelde taktijd klas &lt; gemiddelde taktijd populatie\nH0: H1:\nH0: H1:",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
@@ -174,7 +184,17 @@
     "href": "4_improve_fase.html",
     "title": "4  Improve-fase",
     "section": "",
-    "text": "4.1 Mogelijke oplossingen",
+    "text": "4.1 Mogelijke oplossingen\nMethode om oplossingen te genereren: In het vorige",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
+    ]
+  },
+  {
+    "objectID": "4_improve_fase.html#mogelijke-oplossingen",
+    "href": "4_improve_fase.html#mogelijke-oplossingen",
+    "title": "4  Improve-fase",
+    "section": "",
+    "text": "Eerder beginnen",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
     ]
@@ -204,7 +224,7 @@
     "href": "4_improve_fase.html#implementatieplan",
     "title": "4  Improve-fase",
     "section": "4.4 Implementatieplan",
-    "text": "4.4 Implementatieplan",
+    "text": "4.4 Implementatieplan\nplaatje van een kalender (zoals voorbereiding jaarverslag)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
     ]
