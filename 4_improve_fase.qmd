@@ -21,7 +21,10 @@ In het vorige
 
 ## Korte termijn oplossing
 
-
+Benoemen dat er momenteel meerdere interpretaties zijn:  
+- De e-learnings moeten af voor het einde van het blok
+- De e-learnings moeten af voor het examen
+- De e-learnings ...
 
 ## Implementatieplan
 
