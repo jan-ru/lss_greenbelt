@@ -134,17 +134,7 @@
     "href": "3_analyse_fase.html",
     "title": "3  Analyse-fase",
     "section": "",
-    "text": "3.1 Analyse technieken\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …\ntimeseries en causaliteit",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
-    ]
-  },
-  {
-    "objectID": "3_analyse_fase.html#analyse-technieken",
-    "href": "3_analyse_fase.html#analyse-technieken",
-    "title": "3  Analyse-fase",
-    "section": "",
-    "text": "Timeseries analyse\nCluster",
+    "text": "3.1 Analyse technieken\nOm de eerste vraag over de taktijd te beantwoorden wordt de data grafisch weergegeven in een zogenaamde ‘scatterplot’. Horizontaal wordt de tijd weergeven in weken (1-10). Verticaal wordt het aantal studenten weergegeven dat de e-learning in een bepaalde week heeft afgerond.\nOm de tweede vraag over mogelijke verschillen tussen taktijden te beantwoorden wordt de data grafisch weergegeven in een zogenaamde ‘controlchart’. Horizontaal wordt opnieuw de tijd weergegeven in weken (1-10). Verticaal wordt weergegeven wat de voortgang van de e-learning in de betreffende week is.\nOm de derde vraag over de mogelijke invloedsfactoren te beantwoorden is gebruik gemaakt van een zogenaamd ‘visgraat diagram’. Aan de kop van de vis staat het probleem en de vis heeft 6 graten aan de hand waarvan mogelijke invloedsfactoren worden opgesomd en gegroepeerd.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
@@ -164,7 +154,7 @@
     "href": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
     "title": "3  Analyse-fase",
     "section": "3.3 Inventarisatie invloedsfactoren",
-    "text": "3.3 Inventarisatie invloedsfactoren\nHet Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Iedere graad van de vis heeft als label 1 van de 6 M’s gekregen (Mens, Methode, Machine, Materiaal, Millieu, ). Het resultaat van deze brainstrom\n\n\n\n\n\n\nFigure 3.1: Visgraat diagram\n\n\n\nEr worden in het visgraat diagram 13 variabelen geïdentificeerd. Van de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten.\n\nLeeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze nog niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.\nLokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele “lokaal” en de variabele “tijdstip” hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.\nBrightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten.\n\n\n\n\n\n\n\n\n\n\nvarialele\nmogelijke waardes\ntype data\nreadily available\n\n\n\n\n1 blok\n1,2,3,4\ncategorical\nY\n\n\n2 klas\nFC2A, FC2B, FC2C, FC2D\ncategorical\nY\n\n\n3 groep\n1,2,3,4,5,6,7,8,9\ncategorical\nY\n\n\n4 lokaal\n\ncategorical\nY\n\n\n5 tijdstip\n\ncontinue\nY\n\n\n6 procesdocent\nDocent A, Docent B\ncategorical\nY\n\n\n7 vakdocent\nDocent C, Docent D\ncategorical\nY\n\n\n8 brightspace\nJ/N\ncategorical\nY\n\n\n9 studiehandleiding\nJ/N\ncategorical\nY\n\n\n10 vooropleiding\nMBO,HAVO,VWO\ncategorical\nN\n\n\n11 leeftijd\nNummeriek positief\ndiscreet\nN\n\n\n12 studie achterstand\nJ/N\ncategorical\nN\n\n\n13 programma fout\nJ/N\ncategorical\nN\n\n\n\n\n: Mogelijke x’en",
+    "text": "3.3 Inventarisatie invloedsfactoren\nHet Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Het resultaat van deze brainstorm staat in onderstaande grafiek. Er zijn 13 mogelijke invloedsfacturen (mogelijke x’en) geïdentificeerd.\n\n\n\n\n\n\nFigure 3.1: Visgraat diagram\n\n\n\nVan de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten:\n\nLeeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze nog niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.\nLokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele “lokaal” en de variabele “tijdstip” hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.\nBrightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten.\n\n\n\n\n\n\n\n\n\n\nvarialele\nmogelijke waardes\ntype data\nreadily available\n\n\n\n\n1 blok\n1,2,3,4\ncategorical\nY\n\n\n2 klas\nFC2A, FC2B, FC2C, FC2D\ncategorical\nY\n\n\n3 groep\n1,2,3,4,5,6,7,8,9\ncategorical\nY\n\n\n4 lokaal\n\ncategorical\nY\n\n\n5 tijdstip\n\ncontinue\nY\n\n\n6 procesdocent\nDocent A, Docent B\ncategorical\nY\n\n\n7 vakdocent\nDocent C, Docent D\ncategorical\nY\n\n\n8 brightspace\nJ/N\ncategorical\nY\n\n\n9 studiehandleiding\nJ/N\ncategorical\nY\n\n\n10 vooropleiding\nMBO,HAVO,VWO\ncategorical\nN\n\n\n11 leeftijd\nNummeriek positief\ndiscreet\nN\n\n\n12 studie achterstand\nJ/N\ncategorical\nN\n\n\n13 programma fout\nJ/N\ncategorical\nN\n\n\n\n\n: Mogelijke x’en",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
     ]
@@ -214,7 +204,7 @@
     "href": "4_improve_fase.html#korte-termijn-oplossing",
     "title": "4  Improve-fase",
     "section": "4.3 Korte termijn oplossing",
-    "text": "4.3 Korte termijn oplossing",
+    "text": "4.3 Korte termijn oplossing\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
     ]

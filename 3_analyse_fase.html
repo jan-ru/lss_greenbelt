@@ -240,18 +240,14 @@ ul.task-list li input[type="checkbox"] {
 <p>De eerste analyse gaat erom de elementen te vinden die van invloed zijn op de taktijd. De vragen die we daartoe willen beantwoorden zijn:</p>
 <ul>
 <li>Hoe is de taktijd nu verdeeld (descriptive statistics)?</li>
-<li>Wat zijn de variabelen (X) die de taktijd verklaren (Y)?</li>
+<li>Zijn er significante verschillen tussen individuen, groepen en klassen?</li>
+<li>Wat zijn de variabelen (X) die de taktijd kunnen verklaren (Y)?</li>
 </ul>
 <section id="analyse-technieken" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="analyse-technieken"><span class="header-section-number">3.1</span> Analyse technieken</h2>
-<ul>
-<li>Timeseries analyse</li>
-<li>Cluster</li>
-<li></li>
-</ul>
-<p>Benoemen dat er momenteel meerdere interpretaties zijn:<br>
-- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …</p>
-<p>timeseries en causaliteit</p>
+<p>Om de eerste vraag over de taktijd te beantwoorden wordt de data grafisch weergegeven in een zogenaamde ‘scatterplot’. Horizontaal wordt de tijd weergeven in weken (1-10). Verticaal wordt het aantal studenten weergegeven dat de e-learning in een bepaalde week heeft afgerond.</p>
+<p>Om de tweede vraag over mogelijke verschillen tussen taktijden te beantwoorden wordt de data grafisch weergegeven in een zogenaamde ‘controlchart’. Horizontaal wordt opnieuw de tijd weergegeven in weken (1-10). Verticaal wordt weergegeven wat de voortgang van de e-learning in de betreffende week is.</p>
+<p>Om de derde vraag over de mogelijke invloedsfactoren te beantwoorden is gebruik gemaakt van een zogenaamd ‘visgraat diagram’. Aan de kop van de vis staat het probleem en de vis heeft 6 graten aan de hand waarvan mogelijke invloedsfactoren worden opgesomd en gegroepeerd.</p>
 </section>
 <section id="prestaties-van-het-proces" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="prestaties-van-het-proces"><span class="header-section-number">3.2</span> Prestaties van het proces</h2>
@@ -262,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="inventarisatie-invloedsfactoren" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="inventarisatie-invloedsfactoren"><span class="header-section-number">3.3</span> Inventarisatie invloedsfactoren</h2>
-<p>Het Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Iedere graad van de vis heeft als label 1 van de 6 M’s gekregen (Mens, Methode, Machine, Materiaal, Millieu, ). Het resultaat van deze brainstrom</p>
+<p>Het Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Het resultaat van deze brainstorm staat in onderstaande grafiek. Er zijn 13 mogelijke invloedsfacturen (mogelijke x’en) geïdentificeerd.</p>
 <div id="fig-visgraatdiagram" class="quarto-figure quarto-figure-left quarto-float anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-visgraatdiagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -273,7 +269,7 @@ Figure&nbsp;3.1: Visgraat diagram
 </figcaption>
 </figure>
 </div>
-<p>Er worden in het visgraat diagram 13 variabelen geïdentificeerd. Van de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten.</p>
+<p>Van de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten:</p>
 <ul>
 <li><p>Leeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze nog niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.</p></li>
 <li><p>Lokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele “lokaal” en de variabele “tijdstip” hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.</p></li>
