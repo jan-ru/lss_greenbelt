@@ -1,11 +1,6 @@
 # Studiebelasting
 
-\newpage
-
-Tabel met in te leveren deelproducten per sprint en ook uren per fase.
-
-De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo). In de tabel hieronder staat de inhoud van de zes modules en de studiebelasting per module.
-
+De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo).
 
 |module                | onderwerpen                           |studiebelasting|
 |----------------------|---------------------------------------|--------------:|
@@ -36,14 +31,16 @@ De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclu
 |                      | In control zijn en blijven            |               |
 |                      | Verankering in het DNA                |               |
 |                      | Project afsluiten                     |               |
-|                      |                                       |               |
 |Subtotaal (circa)     |                                       |16,0 uur       |
 |Proef examen          |                                       | 2,0 uur       |
 |Examen                |                                       | 2,0 uur       |
 |Totaal (circa)        |                                       |20,0 uur       |
 
-: Studiebelasting
+: Yellow Belt
 
+\newpage
+
+Naast de Yellow Belt e-learning zijn er nog twee kleinere e-learnings te volbrengen respectievelijk over statistiek en kwaliteitsmanagement. De totale studiebelasting van de 2 modules is afgerond circa 6 uur.
 
 |module                | onderwerpen                           |studiebelasting|
 |----------------------|---------------------------------------|--------------:|
@@ -51,11 +48,15 @@ De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclu
 |                      | Data verzamelen                       |               |
 |                      | Prestaties weergeven                  |               |
 |                      | Prestaties toetsen                    |               |
+|                      |                                       |               |
 
+: Minitab
 
 |module                | onderwerpen                           |studiebelasting|
 |----------------------|---------------------------------------|--------------:|
-|Minitab introductie   | Wat is kwaliteit?                     | 1,5 uur       |
+|Kwaliteitsmanagement  | Wat is kwaliteit?                     | 1,5 uur       |
 |                      | Wat is kwaliteitsmanagement?          |               |
 |                      | Kwaliteitsmanagementsysteem           |               |
 |                      | Kwaliteitsgoeroes                     |               |
+
+: Kwaliteitsmanagement

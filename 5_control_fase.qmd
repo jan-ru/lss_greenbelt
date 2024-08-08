@@ -11,8 +11,15 @@ Aan het eind van de module vind met het docententeam een evaluatie plaats aan de
 
 ## Control instrument 1 
 
+(Huis)regels opstellen:
+1. Je ontvangt geen feedback als je de betreffende e-learning nog niet gevolgd hebt. 
+2. De tweede keer dat je een rapport inlevert kun je niet meer dan een punt hoger halen dan de eerste keer dat je het rapport inlevert. (van een 4 kan je geen 6 maken)
+3. Vragen worden in de les, voor de les of na de les beantwoord maar niet per email.
+
+<!-- intern (voor collega's) motivatie voor de regels beschrijven -->
 
 
 ## Control instrument 2
 
-
+BPMN diagram waar je op verschillende manieren doorheen kan.
+Critische pad tekenen.

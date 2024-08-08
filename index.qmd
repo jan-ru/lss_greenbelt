@@ -1,12 +1,20 @@
 # Introduction {.unnumbered}
 
+<!--
+Het paard achter de wagen spannen.
+en 
+
+-->
+
+De basis op orde.
+
 Ten behoeve van dit rapport worden de volgende definities gehanteerd:
 
-- Cyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken. 
-- Doorlooptijd: de totale tijd om het vak af te ronden is 9 weken, gerekend vanaf de start van het blok.
-- Taktijd: de maximale tijd om de e-learnings af te ronden is 8 weken, gerekend vanaf de start van het blok.
+- Cyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken (70 dagen). 
+- Doorlooptijd: de totale tijd om het vak af te ronden is 9 weken (63 dagen), gerekend vanaf de start van het blok.
+- Taktijd: de maximale tijd om de e-learnings af te ronden is 8 weken (56 dagen), gerekend vanaf de start van het blok.
 
-De redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken. De waardes voor de doorlooptijd en taktijd zijn afgerond op hele weken.
+De redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken.
 
 - Unit of analysis.
 - Populatie

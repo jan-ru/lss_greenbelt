@@ -2,39 +2,122 @@
 title: "Analyse-fase"
 ---
 
-De eerste analyse gaat erom de elementen te vinden die van invloed zijn op de taktijd. De vragen die we daartoe willen beantwoorden zijn:
+De analyse gaat erom elementen te vinden die van invloed zijn op de prestaties van het proces. De vragen die we daartoe willen beantwoorden zijn:
 
-- Hoe is de taktijd nu verdeeld (descriptive statistics)?
-- Zijn er significante verschillen tussen individuen, groepen en klassen?
-- Wat zijn de variabelen (X) die de taktijd kunnen verklaren (Y)?
+1. Wat verstaan we precies onder de prestaties van het proces?
+2. Hoe zijn de populatie en de steekproef gedefinieerd?
+3. Hoe kunnen we de data beschrijven?
+4. Wat zijn de variabelen (X) die de prestaties kunnen verklaren (Y)?
+5. Zijn er significante verschillen tussen individuen, groepen en klassen?
 
 ## Analyse technieken
 
-Om de eerste vraag over de taktijd te beantwoorden wordt de data grafisch weergegeven in een zogenaamde 'scatterplot'. Horizontaal wordt de tijd weergeven in weken (1-10). Verticaal wordt het aantal studenten weergegeven dat de e-learning in een bepaalde week heeft afgerond.  
+<!--Om de eerste vraag over de taktijd te beantwoorden wordt de data grafisch weergegeven in een zogenaamde 'scatterplot'. Horizontaal wordt de tijd weergeven in weken (1-10). Verticaal wordt het aantal studenten weergegeven dat de e-learning in een bepaalde week heeft afgerond.  -->
 
-Om de tweede vraag over mogelijke verschillen tussen taktijden te beantwoorden wordt de data grafisch weergegeven in een zogenaamde 'controlchart'. Horizontaal wordt opnieuw de tijd weergegeven in weken (1-10). Verticaal wordt weergegeven wat de voortgang van de e-learning in de betreffende week is.
+Onder de prestatie van het proces wordt in dit rapport verstaan de mate waarin het lukt studenten binnnen de daarvoor gestelde tijd met een voldoende resultaat een onderdeel van het vak Operations te laten afronden.
 
-Om de derde vraag over de mogelijke invloedsfactoren te beantwoorden is gebruik gemaakt van een zogenaamd 'visgraat diagram'. Aan de kop van de vis staat het probleem en de vis heeft 6 graten aan de hand waarvan mogelijke invloedsfactoren worden opgesomd en gegroepeerd.
+Vervolgens definiëren we de populatie en de steekproef. De populatie behelst alle HvA studenten die het vak Operations gevolgd hebben sinds het in de huidige vorm gegeven wordt. De steekproef behelst de studenten die zich tijdens studiejaar '23-'24 (L23) hebben opgegeven voor een onderdeel van het vak Operations: de Yellow Belt e-learning.
+
+
+Een beschrijving van de dataset en een geannonimiseerde versie van de dataset is opgenomen in bijlage C.
+
+<!-- Om de derde vraag over mogelijke verschillen tussen taktijden te beantwoorden wordt de data grafisch weergegeven in een zogenaamde 'controlchart'. Horizontaal wordt opnieuw de tijd weergegeven in weken (1-10). Verticaal wordt weergegeven wat de voortgang van de e-learning in de betreffende week is. -->
+
+Om de vierde vraag over de mogelijke invloedsfactoren te beantwoorden is gebruik gemaakt van een zogenaamd 'visgraat diagram'. Aan de kop van de vis staat het probleem en de vis heeft 6 graten aan de hand waarvan mogelijke invloedsfactoren worden opgesomd en gegroepeerd.
+
+Om de vijfde vraag over het belang van de verschillende invloedsfactoren te kunnen beantwoorden worden een aantal hypothesis geformuleerd en statistisch getoetst.
 
 \newpage
 ## Prestaties van het proces
 
-In het studiejaar '23-'24 is het vak Operations voor Finance & Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok3. Hieronder staan vier scatterplots weergegeven. Horizontaal staat de taktijd in dagen (einddatum - begindatum). Verticaal staat het aantal studenten (n=x). De plot linksboven betreft klas FC2_ (blok 3). De plot rechtsboven betreft klas FC2_ (blok3). Linksonder staat FC2_ (blok1). Rechtsonder staat FC2_ (blok1).
+In het studiejaar '23-'24 is het vak Operations voor Finance & Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok3[^3]. De klassen FC2A, FC2B en FC2E kregen de module in blok 1. De klassen FC2C en FC2D kregen de module in blok 3. In het totaal hebben 116 studenten zich ingeschreven voor de e-learning waarvan 91 (78%) studenten deze hebben voltooid binnen 13 weken na de start van het blok.
+
+De inhoud van de e-learnings vormt de basis die men nodig heeft om de praktijkopdracht, en ook uiteindelijk de toets, te kunnen maken. In deze paragraaf wordt uitsluitend de prestatie van het (deel)proces van de Yellow Belt e-learning beschouwd (CTQ1).
+
+<!--Hieronder staan vijf scatterplots weergegeven. Horizontaal staat de taktijd in dagen (einddatum - begindatum). Verticaal staat het aantal studenten (n=x). De plot linksboven betreft klas FC2_ (blok 3). De plot rechtsboven betreft klas FC2_ (blok3). Linksonder staat FC2_ (blok1). Rechtsonder staat FC2_ (blok1).
 
 ```{python}
 
 ```
 
-Scatterplot opnemen eindtijd of scatterplot taktijd (dagen).
+-->
 
-Ten bhe
+Hieronder wordt eerst het aantal studenten bepaald (n). Daarna wordt bepaald hoeveel studenten de e-learning module binnen 13 weken vanaf de start van het blok hebben afgerond. Tenslotte voor deze groep studenten gekenen hoe lang zij over de e-learning hebben gedaan.
 
-Startdatum:
-Einddatum:
-Gemiddelde taktijd:
-Minimum taktijd:
-Maximum taktijd:
 
+| Studenten / Klas |L23-FC2A|L23-FC2B|L23-FC2E|L23-FC2C|L23-FC2D|Totaal |
+|------------------|--------|--------|--------|--------|--------|-------|
+| Brightspace      |    25  |   27   |  33    |   27   |   32   | 145   |
+| SIS              |    25  |   24   |  28    |   27   |   33   | 137   |
+| Skoledo          |    21  |   25   |  29    |   16   |   25   |**116**|
+
+: Aantal studenten
+
+Het aantal studenten in Brightspace is opgehaald via de functie "Classlist".
+Het aantal studenten in SIS is opgehaald via de functie "mijn studenten".
+Het aantal studenten Skoledo is berekend in excel door het aantal regels in een klas op te vragen middels de functie countif(range).
+
+De verschillende aantallen studenten tussen BS, SIS en Skoledo dienen, ten behoeve van een eventuele vervolg analyse, nader te worden bekeken. In dit hoofdstuk wordt verder gerekend met het aantal studenten dat zich heeft ingeschreven voor de Yellow Belt e-learning (116). <!--[Herkansers vormen een eventuele (gedeeltelijke) verklaring voor de verschillen tussen Brightspace en SIS. Uitval vormt een eventuele (gedeeltelijke) verklaring voor de verschillen tussen Brightspace en Skoledo.]-->
+
+In de tabel hieronder staat het aantal studenten dat de e-learning (binnen 13 weken) heeft afgerond. Op de laatste regel staat ook het aantal studenten weergegeven dat de e-learning niet binnen 13 weken heeft afgerond. Eén output variabele (Y) is de taktijd. Hieronder staat de verdeling van de taktijd weergegeven, zowel per klas als totaal.
+
+
+|                    |L23-FC2A|L23-FC2B|L23-FC2E|L23-FC2C|L23-FC2D|Totaal|
+|--------------------|-------:|-------:|-------:|-------:|-------:|-----:|
+|Totaal studenten    |    21  |   25   |   29   |   16   |   25   | 116  |
+|- Afgerond          |    14  |   22   |   26   |    6   |   23   |  91  |
+|- Niet afgerond     |     7  |    3   |    3   |   10   |    2   |  25  |
+|                    |        |        |        |        |        |      |
+|Taktijd (dagen)     |        |        |        |        |        |      |
+|- Minimum           |   41   |   24   |   36   |   41   |   18   |  18  |
+|- Maximum           |   87   |   58   |   80   |   65   |   70   |  87  |
+|- Gemiddelde        |   61,6 |   49,5 |   57,2 |   50,8 |   50,7 |  53,3|
+|- Standaard deviatie|    8,5 |   9,4  |   12,1 |   8,6  |   15,3 |  13,5|
+
+: Samenvattig per klas
+
+
+|                    |Blok 1|Blok  3|Totaal|
+|--------------------|-----:|------:|-----:|
+|Totaal studenten    |  75  |  41   | 116  |
+|- Afgerond          |  62  |  29   |  91  |
+|- Niet afgerond     |  13  |  12   |  25  |
+|                    |      |       |      |
+|Time to complete    |      |       |      |
+|- Minimum           | 24   |  18   |  18  |
+|- Maximum           | 80   |  70   |  80  |
+|- Gemiddelde        | 55,5 |  50,7 |  53,9|
+|- Standaard deviatie| 11,3 |  14,1 |  12,4|
+
+: Samenvatting per blok
+
+
+Gelet op de steekproef omvang geeft de totaal-kolom een betrouwbaarder beeld (n=116) dan de kolommen betreffende de individuele klassen. Uitgaande van de totaal-kolom kan over het e-learning deelproces opgemerkt worden dat:
+
+- Circa 21% (25/116) van de studenten in de steekproef starten de e-learning wel maar ronden deze niet binnen een termijn van 13 weken af.
+- Van de 79% (91/116) van de studenten in de steekproef die de e-learning binnen 13 weken afronden doet men er gemiddeld 53 dagen over. Ofwel gemiddeld rond deze groep studenten de e-learning af binnen de 8 lesweken (56 dagen).
+- Een aanzienlijk deel van de studenten in de steekproef die de e-learning binnen 13 weken afronden doet dat in de examen periode, in de herkansingsperiode of na het einde van het blok.
+
+Consequenties van bovenstaande zijn:
+
+- Studenten kunnen het materiaal van de e-learning slechts gedeeltelijk toepassen bij de praktijkopdracht omdat de praktijkopdracht al (deels)voldaan is terwijl de theorie daarover nog niet bestudeerd is.
+- sommige studenten kunnen het materiaal van de e-learning niet gebruiken voor de eind toets omdat de eindtoets plaats heeft in week 9 en deel van de studenten de e-learning pas in week 10,11,12 en 13 afronden.
+
+<!--
+Voortgang kan een omgevingsvariabele zijn samenhangend met tijdstip
+In de grafiek hieronder staat de gemiddelde voortgang van de studenten in de 5 klassen weergegeven
+
+Dit zien we pas als de voortgang 
+- studenten verdelen de studielast niet lineair, er wordt meer voorgang geboekt in latere weken. De meeste voortgang wordt geboekt in week xx. 
+
+Scatterplot opnemen taktijd (dagen). e-learning. Horizontaal dagen, verticaal resultaat.
+-->
+
+[^3]: zie [jaarrooster 2023-2024](https://www.hva.nl/studeren/studiekeuze/naast-je-opleiding/jaarrooster)
+
+[^4]: conform skoledo wekelijks rapport <!-- zie ook bijlage xx. -->
+
+<!--[^5]: er is gerekend met de stdev.s functie in excel als ware de verdeling een normale verdeling. De verdeling is een poisson verdeling aangezien het een telling betreft van discrete events. Echter, hoe groter de n, hoe beter een poisson een normale verdeling benaderd. De aanname dat de verdeling als normale-verdeling beschouwd kan worden lijkt dan ook gerechtvaardigd.-->
 
 \newpage
 ## Inventarisatie invloedsfactoren
@@ -43,45 +126,215 @@ Het Ishikawa diagram, ofwel visgraat diagram, is gebruikt als "kapstok" om mogel
 
 ![Visgraat diagram](./static/33_visgraatdiagram.jpg){fig-align="left" #fig-visgraatdiagram}
 
-Van de 13 geïdentifeerde variabelen zijn er 7 die (op dit moment) buiten beschouwing worden gelaten: 
+Van de 13 geïdentifeerde variabelen zijn er 8 die (op dit moment) buiten beschouwing worden gelaten: 
 
-- Leeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze nog niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.
+- Leeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze (nog) niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.
 
 - Lokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele "lokaal" en de variabele "tijdstip" hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.
 
-- Brightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten.
+- Brightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten, binnen één studiejaar, hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten, binnen één studiejaar.
+
+- Programma Fout verwijst naar de mogelijkheid dat het programma waarmee de toets wordt afgenomen een fout bevat. Een fout kan zijn dat een antwoord dat goed is fout gerekend wordt of andersom. De kans dat dit optreed wordt zeer klein geacht. Ook als dit op zou treden is het effect, vanwege het grote aantal vragen (40), relatief klein. Deze mogelijke invloedsfactor wordt daarom niet nader onderzocht.
 
 \newpage
 
-| varialele          | mogelijke waardes       | type data | readily available |
-|--------------------|-------------------------|-----------|-------------------|
-| 1 blok             | 1,2,3,4                 |categorical| Y |
-| 2 klas             | FC2A, FC2B, FC2C, FC2D  |categorical| Y |
-| 3 groep            | 1,2,3,4,5,6,7,8,9       |categorical| Y |
-| 4 lokaal           |                         |categorical| Y |
-| 5 tijdstip         |                         |continue   | Y |
-| 6 procesdocent     | Docent A, Docent B      |categorical| Y |
-| 7 vakdocent        | Docent C, Docent D      |categorical| Y |
-| 8 brightspace      | J/N                     |categorical| Y |
-| 9 studiehandleiding| J/N                     |categorical| Y |
-| 10 vooropleiding   | MBO,HAVO,VWO            |categorical| N |
-| 11 leeftijd        | Nummeriek positief      |discreet   | N |
-| 12 studie achterstand| J/N                   |categorical| N |
-| 13 programma fout  | J/N                     |categorical| N |
+| variabele            | mogelijke waardes       | type data | beschikbaar |
+|----------------------|-------------------------|-----------|-------------|
+| 1 blok               | 1,2,3,4                 |categorical| Y |
+| 2 klas               | FC2A, FC2B, FC2C, FC2D  |categorical| Y |
+| 3 groep              | 1,2,3,4,5,6,7,8,9       |categorical| Y |
+| 4 lokaal             |                         |categorical| Y |
+| 5 tijdstip           |                         |continue   | Y |
+| 6 procesdocent       | Docent A, Docent B      |categorical| Y |
+| 7 vakdocent          | Docent C, Docent D      |categorical| Y |
+| 8 brightspace        | J/N                     |categorical| Y |
+| 9 studiehandleiding  | J/N                     |categorical| Y |
+| 10 vooropleiding     | MBO,HAVO,VWO            |categorical| N |
+| 11 leeftijd          | Nummeriek positief      |discreet   | N |
+| 12 studie achterstand| J/N                     |categorical| N |
+| 13 programma fout    | J/N                     |categorical| N |
+
+: Mogelijke X'en
 
 <!-- | xx aanwezigheid    |                         |           | Y | -->
-
-: Mogelijke x'en
-
 
 \newpage
 ## Meeste Impact
 
+Omdat er 8 van de 13 mogelijke invloedsfactoren buiten beschouwing worden gelaten resteren er 5:
+
+- blok
+- klas
+- groep
+- procesdocent
+- vakdocent
+
+Groep, procesdocent en vakdocent staan (nog) niet in de dataset. In eerste instantie wordt daarom getest op blok en klas. In een eventueel vervolgonderzoek kan de dataset worden uitgebreid en kan ook op andere invloedsfactoren getest worden.
+
+Ten eerste toetsen we of verschillen zijn tussen **blok 1** en **blok 3**. Ten tweede toetsen we of er verschillen zijn tussen **FC1A**, **FC1B**, **FC1C**, **FC1D** en **FC1E**. Dat wil zeggen: komen de steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?
+
+Om de vraag te beantwoorden wordt een histogram geplot en wordt een statistiche toets gedaan. De variabele met de meeste impact is vervolgens de variabele met de grootste afwijking.
+
+### Verschillen per blok
+
+Hieronder staan 2x2 histogrammen weergegeven. Bij de eerste twee histogrammen staat verticaal het aantal studenten dat de Yellow Belt e-learning heeft afgerond. 
+
+```{python}
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from lib.my_excel_lib import get_tables
+from lib.my_custom_lib import xls2md
+
+# Init
+excel_file = 'data/L23_FC2_blok1_blok3.xlsx'
+tables = get_tables(excel_file)
+
+table_name = 'YB_3'
+if table_name not in tables:
+  print('Error in 4_analyse_fase.qmd: ',table_name, ' not in tables')
+
+# Filter invalid records
+df = xls2md(tables['YB_3'])
+df_filtered = df.dropna(subset=['Afrondingsdatum'])
+
+```
+
+
+```{python}
+#| label: fig-histogram-blok-aantal
+#| fig-cap: "histogram: taktijd / blok"
+
+# Calculate the count of occurrences per klas
+df_summary = df_filtered.groupby('Blok')['TakTijd'].agg(['count', 'mean', 'std']).reset_index()
+
+# Adjust figure size
+plt.figure(figsize=(10,8))
+plt.close()
+
+# Create FacetGrid with sample size in facet titles
+g = sns.FacetGrid(df_filtered, col="Blok", col_wrap=3, sharex=True)
+g.map_dataframe(sns.histplot, x="TakTijd")
+
+# Add sample size to facet titles
+for ax, (_, row) in zip(g.axes.flat, df_summary.iterrows()):
+    ax.set_title(f"Blok {row['Blok']}\n"
+                f"(n = {row['count']}, x̄ = {row['mean']:.1f}, s = {row['std']:.1f})")
+
+g.set_axis_labels("taktijd (dagen)", "studenten (aantal)")
+# g.figure.suptitle('Histogram: taktijd / blok')
+
+# Adjust layout to prevent overlapping
+plt.tight_layout()
+plt.show()
+
+```
+
+<!-- De 2 grafieken zijn visueel moeilijk te vergelijken mede omdat in blok 1 en blok 2 een verschillend aantal studenten de e-learning hebben afgerond (n=62 vs n=29). Bij de tweede twee histogrammen staat verticaal het percentage studenten dat de Yellow Belt e-learning heeft afgerond.Het gaat hierbij om een relatief aantal, ten opczichte van het totaal in het blok. De 2 grafieken zijn daarmee visueel gemakkelijker te vergelijken.
+
+```{python}
+#| label: fig-histogram-blok-percentage
+#| fig-cap: "histogram: taktijd / blok"
+
+# Calculate the count of occurrences per klas
+df_summary = df_filtered.groupby('Blok')['TakTijd'].agg(['count', 'mean', 'std']).reset_index()
+
+# Adjust figure size
+plt.figure(figsize=(10,8))
+plt.close()
+
+# Create FacetGrid with sample size in facet titles
+g = sns.FacetGrid(df_filtered, col="Blok", col_wrap=3, sharex=True)
+
+# g.map_dataframe(sns.histplot, x="TakTijd")
+
+# Function to calculate and plot normalized histogram
+def plot_normalized_hist(x, **kwargs):
+    """Plots a normalized histogram."""
+    sns.histplot(x, stat='density', **kwargs)
+
+g.map(plot_normalized_hist, 'TakTijd')
+
+# Add sample size to facet titles
+for ax, (_, row) in zip(g.axes.flat, df_summary.iterrows()):
+    ax.set_title(f"Blok {row['Blok']}\n"
+                f"(n = 100%, x̄ = {row['mean']:.1f}, s = {row['std']:.1f})")
+    
+    # Remove y-axis ticks and labels
+    ax.set_yticks([])
+
+g.set_axis_labels("taktijd (dagen)", "studenten (percentage of total)")
+
+# Adjust layout to prevent overlapping
+plt.tight_layout()
+plt.show()
+
+```
+-->
+
+Om te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een dubbelzijdige (onafhankelijke) t-test uit. (zie: @as2013BasisboekKwantitatieveMethoden). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:
+
+$H_0 : \bar{x}_1 = \bar{x}_2$ 
+
+$H_1 : \bar{x}_1 <> \bar{x}_2$
+
+$\bar{x} = \frac{\sum_{i=1}^n{x_i}}{n}$
+
+$s_d = \sqrt{\sum_{i=1}^n{(x_i - \bar{x})^2}/(n-1)}$
+
+$t = \frac{\bar{x} - 0}{s_d/\sqrt{n}}$
+
+```{python}
+
+
+```
+
+
+\newpage
+
+### Verschillen per klas
+
+Dat wil zeggen: komen de 5 steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend? Is de variatie significant verschillend?
+
+Om de vragen te beantwoorden wordt een histogram van de vijf verdelingen geplot en wordt een (onafhankelijke) t-test uitgevoerd met een 95% betrouwbaarheids interval.
+
+```{python}
+#| label: fig-histogram-klas
+#| fig-cap: "histogram: taktijd / klas"
+
+# Calculate the count of occurrences per klas
+df_summary = df_filtered.groupby('Klas')['TakTijd'].agg(['count', 'mean', 'std']).reset_index()
+
+# Adjust figure size
+plt.figure(figsize=(10,8))
+plt.close()
+
+# Create FacetGrid with sample size in facet titles
+g = sns.FacetGrid(df_filtered, col="Klas", col_wrap=3, sharex=True)
+g.map_dataframe(sns.histplot, x="TakTijd")
+
+# Add sample size to facet titles
+for ax, (_, row) in zip(g.axes.flat, df_summary.iterrows()):
+    ax.set_title(f"Blok {row['Klas']}\n"
+                f"(n = {row['count']}, x̄ = {row['mean']:.1f}, s = {row['std']:.1f})")
+
+g.set_axis_labels("taktijd (dagen)", "studenten (aantal)")
+
+# Adjust layout to prevent overlapping
+plt.tight_layout()
+plt.show()
+
+```
+
+
+Anova Test
+
 H0: gemiddelde taktijd klas = gemiddelde taktijd populatie
-H1: gemiddelde taktijd klas < gemiddelde taktijd populatie
+H1: gemiddelde taktijd klas <> gemiddelde taktijd populatie
 
-H0: 
-H1: 
 
-H0: 
-H1: 
+as per  de anova test
+
+Concluderend kunnen we stellen dat ... 

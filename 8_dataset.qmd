@@ -1,10 +1,52 @@
-# Partiële dataset
+# Dataset
 
-\newpage
+<!-- datamodel toevoegen? -->
 
-Tabel met in te leveren deelproducten per sprint en ook uren per fase.
+<!--Tabel met in te leveren deelproducten per sprint en ook uren per fase.
 
 De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo). In de tabel hieronder staat de inhoud van de zes modules en de studiebelasting per module.
+-->
 
+De dataset uit de status op het eind van week 13. De dataset betreft 5 klassen, totaal 116 rijen, waarbij elke rij 1 student voorstelt. Naast het student emailadres zijn er 7 andere kolommen in de dataset, zoals hieronder weergegeven.
 
+| colom|variabele    | mogelijke waardes      |data type  |
+|------|-------------|------------------------|-----------|
+|  A   |blok         |1,3                     |categorical|
+|  B   |startdatum   |datum                   |categorical|
+|  C   |statusdatum  |datum                   |categorical|
+|  D   |klas         |FC2A,FC2B,FC2C,FC2D     |categorical|
+|  E   |student      |...@hva.nl              |categorical|
+|  F   |afronding YB | datum                  |categorical|
+|  G   |toetsscore YB| 0 ... 100%             |numeric    |
+|  H   |time2complete| 0 ... 91 (13x7)        |numeric    |
 
+: Dateset kolommen (8)
+
+De dataset listing wordt hieronder weergegeven. Het veld (E) waar het student email-adres in staat is geannonimiseerd.
+
+\fontsize{6}{7}\selectfont
+
+```{python}
+#| label: time2complete
+#| tbl-cap: Time to Complete
+
+from IPython.display import Markdown
+from tabulate import tabulate
+from lib.my_object_exists import file_exists
+from lib.my_excel_lib import get_tables
+from lib.my_custom_lib import xls2md
+
+excel_file = 'data/L23_FC2_blok1_blok3.xlsx'
+tables = get_tables(excel_file)
+
+table_name = 'YB_3'
+if table_name not in tables:
+  print('Error in 8_dataset.qmd: ',table_name, ' not in tables')
+
+Markdown(tabulate(
+xls2md(tables['YB_3']),
+headers=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'],
+maxcolwidths=[None, 20, 20, None, None, 20, None, None],
+showindex=True,
+colalign=('left', 'left', 'left', 'left', 'left', 'left', 'left')))
+```

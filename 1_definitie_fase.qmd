@@ -81,7 +81,7 @@ Het project charter heeft als doel een éénduidige beschrijving van het project
 -->
 ![Project Charter](./static/12_project_charter.jpg){fig-align="left" #fig-project-charter}
 
-[^1]: de doelstelling zal na de analyse fase worden aangepast omdat dan pas duidelijk zal zijn wat momenteel de gemiddelde doorlooptijd is.
+Merk op de doelstelling zal na de analyse fase worden aangescherpt omdat dan pas duidelijk zal zijn wat momenteel de gemiddelde doorlooptijd is.
 
 Ik vind sterk van de charter dat ik mij in de business case een voorstelling heb geprobeerd te maken een ordegrootte van de "kosten & baten". We spreken over een mogelijke "verbetering" ad. €3.000 per blok. Op dit moment heb ik over de charter geen vragen.
 
