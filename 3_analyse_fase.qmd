@@ -135,8 +135,7 @@ Van de 13 geïdentifeerde variabelen zijn er 8 die (op dit moment) buiten bescho
 - Brightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten, binnen één studiejaar, hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten, binnen één studiejaar.
 
 - Programma Fout verwijst naar de mogelijkheid dat het programma waarmee de toets wordt afgenomen een fout bevat. Een fout kan zijn dat een antwoord dat goed is fout gerekend wordt of andersom. De kans dat dit optreed wordt zeer klein geacht. Ook als dit op zou treden is het effect, vanwege het grote aantal vragen (40), relatief klein. Deze mogelijke invloedsfactor wordt daarom niet nader onderzocht.
-
-\newpage
+- 
 
 | variabele            | mogelijke waardes       | type data | beschikbaar |
 |----------------------|-------------------------|-----------|-------------|
@@ -173,7 +172,7 @@ Groep, procesdocent en vakdocent staan (nog) niet in de dataset. In eerste insta
 
 Ten eerste toetsen we of verschillen zijn tussen **blok 1** en **blok 3**. Ten tweede toetsen we of er verschillen zijn tussen **FC1A**, **FC1B**, **FC1C**, **FC1D** en **FC1E**. Dat wil zeggen: komen de steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?
 
-Om de vraag te beantwoorden wordt een histogram geplot en wordt een statistiche toets gedaan. De variabele met de meeste impact is vervolgens de variabele met de grootste afwijking.
+Om de vraag te beantwoorden wordt een histogram geplot en wordt een statistiche toets gedaan.
 
 ### Verschillen per blok
 
@@ -196,9 +195,10 @@ table_name = 'YB_3'
 if table_name not in tables:
   print('Error in 4_analyse_fase.qmd: ',table_name, ' not in tables')
 
-# Filter invalid records
+# Filter invalid records & convert 'Taktijd' from object to int
 df = xls2md(tables['YB_3'])
 df_filtered = df.dropna(subset=['Afrondingsdatum'])
+df_filtered['TakTijd'] = df_filtered['TakTijd'].astype(int)
 
 ```
 
@@ -274,31 +274,57 @@ plt.show()
 ```
 -->
 
-Om te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een dubbelzijdige (onafhankelijke) t-test uit. (zie: @as2013BasisboekKwantitatieveMethoden). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:
+Om te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een (onafhankelijke) t-test uit tussen de 2 steekproeven (zie: @as2013BasisboekKwantitatieveMethoden). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:
 
-$H_0 : \bar{x}_1 = \bar{x}_2$ 
+$H_0 : \bar{x}_1 = \bar{x}_2$
 
 $H_1 : \bar{x}_1 <> \bar{x}_2$
 
-$\bar{x} = \frac{\sum_{i=1}^n{x_i}}{n}$
+<!--
+$$\bar{x} = \frac{\sum_{i=1}^n{x_i}}{n}$
 
 $s_d = \sqrt{\sum_{i=1}^n{(x_i - \bar{x})^2}/(n-1)}$
+-->
 
-$t = \frac{\bar{x} - 0}{s_d/\sqrt{n}}$
+$t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_{1}^2}{n_1} + \frac{s_{2}^2}{n_2}}}$
+
+Uitgaande van een 95% betrouwbaarheidsinterval (alpha = 0,05) is de uitkomst van de berekening als volgt:
+
+::: {.callout-note}
+## to be title
+
 
 ```{python}
+from scipy import stats
 
+# filter data for Blok 1 and Blok 3
+df_blok1 = df_filtered[df_filtered['Blok'] == 1]['TakTijd']
+df_blok3 = df_filtered[df_filtered['Blok'] == 3]['TakTijd']
+
+# Perform two sample t-test
+t_statistic, p_value = stats.ttest_ind(df_blok1, df_blok3, equal_var=False, alternative='greater')
+
+# Print results
+print(f"t-statistic: {t_statistic:.4f}\n")
+print(f"p-value    : {p_value:.4f}\n")
+alpha = 0.05  # significance level
+
+# Interpret results
+if p_value < alpha:
+    print("Conclusie : Nul hypothese verwerpen")
+else:
+    print("Conclusie : Nul-hypothese niet verwerpen")
 
 ```
 
+:::
 
-\newpage
+Statistisch zijn de gemiddelden van blok 1 en blok 3 niet ongelijk. Het blok waarin een student de e-learning volgt is daarmee geen belangrijke invloedsfactor voor de taktijd.
 
 ### Verschillen per klas
 
-Dat wil zeggen: komen de 5 steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend? Is de variatie significant verschillend?
+Wij doen een soortgelijke analyse met betrekking tot de klas. Dat wil zeggen: komen de 5 steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?
 
-Om de vragen te beantwoorden wordt een histogram van de vijf verdelingen geplot en wordt een (onafhankelijke) t-test uitgevoerd met een 95% betrouwbaarheids interval.
 
 ```{python}
 #| label: fig-histogram-klas
@@ -328,13 +354,38 @@ plt.show()
 
 ```
 
+Om te bepalen of het gemiddelde van FC2A t/m FC2E significant van elkaar verschillen voeren we een anova test uit (zie: @as2013BasisboekKwantitatieveMethoden). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:
 
-Anova Test
+$H_0 : \bar{x}_1 = \bar{x}_2 = \bar{x}_3 = \bar{x}_4 = \bar{x}_5$
 
-H0: gemiddelde taktijd klas = gemiddelde taktijd populatie
-H1: gemiddelde taktijd klas <> gemiddelde taktijd populatie
+$H_1 : \bar{x}_1 <> \bar{x}_2 <> \bar{x}_3 <> \bar{x}_4 <> \bar{x}_5$ 
 
+$F = \frac{Variance Between Groups}{Variance Within Groups}$
 
-as per  de anova test
+::: {.callout-note}
 
-Concluderend kunnen we stellen dat ... 
+```{python}
+df_klas = df_filtered[['Klas', 'TakTijd']]
+
+FC2A = df_klas[df_klas['Klas'] == 'FC2A']['TakTijd']
+FC2B = df_klas[df_klas['Klas'] == 'FC2B']['TakTijd']
+FC2C = df_klas[df_klas['Klas'] == 'FC2C']['TakTijd']
+FC2D = df_klas[df_klas['Klas'] == 'FC2D']['TakTijd']
+FC2E = df_klas[df_klas['Klas'] == 'FC2E']['TakTijd']
+
+# Perform one-way ANOVA
+f_statistic, p_value = stats.f_oneway(FC2A, FC2B, FC2C, FC2D, FC2E)
+
+print(f"F-statistic: {f_statistic:.4}\n")
+print(f"p-value    : {p_value:.4}\n")
+alpha = 0.05  # significance level
+
+# Interpret results
+if p_value < alpha:
+    print("Conclusie : Nul hypothese verwerpen")
+else:
+    print("Conclusie : Nul-hypothese niet verwerpen")
+```
+:::
+
+Statistisch zijn de gemiddelden van FC2A t/m FC2E niet gelijk. De klas waarin een student de e-learning volgt is daarmee een belangrijkere invloedsfactor voor de taktijd dan het blok waarin de student de e-learning volgt. Voor wat betreft de Improve-Fase zal dan ook gezocht worden naar mogelijkheden om de verschillen tussen klassen te verkleinen.

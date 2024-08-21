@@ -53,12 +53,13 @@ format:
       theme: neutral
     cite-method: citeproc
     toc: true
+    toc-depth: 2
     lof: true
     lot: true
   html: 
     title-block-banner: true
     number-sections: true
-    date-modified: "8/6/2024"
+    date-modified: "8/8/2024"
     toc: true
     output-dir: output
   #  comments:
