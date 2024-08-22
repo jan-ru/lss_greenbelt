@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -104,7 +124,7 @@ window.Quarto = {
 <body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -178,7 +198,29 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Analyse-fase</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">August 21, 2024</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -238,15 +280,13 @@ window.Quarto = {
   <li><a href="#verschillen-per-klas" id="toc-verschillen-per-klas" class="nav-link" data-scroll-target="#verschillen-per-klas">Verschillen per klas</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="3_analyse_fase.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="3_analyse_fase.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="3_analyse_fase.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<header id="title-block-header">
-<h1 class="title display-7">Analyse-fase</h1>
 
-</header>
+
 
 
 <p>De analyse gaat erom elementen te vinden die van invloed zijn op de prestaties van het proces. De vragen die we daartoe willen beantwoorden zijn:</p>
@@ -681,7 +721,7 @@ Figure&nbsp;2: histogram: taktijd / blok
 
 
 -->
-<p>Om te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een (onafhankelijke) t-test uit tussen de 2 steekproeven (zie: <span class="citation" data-cites="as2013BasisboekKwantitatieveMethoden">As and Klouwen (2013)</span>). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:</p>
+<p>Om te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een (onafhankelijke) t-test uit tussen de 2 steekproeven (zie: <span class="citation" data-cites="as2013BasisboekKwantitatieveMethoden">As and Klouwen (<a href="#ref-as2013BasisboekKwantitatieveMethoden" role="doc-biblioref">2013</a>)</span>). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:</p>
 <p><span class="math inline">\(H_0 : \bar{x}_1 = \bar{x}_2\)</span></p>
 <p><span class="math inline">\(H_1 : \bar{x}_1 &lt;&gt; \bar{x}_2\)</span></p>
 <!--
@@ -723,7 +763,7 @@ Figure&nbsp;3: histogram: taktijd / klas
 </figure>
 </div>
 </div>
-<p>Om te bepalen of het gemiddelde van FC2A t/m FC2E significant van elkaar verschillen voeren we een anova test uit (zie: <span class="citation" data-cites="as2013BasisboekKwantitatieveMethoden">As and Klouwen (2013)</span>). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:</p>
+<p>Om te bepalen of het gemiddelde van FC2A t/m FC2E significant van elkaar verschillen voeren we een anova test uit (zie: <span class="citation" data-cites="as2013BasisboekKwantitatieveMethoden">As and Klouwen (<a href="#ref-as2013BasisboekKwantitatieveMethoden" role="doc-biblioref">2013</a>)</span>). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:</p>
 <p><span class="math inline">\(H_0 : \bar{x}_1 = \bar{x}_2 = \bar{x}_3 = \bar{x}_4 = \bar{x}_5\)</span></p>
 <p><span class="math inline">\(H_1 : \bar{x}_1 &lt;&gt; \bar{x}_2 &lt;&gt; \bar{x}_3 &lt;&gt; \bar{x}_4 &lt;&gt; \bar{x}_5\)</span></p>
 <p><span class="math inline">\(F = \frac{Variance Between Groups}{Variance Within Groups}\)</span></p>
@@ -745,6 +785,11 @@ Note
 <p>Statistisch zijn de gemiddelden van FC2A t/m FC2E niet gelijk. De klas waarin een student de e-learning volgt is daarmee een belangrijkere invloedsfactor voor de taktijd dan het blok waarin de student de e-learning volgt. Voor wat betreft de Improve-Fase zal dan ook gezocht worden naar mogelijkheden om de verschillen tussen klassen te verkleinen.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-as2013BasisboekKwantitatieveMethoden" class="csl-entry" role="listitem">
+As, Donald van, and Jaap Klouwen. 2013. <em>Basisboek kwantitatieve methoden: statistiek met Exceltoepassingen</em>. 2e herz. dr. Bussum: Coutinho.
+</div>
+</div>
 </section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
