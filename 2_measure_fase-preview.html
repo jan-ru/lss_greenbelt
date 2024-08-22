@@ -1,37 +1,118 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.6.1">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.1">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Measure-fase</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
+    <title>Measure-fase</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./3_analyse_fase.html" rel="next">
-<link href="./1_definitie_fase.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,192 +122,50 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+     
+      </head>
 
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Measure-fase</h6>
 
-</head>
+            <a href="./2_measure_fase.qmd" class="btn btn-primary quarto-download-embed" download="2_measure_fase.qmd">Download Source</a>
+          </div>
 
-<body class="nav-sidebar floating nav-fixed">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blackbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Blackbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-blackbelt">    
-        <li>
-    <a class="dropdown-item" href="./2_blackbelt/index.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="./1_definitie_fase.html">
- <span class="dropdown-text">Definition Phase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./2_measure_fase.html">
- <span class="dropdown-text">Measure Phase</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-greenbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Greenbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-greenbelt">    
-        <li>
-    <a class="dropdown-item" href="./3_analyse_fase.html">
- <span class="dropdown-text">Analyse-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./4_improve_fase.html">
- <span class="dropdown-text">Improve-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./5_control_fase.html">
- <span class="dropdown-text">Control-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./6_kosten.html">
- <span class="dropdown-text">Kosten</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2_measure_fase.html">Measure-fase</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2_blackbelt/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./1_definitie_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Definitie-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2_measure_fase.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Measure-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./3_analyse_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analyse-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./4_improve_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Improve-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./5_control_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Control-fase</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+     <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#gegevens---verzamelen" id="toc-gegevens---verzamelen" class="nav-link active" data-scroll-target="#gegevens---verzamelen">Gegevens - verzamelen</a></li>
-  <li><a href="#meetplan" id="toc-meetplan" class="nav-link" data-scroll-target="#meetplan">Meetplan</a></li>
-  <li><a href="#gegevens---betrouwbaarheid" id="toc-gegevens---betrouwbaarheid" class="nav-link" data-scroll-target="#gegevens---betrouwbaarheid">Gegevens - betrouwbaarheid</a></li>
-  <li><a href="#gegevens---verwerken" id="toc-gegevens---verwerken" class="nav-link" data-scroll-target="#gegevens---verwerken">Gegevens - verwerken</a></li>
+  <li><a href="#gegevens---verzamelen" id="toc-gegevens---verzamelen" class="nav-link active" data-scroll-target="#gegevens---verzamelen"><span class="toc-section-number">1</span> Gegevens - verzamelen</a></li>
+  <li><a href="#meetplan" id="toc-meetplan" class="nav-link" data-scroll-target="#meetplan"><span class="toc-section-number">2</span> Meetplan</a></li>
+  <li><a href="#gegevens---betrouwbaarheid" id="toc-gegevens---betrouwbaarheid" class="nav-link" data-scroll-target="#gegevens---betrouwbaarheid"><span class="toc-section-number">3</span> Gegevens - betrouwbaarheid</a></li>
+  <li><a href="#gegevens---verwerken" id="toc-gegevens---verwerken" class="nav-link" data-scroll-target="#gegevens---verwerken"><span class="toc-section-number">4</span> Gegevens - verwerken</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="2_measure_fase.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="2_measure_fase.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header">
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">      <header id="title-block-header">
 <h1 class="title display-7">Measure-fase</h1>
 
-</header>
-
-
-<p>Het doel van de measure-fase is om te komen tot een meetplan. In dit hoofdstuk komen aan de orde: welke gegevens er beschikbaar zijn, welke gegevens er gebruikt gaan worden, wat de betrouwbaarheid is van de gevens en tenslotte hoe de gegevens verwerkt gaan worden.</p>
-<section id="gegevens---verzamelen" class="level2">
-<h2 class="anchored" data-anchor-id="gegevens---verzamelen">Gegevens - verzamelen</h2>
+</header>     <p>Het doel van de measure-fase is om te komen tot een meetplan. In dit hoofdstuk komen aan de orde: welke gegevens er beschikbaar zijn, welke gegevens er gebruikt gaan worden, wat de betrouwbaarheid is van de gevens en tenslotte hoe de gegevens verwerkt gaan worden.</p>
+<section id="gegevens---verzamelen" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="gegevens---verzamelen"><span class="header-section-number">1</span> Gegevens - verzamelen</h2>
 <p>In de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.</p>
 <div id="fig-gegevensbronnen" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gegevensbronnen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./static/21_gegevensbronnen.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+<a href="./static/21_gegevensbronnen.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Gegevensbronnen"><img src="./static/21_gegevensbronnen.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gegevensbronnen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Gegevensbronnen
+Gegevensbronnen
 </figcaption>
 </figure>
 </div>
@@ -242,16 +181,16 @@ Figure&nbsp;1: Gegevensbronnen
 Referentie (Skoledo, 2024)
 De output van het proces (cyclustijd) -->
 </section>
-<section id="meetplan" class="level2">
-<h2 class="anchored" data-anchor-id="meetplan">Meetplan</h2>
+<section id="meetplan" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="meetplan"><span class="header-section-number">2</span> Meetplan</h2>
 <p>In de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige processtappen herhaald worden. In onderstaand schema wordt dat verduidelijkt.</p>
 <div id="fig-module-detail" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-module-detail-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./static/22_module_detail.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+<a href="./static/22_module_detail.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Module detail"><img src="./static/22_module_detail.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-module-detail-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Module detail
+Module detail
 </figcaption>
 </figure>
 </div>
@@ -305,8 +244,8 @@ Figure&nbsp;2: Module detail
 </table>
 <p>Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1.</p>
 </section>
-<section id="gegevens---betrouwbaarheid" class="level2">
-<h2 class="anchored" data-anchor-id="gegevens---betrouwbaarheid">Gegevens - betrouwbaarheid</h2>
+<section id="gegevens---betrouwbaarheid" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="gegevens---betrouwbaarheid"><span class="header-section-number">3</span> Gegevens - betrouwbaarheid</h2>
 <p>V.w.b. de gegevens aangaande de e-learnings wordt gewerkt met secundaire data. Deze gegevens zijn afkomstig van Skoledo. De gegevens worden uit de Skoledo database geexporteerd. Wekelijk wordt er een rapportage samengesteld en opgestuurd naar de docenten van het vak Operations. Er worden door de ontvanger een paar checks gedaan:</p>
 <ul>
 <li>Zijn de data oplopend</li>
@@ -318,17 +257,17 @@ Figure&nbsp;2: Module detail
 <div id="fig-checks" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./static/24_betrouwbaarheid.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+<a href="./static/24_betrouwbaarheid.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Vakdocent en student checks"><img src="./static/24_betrouwbaarheid.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Vakdocent en student checks
+Vakdocent en student checks
 </figcaption>
 </figure>
 </div>
 <p>Hoewel er dus de nodige checks en balances zijn kan niet gegarandeerd worden dat de gegevens betrouwbaar zijn. Studenten kunnen frauderen en de e-learnings door een ander laten maken. Er is geen aanleiding om te denken dat dit gebeurd. Voorzover het de student zou helpen de e-learnings te behalen helpt het de student niet om andere toetsen, zoals de praktijkopdrachten, de assessment en de kennistoets te halen.</p>
 </section>
-<section id="gegevens---verwerken" class="level2">
-<h2 class="anchored" data-anchor-id="gegevens---verwerken">Gegevens - verwerken</h2>
+<section id="gegevens---verwerken" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="gegevens---verwerken"><span class="header-section-number">4</span> Gegevens - verwerken</h2>
 <p>In de analyse-fase wordt gebruik gemaakt van secundaire data. De data wordt aangeleverd door Skoledo. De gegevens zullen worden verwerkt met Excel. De overwegingen om de gegevens in excel te verwerken zijn:</p>
 <ul>
 <li>De gegevens worden aangeleverd in Excel</li>
@@ -340,12 +279,9 @@ Figure&nbsp;3: Vakdocent en student checks
 </ul>
 <!-- Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.-->
 <!-- Bijlage? ![Excel score op LinkedIn (2021)](./static/20210815_LinkedIn_Excel.pdf){fig-align="left" #fig-linkedin-excel}-->
-
-
 </section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -437,7 +373,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/jan-ru\.github\.io\/lss_greenbelt\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -764,52 +700,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./1_definitie_fase.html" class="pagination-link" aria-label="Definitie-fase">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Definitie-fase</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./3_analyse_fase.html" class="pagination-link" aria-label="Analyse-fase">
-        <span class="nav-page-text">Analyse-fase</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- 2024 Copyright (c) Hogeschool van Amsterdam
-  </li>  
-</ul>
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="mailto:j.r.muller@hva.nl">
-      <i class="bi bi-envelope-at-fill" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.hva.nl/">
-      <i class="bi bi-globe" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
-
-
-
-
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script> 
+  
 </body></html>

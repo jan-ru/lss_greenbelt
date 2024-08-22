@@ -1,295 +1,326 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Green Belt",
-    "section": "",
-    "text": "Introduction\n\nDe basis op orde.\nTen behoeve van dit rapport worden de volgende definities gehanteerd:\n\nCyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken (70 dagen).\nDoorlooptijd: de totale tijd om het vak af te ronden is 9 weken (63 dagen), gerekend vanaf de start van het blok.\nTaktijd: de maximale tijd om de e-learnings af te ronden is 8 weken (56 dagen), gerekend vanaf de start van het blok.\n\nDe redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken.\n\nUnit of analysis.\nPopulatie\nSteekproefomvang\nRepresentatief",
-    "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "1_definitie_fase.html",
-    "href": "1_definitie_fase.html",
-    "title": "1  Definitie-fase",
-    "section": "",
-    "text": "1.1 Proces-selectie\nMijn verzoek om de opdracht t.b.v. het Green Belt Certificaat te kunnen doen is goedgekeurd door de Finance & Control coördinator Nadine Steverink. Met de goedkeuring kwam de vraag om een onderwerp te kiezen dat te maken heeft met de opleiding. Ik had toen het idee om het project te doen over een onderdeel van de opleiding waarin ik zelf actief ben. Hierna heb ik mondeling overleg gehad met mijn collega’s Gert de Jong en Paul te Riele. De collega’s stonden niet afwijzend tegenover het idee. Ons regulier periodiek overleg geeft mij de gelegenheid om terugkoppeling te vragen op de deelproducten van het project.\nHieronder is staat een generiek proces van een onderwijs module weergegeven. Dit LSS project situeert zich in de processtap “Het uitvoeren van onderwijs”. Hieronder wordt verstaan het geven van lessen, het begeleiden van studenten en het beoordelen van leerresultaten.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
-    ]
-  },
-  {
-    "objectID": "1_definitie_fase.html#proces-selectie",
-    "href": "1_definitie_fase.html#proces-selectie",
-    "title": "1  Definitie-fase",
-    "section": "",
-    "text": "Figure 1.1: Generiek Module Proces",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
-    ]
-  },
-  {
-    "objectID": "1_definitie_fase.html#project-charter",
-    "href": "1_definitie_fase.html#project-charter",
-    "title": "1  Definitie-fase",
-    "section": "1.2 Project Charter",
-    "text": "1.2 Project Charter\nHet project charter heeft als doel een éénduidige beschrijving van het project te geven zodat betrokkenen het doel, de rijkwijdte en de planning kennen. De werktitel van het project is “verbeteren door versnellen” (van de e-learnings).\n\n\n\n\n\n\n\nFigure 1.2: Project Charter\n\n\n\nMerk op de doelstelling zal na de analyse fase worden aangescherpt omdat dan pas duidelijk zal zijn wat momenteel de gemiddelde doorlooptijd is.\nIk vind sterk van de charter dat ik mij in de business case een voorstelling heb geprobeerd te maken een ordegrootte van de “kosten & baten”. We spreken over een mogelijke “verbetering” ad. €3.000 per blok. Op dit moment heb ik over de charter geen vragen.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
-    ]
-  },
-  {
-    "objectID": "1_definitie_fase.html#sipoc",
-    "href": "1_definitie_fase.html#sipoc",
-    "title": "1  Definitie-fase",
-    "section": "1.3 SIPOC",
-    "text": "1.3 SIPOC\nMet een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.\n\n\n\n\n\n\nFigure 1.3: Onderwijsuitvoering\n\n\n\nTer algemene toelichting:\n\nHet coördinatieteam zorgt ondermeer voor het samenstellen van het rooster.\nOnderwijs & onderzoek ondersteunt o.a. bij de inrichting en het gebruik van het LMS1.\nDe externe dienstverlener is in dit geval Skoledo waar de studenten de e-learnings volgen.\nHet examenburo verzorgt de logistiek rondom de afname van examens.\nOnder management wordt hier verstaan het hoofd van de opleiding Finance & Control.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
-    ]
-  },
-  {
-    "objectID": "1_definitie_fase.html#voc-ctq",
-    "href": "1_definitie_fase.html#voc-ctq",
-    "title": "1  Definitie-fase",
-    "section": "1.4 VOC-CTQ",
-    "text": "1.4 VOC-CTQ\nDe Voice of the Customer, is de klantenvraag waardoor het project geïnitieerd is. In dit project is het de Voice of the Business aangezien de vraag (of opdracht) afkomstig is van de HvA academy, het interne opleidingsinstituut van de HvA.\nIn de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Bloom: onthouden, toepassen en reproduceren. De taxonomie van Bloom is een referentie waarnaar, binnen de HvA, regelmatig wordt verwezen. In de taxonomie worden zes nivo’s van leren onderscheiden. Omdat het onderwerp van dit project een module is uit jaar 2, worden alleen de onderste drie nivo’s van de taxonomie benoemd.\n\n\n\n\n\n\nflowchart TD\n    A[\"VOB: wij willen dat studenten\n     aan de hand van leeruitkomsten\n     aantonen dat zij de leerdoelen\n     beheersen\"] \n        A --&gt;B[\"CTQ1: aantonen door \n        onthouden\"]\n        B --&gt;C[\"Instrument: \n        quiz\"]\n        C --&gt;D[\"ME1: Datum, Cijfer\"]\n        A --&gt;E[\"CTQ2: aantonen door \n        toepassen\"]\n        E --&gt;F[\"Instrument: \n        praktijkopdracht\"]\n        F --&gt;G[\"ME2: Datum, Cijfer\"]\n        A --&gt;H[\"CTQ3: aantonen door \n        reproduceren\"]\n        H --&gt;I[\"Instrument: \n        kennistoets\"]\n        I --&gt;J[\"ME3: Datum, Cijfer\"]\n\n\n\n\nFigure 1.4: Voice of the Business\n\n\n\n\n\nWaarschijnlijke toekomstige verbeteringen:\n\nIn deze versie van de VOB-CTQ staan drie meetinstrumenten (quiz, praktijkopdracht, kennistoets) genoemd. In een latere versie wordt het instrument “assessment” daaraan toegevoegd en zullen de instrumenten (dan vier) verplaatst worden naar de meetfase.\nIn deze versie van de VOB-CTQ staan de meetbare eenheden (ME) appart genoemd per CTQ. In een latere versie kunnen alle drie de CTQ’s verwijzen naar twee meetbare eenheden: datum en cijfer.\nEr dient nog een CTQ over “volgordelijkheid” te worden toegevoegd. Hiervoor dient de VOB nog te worden aangepast (met een statement over effectiviteit).",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
-    ]
-  },
-  {
-    "objectID": "1_definitie_fase.html#prestatie-indicator",
-    "href": "1_definitie_fase.html#prestatie-indicator",
-    "title": "1  Definitie-fase",
-    "section": "1.5 Prestatie indicator",
-    "text": "1.5 Prestatie indicator\nDe grafische prestatie indicator dient weer te geven wat:\n\nde ideale doorlooptijd van de e-learnings is\nwat de feitelijke doorlooptijd van de e-learnings is.\n\nVoor de ideale doorlooptijd van de e-learnings is de studiegids leidend in combinatie met de daadwerkelijke opdrachten op Brightspace. Voorwat betreft de feitelijke doorlooptijd van de e-learnings is de rapportage van Skoledo leidend.\n\n\n\n\n\n\n\nFigure 1.5: A line plot showing progress on the e-learnings\n\n\n\n\nDe totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.\nVooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.\n\nDe blauwe lijn geeft de huidige doorlooptijd van de e-learnings weer.\nDe rode lijn geeft de nieuwe beoogde doorlooptijd van de e-learnings weer (10% korter).\n\nDe twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
-    ]
-  },
-  {
-    "objectID": "1_definitie_fase.html#footnotes",
-    "href": "1_definitie_fase.html#footnotes",
-    "title": "1  Definitie-fase",
-    "section": "",
-    "text": "Learning Management System, in het geval van de HvA het programma Brightspace.↩︎",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitie-fase</span>"
-    ]
-  },
-  {
-    "objectID": "2_measure_fase.html",
-    "href": "2_measure_fase.html",
-    "title": "2  Measure-fase",
-    "section": "",
-    "text": "2.1 Gegevens - verzamelen\nIn de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.\nIndachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend de gegevensbron Skoledo.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
-    ]
-  },
-  {
-    "objectID": "2_measure_fase.html#gegevens---verzamelen",
-    "href": "2_measure_fase.html#gegevens---verzamelen",
-    "title": "2  Measure-fase",
-    "section": "",
-    "text": "Figure 2.1: Gegevensbronnen\n\n\n\n\nSIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.\nSkoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.\nBrightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.\nTestvision is het programma waarin de kennistoets wordt samengesteld en waarin de studenten de toets maken.\nRooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
-    ]
-  },
-  {
-    "objectID": "2_measure_fase.html#meetplan",
-    "href": "2_measure_fase.html#meetplan",
-    "title": "2  Measure-fase",
-    "section": "2.2 Meetplan",
-    "text": "2.2 Meetplan\nIn de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige processtappen herhaald worden. In onderstaand schema wordt dat verduidelijkt.\n\n\n\n\n\n\nFigure 2.2: Module detail\n\n\n\nDe duur van de module is 1 blok, ofwel 10 weken. De voorbereiding voor het blok, waaronder het maken van het lessenplan wordt voor de aanvang van de module gedaan. Er zijn 8 lesweken, 1 assessment en examenweek, en 1 week voor herkansingen (en voorbereiding volgend blok). In het schema worden stap 3.2 t/m 3.4 in het totaal 8 keer uitgevoerd.\n\nMeetplan\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de data\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\ndatum & cijfer\nCTQ1\nAutomatisch door het volgen van de e-learnings\niedere week\nvoor processtap 3.4\nSkoledo\n\n\ndatum & cijfer\nCTQ2\nHandmatig door beoordeling praktijkopddracht\niedere week\nvoor processtap 3.4\nVakdocent\n\n\ndatum & cijfer\nCTQ3\nSemi-automatisch door maken examen en de beoordeling daarvan\nin week 9\nvoor processtap 3.5\nVakdocent\n\n\n\nIndachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
-    ]
-  },
-  {
-    "objectID": "2_measure_fase.html#gegevens---betrouwbaarheid",
-    "href": "2_measure_fase.html#gegevens---betrouwbaarheid",
-    "title": "2  Measure-fase",
-    "section": "2.3 Gegevens - betrouwbaarheid",
-    "text": "2.3 Gegevens - betrouwbaarheid\nV.w.b. de gegevens aangaande de e-learnings wordt gewerkt met secundaire data. Deze gegevens zijn afkomstig van Skoledo. De gegevens worden uit de Skoledo database geexporteerd. Wekelijk wordt er een rapportage samengesteld en opgestuurd naar de docenten van het vak Operations. Er worden door de ontvanger een paar checks gedaan:\n\nZijn de data oplopend\nIs de voortgang deze week hoger dan vorige week\nZijn alle studenten begonnen met de e-learnings\nWelke studenten hebben de e-learnings afgerond\n\nDe docent meldt de (tussentijdse) resultaten terug aan de klas. Hierdoor kunnen de studenten zelf ook checken of de gerapporteerde voortgang en (tussentijdse) resultaten overeenkomt met de gerealiseerde voortgang en (tussentijdse) resultaten.\n\n\n\n\n\n\nFigure 2.3: Vakdocent en student checks\n\n\n\nHoewel er dus de nodige checks en balances zijn kan niet gegarandeerd worden dat de gegevens betrouwbaar zijn. Studenten kunnen frauderen en de e-learnings door een ander laten maken. Er is geen aanleiding om te denken dat dit gebeurd. Voorzover het de student zou helpen de e-learnings te behalen helpt het de student niet om andere toetsen, zoals de praktijkopdrachten, de assessment en de kennistoets te halen.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
-    ]
-  },
-  {
-    "objectID": "2_measure_fase.html#gegevens---verwerken",
-    "href": "2_measure_fase.html#gegevens---verwerken",
-    "title": "2  Measure-fase",
-    "section": "2.4 Gegevens - verwerken",
-    "text": "2.4 Gegevens - verwerken\nIn de analyse-fase wordt gebruik gemaakt van secundaire data. De data wordt aangeleverd door Skoledo. De gegevens zullen worden verwerkt met Excel. De overwegingen om de gegevens in excel te verwerken zijn:\n\nDe gegevens worden aangeleverd in Excel\nExcel is voor iedereen (docenten en studenten) beschikbaar\nBrede bekendheid met Excel onder de docenten\nVoldoende statistische functies om een analyse te kunnen doen\nVoldoende grafische mogelijkheden om een control-chart te kunnen maken\nEn, last but not least, goede kennis van Excel bij de auteur van dit rapport",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measure-fase</span>"
-    ]
-  },
-  {
-    "objectID": "3_analyse_fase.html",
-    "href": "3_analyse_fase.html",
-    "title": "3  Analyse-fase",
-    "section": "",
-    "text": "3.1 Analyse technieken\nOnder de prestatie van het proces wordt in dit rapport verstaan de mate waarin het lukt studenten binnnen de daarvoor gestelde tijd met een voldoende resultaat een onderdeel van het vak Operations te laten afronden.\nVervolgens definiëren we de populatie en de steekproef. De populatie behelst alle HvA studenten die het vak Operations gevolgd hebben sinds het in de huidige vorm gegeven wordt. De steekproef behelst de studenten die zich tijdens studiejaar ’23-’24 (L23) hebben opgegeven voor een onderdeel van het vak Operations: de Yellow Belt e-learning.\nEen beschrijving van de dataset en een geannonimiseerde versie van de dataset is opgenomen in bijlage C.\nOm de vierde vraag over de mogelijke invloedsfactoren te beantwoorden is gebruik gemaakt van een zogenaamd ‘visgraat diagram’. Aan de kop van de vis staat het probleem en de vis heeft 6 graten aan de hand waarvan mogelijke invloedsfactoren worden opgesomd en gegroepeerd.\nOm de vijfde vraag over het belang van de verschillende invloedsfactoren te kunnen beantwoorden worden een aantal hypothesis geformuleerd en statistisch getoetst.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
-    ]
-  },
-  {
-    "objectID": "3_analyse_fase.html#prestaties-van-het-proces",
-    "href": "3_analyse_fase.html#prestaties-van-het-proces",
-    "title": "3  Analyse-fase",
-    "section": "3.2 Prestaties van het proces",
-    "text": "3.2 Prestaties van het proces\nIn het studiejaar ’23-’24 is het vak Operations voor Finance & Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok31. De klassen FC2A, FC2B en FC2E kregen de module in blok 1. De klassen FC2C en FC2D kregen de module in blok 3. In het totaal hebben 116 studenten zich ingeschreven voor de e-learning waarvan 91 (78%) studenten deze hebben voltooid binnen 13 weken na de start van het blok.\nDe inhoud van de e-learnings vormt de basis die men nodig heeft om de praktijkopdracht, en ook uiteindelijk de toets, te kunnen maken. In deze paragraaf wordt uitsluitend de prestatie van het (deel)proces van de Yellow Belt e-learning beschouwd (CTQ1).\n\nHieronder wordt eerst het aantal studenten bepaald (n). Daarna wordt bepaald hoeveel studenten de e-learning module binnen 13 weken vanaf de start van het blok hebben afgerond. Tenslotte voor deze groep studenten gekenen hoe lang zij over de e-learning hebben gedaan.\n\nAantal studenten\n\n\n\n\n\n\n\n\n\n\n\nStudenten / Klas\nL23-FC2A\nL23-FC2B\nL23-FC2E\nL23-FC2C\nL23-FC2D\nTotaal\n\n\n\n\nBrightspace\n25\n27\n33\n27\n32\n145\n\n\nSIS\n25\n24\n28\n27\n33\n137\n\n\nSkoledo\n21\n25\n29\n16\n25\n116\n\n\n\nHet aantal studenten in Brightspace is opgehaald via de functie “Classlist”. Het aantal studenten in SIS is opgehaald via de functie “mijn studenten”. Het aantal studenten Skoledo is berekend in excel door het aantal regels in een klas op te vragen middels de functie countif(range).\nDe verschillende aantallen studenten tussen BS, SIS en Skoledo dienen, ten behoeve van een eventuele vervolg analyse, nader te worden bekeken. In dit hoofdstuk wordt verder gerekend met het aantal studenten dat zich heeft ingeschreven voor de Yellow Belt e-learning (116). \nIn de tabel hieronder staat het aantal studenten dat de e-learning (binnen 13 weken) heeft afgerond. Op de laatste regel staat ook het aantal studenten weergegeven dat de e-learning niet binnen 13 weken heeft afgerond. Eén output variabele (Y) is de taktijd. Hieronder staat de verdeling van de taktijd weergegeven, zowel per klas als totaal.\n\nSamenvattig per klas\n\n\n\n\n\n\n\n\n\n\n\n\nL23-FC2A\nL23-FC2B\nL23-FC2E\nL23-FC2C\nL23-FC2D\nTotaal\n\n\n\n\nTotaal studenten\n21\n25\n29\n16\n25\n116\n\n\n- Afgerond\n14\n22\n26\n6\n23\n91\n\n\n- Niet afgerond\n7\n3\n3\n10\n2\n25\n\n\n\n\n\n\n\n\n\n\n\nTaktijd (dagen)\n\n\n\n\n\n\n\n\n- Minimum\n41\n24\n36\n41\n18\n18\n\n\n- Maximum\n87\n58\n80\n65\n70\n87\n\n\n- Gemiddelde\n61,6\n49,5\n57,2\n50,8\n50,7\n53,3\n\n\n- Standaard deviatie\n8,5\n9,4\n12,1\n8,6\n15,3\n13,5\n\n\n\n\nSamenvatting per blok\n\n\n\nBlok 1\nBlok 3\nTotaal\n\n\n\n\nTotaal studenten\n75\n41\n116\n\n\n- Afgerond\n62\n29\n91\n\n\n- Niet afgerond\n13\n12\n25\n\n\n\n\n\n\n\n\nTime to complete\n\n\n\n\n\n- Minimum\n24\n18\n18\n\n\n- Maximum\n80\n70\n80\n\n\n- Gemiddelde\n55,5\n50,7\n53,9\n\n\n- Standaard deviatie\n11,3\n14,1\n12,4\n\n\n\nGelet op de steekproef omvang geeft de totaal-kolom een betrouwbaarder beeld (n=116) dan de kolommen betreffende de individuele klassen. Uitgaande van de totaal-kolom kan over het e-learning deelproces opgemerkt worden dat:\n\nCirca 21% (25/116) van de studenten in de steekproef starten de e-learning wel maar ronden deze niet binnen een termijn van 13 weken af.\nVan de 79% (91/116) van de studenten in de steekproef die de e-learning binnen 13 weken afronden doet men er gemiddeld 53 dagen over. Ofwel gemiddeld rond deze groep studenten de e-learning af binnen de 8 lesweken (56 dagen).\nEen aanzienlijk deel van de studenten in de steekproef die de e-learning binnen 13 weken afronden doet dat in de examen periode, in de herkansingsperiode of na het einde van het blok.\n\nConsequenties van bovenstaande zijn:\n\nStudenten kunnen het materiaal van de e-learning slechts gedeeltelijk toepassen bij de praktijkopdracht omdat de praktijkopdracht al (deels)voldaan is terwijl de theorie daarover nog niet bestudeerd is.\nsommige studenten kunnen het materiaal van de e-learning niet gebruiken voor de eind toets omdat de eindtoets plaats heeft in week 9 en deel van de studenten de e-learning pas in week 10,11,12 en 13 afronden.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
-    ]
-  },
-  {
-    "objectID": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
-    "href": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
-    "title": "3  Analyse-fase",
-    "section": "3.3 Inventarisatie invloedsfactoren",
-    "text": "3.3 Inventarisatie invloedsfactoren\nHet Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Het resultaat van deze brainstorm staat in onderstaande grafiek. Er zijn 13 mogelijke invloedsfacturen (mogelijke x’en) geïdentificeerd.\n\n\n\n\n\n\nFigure 3.1: Visgraat diagram\n\n\n\nVan de 13 geïdentifeerde variabelen zijn er 8 die (op dit moment) buiten beschouwing worden gelaten:\n\nLeeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze (nog) niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.\nLokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele “lokaal” en de variabele “tijdstip” hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.\nBrightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten, binnen één studiejaar, hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten, binnen één studiejaar.\nProgramma Fout verwijst naar de mogelijkheid dat het programma waarmee de toets wordt afgenomen een fout bevat. Een fout kan zijn dat een antwoord dat goed is fout gerekend wordt of andersom. De kans dat dit optreed wordt zeer klein geacht. Ook als dit op zou treden is het effect, vanwege het grote aantal vragen (40), relatief klein. Deze mogelijke invloedsfactor wordt daarom niet nader onderzocht.\n\n\n\nMogelijke X’en\n\n\n\n\n\n\n\n\nvariabele\nmogelijke waardes\ntype data\nbeschikbaar\n\n\n\n\n1 blok\n1,2,3,4\ncategorical\nY\n\n\n2 klas\nFC2A, FC2B, FC2C, FC2D\ncategorical\nY\n\n\n3 groep\n1,2,3,4,5,6,7,8,9\ncategorical\nY\n\n\n4 lokaal\n\ncategorical\nY\n\n\n5 tijdstip\n\ncontinue\nY\n\n\n6 procesdocent\nDocent A, Docent B\ncategorical\nY\n\n\n7 vakdocent\nDocent C, Docent D\ncategorical\nY\n\n\n8 brightspace\nJ/N\ncategorical\nY\n\n\n9 studiehandleiding\nJ/N\ncategorical\nY\n\n\n10 vooropleiding\nMBO,HAVO,VWO\ncategorical\nN\n\n\n11 leeftijd\nNummeriek positief\ndiscreet\nN\n\n\n12 studie achterstand\nJ/N\ncategorical\nN\n\n\n13 programma fout\nJ/N\ncategorical\nN",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
-    ]
-  },
-  {
-    "objectID": "3_analyse_fase.html#meeste-impact",
-    "href": "3_analyse_fase.html#meeste-impact",
-    "title": "3  Analyse-fase",
-    "section": "3.4 Meeste Impact",
-    "text": "3.4 Meeste Impact\nOmdat er 8 van de 13 mogelijke invloedsfactoren buiten beschouwing worden gelaten resteren er 5:\n\nblok\nklas\ngroep\nprocesdocent\nvakdocent\n\nGroep, procesdocent en vakdocent staan (nog) niet in de dataset. In eerste instantie wordt daarom getest op blok en klas. In een eventueel vervolgonderzoek kan de dataset worden uitgebreid en kan ook op andere invloedsfactoren getest worden.\nTen eerste toetsen we of verschillen zijn tussen blok 1 en blok 3. Ten tweede toetsen we of er verschillen zijn tussen FC1A, FC1B, FC1C, FC1D en FC1E. Dat wil zeggen: komen de steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?\nOm de vraag te beantwoorden wordt een histogram geplot en wordt een statistiche toets gedaan.\n\n3.4.1 Verschillen per blok\nHieronder staan 2x2 histogrammen weergegeven. Bij de eerste twee histogrammen staat verticaal het aantal studenten dat de Yellow Belt e-learning heeft afgerond.\n\n\n\n\n\n\n\nFigure 3.2: histogram: taktijd / blok\n\n\n\n\n\nOm te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een (onafhankelijke) t-test uit tussen de 2 steekproeven (zie: As and Klouwen (2013)). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:\n\\(H_0 : \\bar{x}_1 = \\bar{x}_2\\)\n\\(H_1 : \\bar{x}_1 &lt;&gt; \\bar{x}_2\\)\n\n\\(t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_{1}^2}{n_1} + \\frac{s_{2}^2}{n_2}}}\\)\nUitgaande van een 95% betrouwbaarheidsinterval (alpha = 0,05) is de uitkomst van de berekening als volgt:\n\n\n\n\n\n\nto be title\n\n\n\nt-statistic: 1.5972\np-value : 0.0586\nConclusie : Nul-hypothese niet verwerpen\n\n\nStatistisch zijn de gemiddelden van blok 1 en blok 3 niet ongelijk. Het blok waarin een student de e-learning volgt is daarmee geen belangrijke invloedsfactor voor de taktijd.\n\n\n3.4.2 Verschillen per klas\nWij doen een soortgelijke analyse met betrekking tot de klas. Dat wil zeggen: komen de 5 steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?\n\n\n\n\n\n\n\nFigure 3.3: histogram: taktijd / klas\n\n\n\n\nOm te bepalen of het gemiddelde van FC2A t/m FC2E significant van elkaar verschillen voeren we een anova test uit (zie: As and Klouwen (2013)). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:\n\\(H_0 : \\bar{x}_1 = \\bar{x}_2 = \\bar{x}_3 = \\bar{x}_4 = \\bar{x}_5\\)\n\\(H_1 : \\bar{x}_1 &lt;&gt; \\bar{x}_2 &lt;&gt; \\bar{x}_3 &lt;&gt; \\bar{x}_4 &lt;&gt; \\bar{x}_5\\)\n\\(F = \\frac{Variance Between Groups}{Variance Within Groups}\\)\n\n\n\n\n\n\nNote\n\n\n\nF-statistic: 3.258\np-value : 0.01543\nConclusie : Nul hypothese verwerpen\n\n\nStatistisch zijn de gemiddelden van FC2A t/m FC2E niet gelijk. De klas waarin een student de e-learning volgt is daarmee een belangrijkere invloedsfactor voor de taktijd dan het blok waarin de student de e-learning volgt. Voor wat betreft de Improve-Fase zal dan ook gezocht worden naar mogelijkheden om de verschillen tussen klassen te verkleinen.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
-    ]
-  },
-  {
-    "objectID": "3_analyse_fase.html#footnotes",
-    "href": "3_analyse_fase.html#footnotes",
-    "title": "3  Analyse-fase",
-    "section": "",
-    "text": "zie jaarrooster 2023-2024↩︎",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Analyse-fase</span>"
-    ]
-  },
-  {
-    "objectID": "4_improve_fase.html",
-    "href": "4_improve_fase.html",
-    "title": "4  Improve-fase",
-    "section": "",
-    "text": "4.1 Mogelijke oplossingen\nMethode om oplossingen te genereren: In het vorige",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
-    ]
-  },
-  {
-    "objectID": "4_improve_fase.html#mogelijke-oplossingen",
-    "href": "4_improve_fase.html#mogelijke-oplossingen",
-    "title": "4  Improve-fase",
-    "section": "",
-    "text": "Eerder beginnen",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
-    ]
-  },
-  {
-    "objectID": "4_improve_fase.html#generatie-van-oplossingen",
-    "href": "4_improve_fase.html#generatie-van-oplossingen",
-    "title": "4  Improve-fase",
-    "section": "4.2 Generatie van oplossingen",
-    "text": "4.2 Generatie van oplossingen\nIndien de e-learning niet af is mag je geen examen doen. Indien er geen voortgang is op de e-learning krijg je geen feedback",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
-    ]
-  },
-  {
-    "objectID": "4_improve_fase.html#korte-termijn-oplossing",
-    "href": "4_improve_fase.html#korte-termijn-oplossing",
-    "title": "4  Improve-fase",
-    "section": "4.3 Korte termijn oplossing",
-    "text": "4.3 Korte termijn oplossing\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
-    ]
-  },
-  {
-    "objectID": "4_improve_fase.html#implementatieplan",
-    "href": "4_improve_fase.html#implementatieplan",
-    "title": "4  Improve-fase",
-    "section": "4.4 Implementatieplan",
-    "text": "4.4 Implementatieplan\nplaatje van een kalender (zoals voorbereiding jaarverslag) blok 1, blok 3 Het docenten team ’24-’25 bestaat grotendeels uit dezelfde docenten als voorgaand jaar.\nDoelstelling (herzien)\nVervolgonderzoek",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Improve-fase</span>"
-    ]
-  },
-  {
     "objectID": "5_control_fase.html",
     "href": "5_control_fase.html",
-    "title": "5  Control-fase",
+    "title": "Control-fase",
     "section": "",
-    "text": "5.1 Borgingsinstrumenten\nAan het eind van de module vind met het docententeam een evaluatie plaats aan de hand van een “PDCA” formulier.",
+    "text": "Inleiding",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Control-fase</span>"
+      "Control-fase"
+    ]
+  },
+  {
+    "objectID": "5_control_fase.html#borgingsinstrumenten",
+    "href": "5_control_fase.html#borgingsinstrumenten",
+    "title": "Control-fase",
+    "section": "Borgingsinstrumenten",
+    "text": "Borgingsinstrumenten\nAan het eind van de module vind met het docententeam een evaluatie plaats aan de hand van een “PDCA” formulier.",
+    "crumbs": [
+      "Control-fase"
     ]
   },
   {
     "objectID": "5_control_fase.html#control-instrument-1",
     "href": "5_control_fase.html#control-instrument-1",
-    "title": "5  Control-fase",
-    "section": "5.2 Control instrument 1",
-    "text": "5.2 Control instrument 1\n(Huis)regels opstellen: 1. Je ontvangt geen feedback als je de betreffende e-learning nog niet gevolgd hebt. 2. De tweede keer dat je een rapport inlevert kun je niet meer dan een punt hoger halen dan de eerste keer dat je het rapport inlevert. (van een 4 kan je geen 6 maken) 3. Vragen worden in de les, voor de les of na de les beantwoord maar niet per email.",
+    "title": "Control-fase",
+    "section": "Control instrument 1",
+    "text": "Control instrument 1\n(Huis)regels opstellen: 1. Je ontvangt geen feedback als je de betreffende e-learning nog niet gevolgd hebt. 2. De tweede keer dat je een rapport inlevert kun je niet meer dan een punt hoger halen dan de eerste keer dat je het rapport inlevert. (van een 4 kan je geen 6 maken) 3. Vragen worden in de les, voor de les of na de les beantwoord maar niet per email.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Control-fase</span>"
+      "Control-fase"
     ]
   },
   {
     "objectID": "5_control_fase.html#control-instrument-2",
     "href": "5_control_fase.html#control-instrument-2",
-    "title": "5  Control-fase",
-    "section": "5.3 Control instrument 2",
-    "text": "5.3 Control instrument 2\nBPMN diagram waar je op verschillende manieren doorheen kan. Critische pad tekenen.",
+    "title": "Control-fase",
+    "section": "Control instrument 2",
+    "text": "Control instrument 2\nBPMN diagram waar je op verschillende manieren doorheen kan. Critische pad tekenen.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Control-fase</span>"
+      "Control-fase"
     ]
   },
   {
-    "objectID": "6_kosten.html",
-    "href": "6_kosten.html",
-    "title": "Appendix A — Kosten",
+    "objectID": "lib/plot.html",
+    "href": "lib/plot.html",
+    "title": "",
     "section": "",
-    "text": "Aanname 1: De kosten van de module zijn als volgt berekend:\nIn 2022 realiseerde de HvA een omzet van €513,5 miljoen en een netto resultaat van €13,2 miljoen (bron:jaarverslag 2022). De kostenbasis van de HvA is daarmee €500,3 miljoen. In 2022 studeerden er 46.928 studenten aan de HvA. De kosten per student zijn daarmee €10.661 per jaar. Een regulier studiejaar bestaat uit 4 blokken. De koster per student zijn €2.665 per blok.\nAanname 2: Een klas bestaat uit 25 studenten. De kosten van een klas/blok zijn daarmee 25*€2.665 = €66.625\nAanname 3: aangenomen is dat 45% van de kosten van 1 blok/klas toe te wijzen zijn aan het vak Operations. Deze aanname is gebasseerd op het feit dat Operations 45% meetelt in het eindcijfer. De 45% bestaat uit 30% beroepsproduct en 15% kennistoets. 45% van €66.625 is €29.881, afgerond €30.000\n\n\n\nBeoordeling Module",
+    "text": "Figure 1: A line plot showing progress on the e-learnings"
+  },
+  {
+    "objectID": "2_blackbelt/index.html",
+    "href": "2_blackbelt/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\n\nDe blackbelt index.qmd",
     "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Kosten</span>"
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\n\nDe basis op orde.\nTen behoeve van dit rapport worden de volgende definities gehanteerd:\n\nCyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken (70 dagen).\nDoorlooptijd: de totale tijd om het vak af te ronden is 9 weken (63 dagen), gerekend vanaf de start van het blok.\nTaktijd: de maximale tijd om de e-learnings af te ronden is 8 weken (56 dagen), gerekend vanaf de start van het blok.\n\nDe redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken.\n\nUnit of analysis.\nPopulatie\nSteekproefomvang\nRepresentatief"
+  },
+  {
+    "objectID": "3_analyse_fase.html",
+    "href": "3_analyse_fase.html",
+    "title": "Analyse-fase",
+    "section": "",
+    "text": "De analyse gaat erom elementen te vinden die van invloed zijn op de prestaties van het proces. De vragen die we daartoe willen beantwoorden zijn:",
+    "crumbs": [
+      "Analyse-fase"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#analyse-technieken",
+    "href": "3_analyse_fase.html#analyse-technieken",
+    "title": "Analyse-fase",
+    "section": "Analyse technieken",
+    "text": "Analyse technieken\n\nOnder de prestatie van het proces wordt in dit rapport verstaan de mate waarin het lukt studenten binnnen de daarvoor gestelde tijd met een voldoende resultaat een onderdeel van het vak Operations te laten afronden.\nVervolgens definiëren we de populatie en de steekproef. De populatie behelst alle HvA studenten die het vak Operations gevolgd hebben sinds het in de huidige vorm gegeven wordt. De steekproef behelst de studenten die zich tijdens studiejaar ’23-’24 (L23) hebben opgegeven voor een onderdeel van het vak Operations: de Yellow Belt e-learning.\nEen beschrijving van de dataset en een geannonimiseerde versie van de dataset is opgenomen in bijlage C.\n\nOm de vierde vraag over de mogelijke invloedsfactoren te beantwoorden is gebruik gemaakt van een zogenaamd ‘visgraat diagram’. Aan de kop van de vis staat het probleem en de vis heeft 6 graten aan de hand waarvan mogelijke invloedsfactoren worden opgesomd en gegroepeerd.\nOm de vijfde vraag over het belang van de verschillende invloedsfactoren te kunnen beantwoorden worden een aantal hypothesis geformuleerd en statistisch getoetst.",
+    "crumbs": [
+      "Analyse-fase"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#prestaties-van-het-proces",
+    "href": "3_analyse_fase.html#prestaties-van-het-proces",
+    "title": "Analyse-fase",
+    "section": "Prestaties van het proces",
+    "text": "Prestaties van het proces\nIn het studiejaar ’23-’24 is het vak Operations voor Finance & Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok31. De klassen FC2A, FC2B en FC2E kregen de module in blok 1. De klassen FC2C en FC2D kregen de module in blok 3. In het totaal hebben 116 studenten zich ingeschreven voor de e-learning waarvan 91 (78%) studenten deze hebben voltooid binnen 13 weken na de start van het blok.\nDe inhoud van de e-learnings vormt de basis die men nodig heeft om de praktijkopdracht, en ook uiteindelijk de toets, te kunnen maken. In deze paragraaf wordt uitsluitend de prestatie van het (deel)proces van de Yellow Belt e-learning beschouwd (CTQ1).\n\nHieronder wordt eerst het aantal studenten bepaald (n). Daarna wordt bepaald hoeveel studenten de e-learning module binnen 13 weken vanaf de start van het blok hebben afgerond. Tenslotte voor deze groep studenten gekenen hoe lang zij over de e-learning hebben gedaan.\n\nAantal studenten\n\n\n\n\n\n\n\n\n\n\n\nStudenten / Klas\nL23-FC2A\nL23-FC2B\nL23-FC2E\nL23-FC2C\nL23-FC2D\nTotaal\n\n\n\n\nBrightspace\n25\n27\n33\n27\n32\n145\n\n\nSIS\n25\n24\n28\n27\n33\n137\n\n\nSkoledo\n21\n25\n29\n16\n25\n116\n\n\n\nHet aantal studenten in Brightspace is opgehaald via de functie “Classlist”. Het aantal studenten in SIS is opgehaald via de functie “mijn studenten”. Het aantal studenten Skoledo is berekend in excel door het aantal regels in een klas op te vragen middels de functie countif(range).\nDe verschillende aantallen studenten tussen BS, SIS en Skoledo dienen, ten behoeve van een eventuele vervolg analyse, nader te worden bekeken. In dit hoofdstuk wordt verder gerekend met het aantal studenten dat zich heeft ingeschreven voor de Yellow Belt e-learning (116). \nIn de tabel hieronder staat het aantal studenten dat de e-learning (binnen 13 weken) heeft afgerond. Op de laatste regel staat ook het aantal studenten weergegeven dat de e-learning niet binnen 13 weken heeft afgerond. Eén output variabele (Y) is de taktijd. Hieronder staat de verdeling van de taktijd weergegeven, zowel per klas als totaal.\n\nSamenvattig per klas\n\n\n\n\n\n\n\n\n\n\n\n\nL23-FC2A\nL23-FC2B\nL23-FC2E\nL23-FC2C\nL23-FC2D\nTotaal\n\n\n\n\nTotaal studenten\n21\n25\n29\n16\n25\n116\n\n\n- Afgerond\n14\n22\n26\n6\n23\n91\n\n\n- Niet afgerond\n7\n3\n3\n10\n2\n25\n\n\n\n\n\n\n\n\n\n\n\nTaktijd (dagen)\n\n\n\n\n\n\n\n\n- Minimum\n41\n24\n36\n41\n18\n18\n\n\n- Maximum\n87\n58\n80\n65\n70\n87\n\n\n- Gemiddelde\n61,6\n49,5\n57,2\n50,8\n50,7\n53,3\n\n\n- Standaard deviatie\n8,5\n9,4\n12,1\n8,6\n15,3\n13,5\n\n\n\n\nSamenvatting per blok\n\n\n\nBlok 1\nBlok 3\nTotaal\n\n\n\n\nTotaal studenten\n75\n41\n116\n\n\n- Afgerond\n62\n29\n91\n\n\n- Niet afgerond\n13\n12\n25\n\n\n\n\n\n\n\n\nTime to complete\n\n\n\n\n\n- Minimum\n24\n18\n18\n\n\n- Maximum\n80\n70\n80\n\n\n- Gemiddelde\n55,5\n50,7\n53,9\n\n\n- Standaard deviatie\n11,3\n14,1\n12,4\n\n\n\nGelet op de steekproef omvang geeft de totaal-kolom een betrouwbaarder beeld (n=116) dan de kolommen betreffende de individuele klassen. Uitgaande van de totaal-kolom kan over het e-learning deelproces opgemerkt worden dat:\n\nCirca 21% (25/116) van de studenten in de steekproef starten de e-learning wel maar ronden deze niet binnen een termijn van 13 weken af.\nVan de 79% (91/116) van de studenten in de steekproef die de e-learning binnen 13 weken afronden doet men er gemiddeld 53 dagen over. Ofwel gemiddeld rond deze groep studenten de e-learning af binnen de 8 lesweken (56 dagen).\nEen aanzienlijk deel van de studenten in de steekproef die de e-learning binnen 13 weken afronden doet dat in de examen periode, in de herkansingsperiode of na het einde van het blok.\n\nConsequenties van bovenstaande zijn:\n\nStudenten kunnen het materiaal van de e-learning slechts gedeeltelijk toepassen bij de praktijkopdracht omdat de praktijkopdracht al (deels)voldaan is terwijl de theorie daarover nog niet bestudeerd is.\nsommige studenten kunnen het materiaal van de e-learning niet gebruiken voor de eind toets omdat de eindtoets plaats heeft in week 9 en deel van de studenten de e-learning pas in week 10,11,12 en 13 afronden.",
+    "crumbs": [
+      "Analyse-fase"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
+    "href": "3_analyse_fase.html#inventarisatie-invloedsfactoren",
+    "title": "Analyse-fase",
+    "section": "Inventarisatie invloedsfactoren",
+    "text": "Inventarisatie invloedsfactoren\nHet Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Het resultaat van deze brainstorm staat in onderstaande grafiek. Er zijn 13 mogelijke invloedsfacturen (mogelijke x’en) geïdentificeerd.\n\n\n\n\n\n\nFigure 1: Visgraat diagram\n\n\n\nVan de 13 geïdentifeerde variabelen zijn er 8 die (op dit moment) buiten beschouwing worden gelaten:\n\nLeeftijd, vooropleiding en studie achterstand worden buiten beschouwing gelaten omdat deze (nog) niet gemakkelijk voorhanden zijn. Deze gegevens zijn wel te achterhalen maar thans geen onderdeel van de dataset.\nLokaal en tijdstip worden buiten beschouwing gelaten omdat de lessen niet altijd in hetzelfde lokaal doorgaan en ook niet altijd op hetzelfde tijdstip. De variabele “lokaal” en de variabele “tijdstip” hebben daarom wel betekenis voor één les maar hebben geen betekenis voor een reeks lessen. Het onderwerp van de analyse (unit of analysis) is één student gedurende één module. Hierbij is een module een reeks lessen, die worden afgesloten met een toets.\nBrightspace en studiehandleiding worden buiten beschouwing gelaten omdat dit voor alle studenten, binnen één studiejaar, hetzelfde is. Een verkeerde vermelding kan een invloedsfactor zijn maar deze factor is dan gelijk voor alle studenten. Met andere woorden: een verkeerde vermelding is geen verklaring voor eventueel onderscheid tussen de studenten, binnen één studiejaar.\nProgramma Fout verwijst naar de mogelijkheid dat het programma waarmee de toets wordt afgenomen een fout bevat. Een fout kan zijn dat een antwoord dat goed is fout gerekend wordt of andersom. De kans dat dit optreed wordt zeer klein geacht. Ook als dit op zou treden is het effect, vanwege het grote aantal vragen (40), relatief klein. Deze mogelijke invloedsfactor wordt daarom niet nader onderzocht.\n\n\n\nMogelijke X’en\n\n\n\n\n\n\n\n\nvariabele\nmogelijke waardes\ntype data\nbeschikbaar\n\n\n\n\n1 blok\n1,2,3,4\ncategorical\nY\n\n\n2 klas\nFC2A, FC2B, FC2C, FC2D\ncategorical\nY\n\n\n3 groep\n1,2,3,4,5,6,7,8,9\ncategorical\nY\n\n\n4 lokaal\n\ncategorical\nY\n\n\n5 tijdstip\n\ncontinue\nY\n\n\n6 procesdocent\nDocent A, Docent B\ncategorical\nY\n\n\n7 vakdocent\nDocent C, Docent D\ncategorical\nY\n\n\n8 brightspace\nJ/N\ncategorical\nY\n\n\n9 studiehandleiding\nJ/N\ncategorical\nY\n\n\n10 vooropleiding\nMBO,HAVO,VWO\ncategorical\nN\n\n\n11 leeftijd\nNummeriek positief\ndiscreet\nN\n\n\n12 studie achterstand\nJ/N\ncategorical\nN\n\n\n13 programma fout\nJ/N\ncategorical\nN",
+    "crumbs": [
+      "Analyse-fase"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#meeste-impact",
+    "href": "3_analyse_fase.html#meeste-impact",
+    "title": "Analyse-fase",
+    "section": "Meeste Impact",
+    "text": "Meeste Impact\nOmdat er 8 van de 13 mogelijke invloedsfactoren buiten beschouwing worden gelaten resteren er 5:\n\nblok\nklas\ngroep\nprocesdocent\nvakdocent\n\nGroep, procesdocent en vakdocent staan (nog) niet in de dataset. In eerste instantie wordt daarom getest op blok en klas. In een eventueel vervolgonderzoek kan de dataset worden uitgebreid en kan ook op andere invloedsfactoren getest worden.\nTen eerste toetsen we of verschillen zijn tussen blok 1 en blok 3. Ten tweede toetsen we of er verschillen zijn tussen FC1A, FC1B, FC1C, FC1D en FC1E. Dat wil zeggen: komen de steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?\nOm de vraag te beantwoorden wordt een histogram geplot en wordt een statistiche toets gedaan.\n\nVerschillen per blok\nHieronder staan 2x2 histogrammen weergegeven. Bij de eerste twee histogrammen staat verticaal het aantal studenten dat de Yellow Belt e-learning heeft afgerond.\n\n\n\n\n\n\n\nFigure 2: histogram: taktijd / blok\n\n\n\n\n\nOm te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een (onafhankelijke) t-test uit tussen de 2 steekproeven (zie: As and Klouwen (2013)). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:\n\\(H_0 : \\bar{x}_1 = \\bar{x}_2\\)\n\\(H_1 : \\bar{x}_1 &lt;&gt; \\bar{x}_2\\)\n\n\\(t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_{1}^2}{n_1} + \\frac{s_{2}^2}{n_2}}}\\)\nUitgaande van een 95% betrouwbaarheidsinterval (alpha = 0,05) is de uitkomst van de berekening als volgt:\n\n\n\n\n\n\nto be title\n\n\n\nt-statistic: 1.5972\np-value : 0.0586\nConclusie : Nul-hypothese niet verwerpen\n\n\nStatistisch zijn de gemiddelden van blok 1 en blok 3 niet ongelijk. Het blok waarin een student de e-learning volgt is daarmee geen belangrijke invloedsfactor voor de taktijd.\n\n\nVerschillen per klas\nWij doen een soortgelijke analyse met betrekking tot de klas. Dat wil zeggen: komen de 5 steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?\n\n\n\n\n\n\n\nFigure 3: histogram: taktijd / klas\n\n\n\n\nOm te bepalen of het gemiddelde van FC2A t/m FC2E significant van elkaar verschillen voeren we een anova test uit (zie: As and Klouwen (2013)). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:\n\\(H_0 : \\bar{x}_1 = \\bar{x}_2 = \\bar{x}_3 = \\bar{x}_4 = \\bar{x}_5\\)\n\\(H_1 : \\bar{x}_1 &lt;&gt; \\bar{x}_2 &lt;&gt; \\bar{x}_3 &lt;&gt; \\bar{x}_4 &lt;&gt; \\bar{x}_5\\)\n\\(F = \\frac{Variance Between Groups}{Variance Within Groups}\\)\n\n\n\n\n\n\nNote\n\n\n\nF-statistic: 3.258\np-value : 0.01543\nConclusie : Nul hypothese verwerpen\n\n\nStatistisch zijn de gemiddelden van FC2A t/m FC2E niet gelijk. De klas waarin een student de e-learning volgt is daarmee een belangrijkere invloedsfactor voor de taktijd dan het blok waarin de student de e-learning volgt. Voor wat betreft de Improve-Fase zal dan ook gezocht worden naar mogelijkheden om de verschillen tussen klassen te verkleinen.",
+    "crumbs": [
+      "Analyse-fase"
+    ]
+  },
+  {
+    "objectID": "3_analyse_fase.html#footnotes",
+    "href": "3_analyse_fase.html#footnotes",
+    "title": "Analyse-fase",
+    "section": "",
+    "text": "zie jaarrooster 2023-2024↩︎",
+    "crumbs": [
+      "Analyse-fase"
+    ]
+  },
+  {
+    "objectID": "2_measure_fase.html",
+    "href": "2_measure_fase.html",
+    "title": "Measure-fase",
+    "section": "",
+    "text": "Het doel van de measure-fase is om te komen tot een meetplan. In dit hoofdstuk komen aan de orde: welke gegevens er beschikbaar zijn, welke gegevens er gebruikt gaan worden, wat de betrouwbaarheid is van de gevens en tenslotte hoe de gegevens verwerkt gaan worden.",
+    "crumbs": [
+      "Measure-fase"
+    ]
+  },
+  {
+    "objectID": "2_measure_fase.html#gegevens---verzamelen",
+    "href": "2_measure_fase.html#gegevens---verzamelen",
+    "title": "Measure-fase",
+    "section": "Gegevens - verzamelen",
+    "text": "Gegevens - verzamelen\nIn de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces “onderwijsuitvoering” te maken heeft.\n\n\n\n\n\n\nFigure 1: Gegevensbronnen\n\n\n\n\nSIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.\nSkoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten.\nBrightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld.\nTestvision is het programma waarin de kennistoets wordt samengesteld en waarin de studenten de toets maken.\nRooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet.\n\nIndachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend de gegevensbron Skoledo.",
+    "crumbs": [
+      "Measure-fase"
+    ]
+  },
+  {
+    "objectID": "2_measure_fase.html#meetplan",
+    "href": "2_measure_fase.html#meetplan",
+    "title": "Measure-fase",
+    "section": "Meetplan",
+    "text": "Meetplan\nIn de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige processtappen herhaald worden. In onderstaand schema wordt dat verduidelijkt.\n\n\n\n\n\n\nFigure 2: Module detail\n\n\n\nDe duur van de module is 1 blok, ofwel 10 weken. De voorbereiding voor het blok, waaronder het maken van het lessenplan wordt voor de aanvang van de module gedaan. Er zijn 8 lesweken, 1 assessment en examenweek, en 1 week voor herkansingen (en voorbereiding volgend blok). In het schema worden stap 3.2 t/m 3.4 in het totaal 8 keer uitgevoerd.\n\nMeetplan\n\n\n\n\n\n\n\n\n\n\nWat meten we\nWaarom meten we\nHoe verzamelen we de data\nWanneer verzamelen\nWaar in het proces\nWie verzamelt ze\n\n\n\n\ndatum & cijfer\nCTQ1\nAutomatisch door het volgen van de e-learnings\niedere week\nvoor processtap 3.4\nSkoledo\n\n\ndatum & cijfer\nCTQ2\nHandmatig door beoordeling praktijkopddracht\niedere week\nvoor processtap 3.4\nVakdocent\n\n\ndatum & cijfer\nCTQ3\nSemi-automatisch door maken examen en de beoordeling daarvan\nin week 9\nvoor processtap 3.5\nVakdocent\n\n\n\nIndachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1.",
+    "crumbs": [
+      "Measure-fase"
+    ]
+  },
+  {
+    "objectID": "2_measure_fase.html#gegevens---betrouwbaarheid",
+    "href": "2_measure_fase.html#gegevens---betrouwbaarheid",
+    "title": "Measure-fase",
+    "section": "Gegevens - betrouwbaarheid",
+    "text": "Gegevens - betrouwbaarheid\nV.w.b. de gegevens aangaande de e-learnings wordt gewerkt met secundaire data. Deze gegevens zijn afkomstig van Skoledo. De gegevens worden uit de Skoledo database geexporteerd. Wekelijk wordt er een rapportage samengesteld en opgestuurd naar de docenten van het vak Operations. Er worden door de ontvanger een paar checks gedaan:\n\nZijn de data oplopend\nIs de voortgang deze week hoger dan vorige week\nZijn alle studenten begonnen met de e-learnings\nWelke studenten hebben de e-learnings afgerond\n\nDe docent meldt de (tussentijdse) resultaten terug aan de klas. Hierdoor kunnen de studenten zelf ook checken of de gerapporteerde voortgang en (tussentijdse) resultaten overeenkomt met de gerealiseerde voortgang en (tussentijdse) resultaten.\n\n\n\n\n\n\nFigure 3: Vakdocent en student checks\n\n\n\nHoewel er dus de nodige checks en balances zijn kan niet gegarandeerd worden dat de gegevens betrouwbaar zijn. Studenten kunnen frauderen en de e-learnings door een ander laten maken. Er is geen aanleiding om te denken dat dit gebeurd. Voorzover het de student zou helpen de e-learnings te behalen helpt het de student niet om andere toetsen, zoals de praktijkopdrachten, de assessment en de kennistoets te halen.",
+    "crumbs": [
+      "Measure-fase"
+    ]
+  },
+  {
+    "objectID": "2_measure_fase.html#gegevens---verwerken",
+    "href": "2_measure_fase.html#gegevens---verwerken",
+    "title": "Measure-fase",
+    "section": "Gegevens - verwerken",
+    "text": "Gegevens - verwerken\nIn de analyse-fase wordt gebruik gemaakt van secundaire data. De data wordt aangeleverd door Skoledo. De gegevens zullen worden verwerkt met Excel. De overwegingen om de gegevens in excel te verwerken zijn:\n\nDe gegevens worden aangeleverd in Excel\nExcel is voor iedereen (docenten en studenten) beschikbaar\nBrede bekendheid met Excel onder de docenten\nVoldoende statistische functies om een analyse te kunnen doen\nVoldoende grafische mogelijkheden om een control-chart te kunnen maken\nEn, last but not least, goede kennis van Excel bij de auteur van dit rapport",
+    "crumbs": [
+      "Measure-fase"
+    ]
+  },
+  {
+    "objectID": "4_improve_fase.html",
+    "href": "4_improve_fase.html",
+    "title": "Improve-fase",
+    "section": "",
+    "text": "In het vorige hoordstuk zijn er __ variabelen geïdentificeerd die mogelijk van invloed zijn op de taktijd. Door voor elk van deze variabelen de correlatiecoefficiënt uit te rekenen is gekeken naar het relatieve belang van deze __ variabelen. De variabelen waarbij de correlatiecoefficient lager uitviel dan x.x zijn buiten beschouwing gelaten. De variabelen waarbij de correlatiecoefficient hoger uitviel dan x.x zijn aangemerkt als relevante invloedsfactoren.",
+    "crumbs": [
+      "Improve-fase"
+    ]
+  },
+  {
+    "objectID": "4_improve_fase.html#mogelijke-oplossingen",
+    "href": "4_improve_fase.html#mogelijke-oplossingen",
+    "title": "Improve-fase",
+    "section": "Mogelijke oplossingen",
+    "text": "Mogelijke oplossingen\nMethode om oplossingen te genereren: In het vorige\n\nEerder beginnen",
+    "crumbs": [
+      "Improve-fase"
+    ]
+  },
+  {
+    "objectID": "4_improve_fase.html#genereren-van-oplossingen",
+    "href": "4_improve_fase.html#genereren-van-oplossingen",
+    "title": "Improve-fase",
+    "section": "Genereren van oplossingen",
+    "text": "Genereren van oplossingen\nIndien de e-learning niet af is mag je geen examen doen. Indien er geen voortgang is op de e-learning krijg je geen feedback",
+    "crumbs": [
+      "Improve-fase"
+    ]
+  },
+  {
+    "objectID": "4_improve_fase.html#korte-termijn-oplossing",
+    "href": "4_improve_fase.html#korte-termijn-oplossing",
+    "title": "Improve-fase",
+    "section": "Korte termijn oplossing",
+    "text": "Korte termijn oplossing\nBenoemen dat er momenteel meerdere interpretaties zijn:\n- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …",
+    "crumbs": [
+      "Improve-fase"
+    ]
+  },
+  {
+    "objectID": "4_improve_fase.html#implementatieplan",
+    "href": "4_improve_fase.html#implementatieplan",
+    "title": "Improve-fase",
+    "section": "Implementatieplan",
+    "text": "Implementatieplan\nplaatje van een kalender (zoals voorbereiding jaarverslag) blok 1, blok 3 Het docenten team ’24-’25 bestaat grotendeels uit dezelfde docenten als voorgaand jaar.\nDoelstelling (herzien)\nVervolgonderzoek",
+    "crumbs": [
+      "Improve-fase"
     ]
   },
   {
     "objectID": "7_studiebelasting.html",
     "href": "7_studiebelasting.html",
-    "title": "Appendix B — Studiebelasting",
+    "title": "Studiebelasting",
     "section": "",
-    "text": "De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo).\n\nYellow Belt\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nWat is Lean Six Sigma?\nWat is Lean?\n2,5 uur\n\n\n\nWat is Six Sigma?\n\n\n\n\nWat is Lean Six Sigma?\n\n\n\n\n\n\n\n\nDefine-fase\nSelecteren verbeterproject\n2,5 uur\n\n\n\nHet proces definiëren\n\n\n\n\nWat wil je bereiken?\n\n\n\n\n\n\n\n\nMeasure-fase\nWaarom welke data verzamelen?\n4,0 uur\n\n\n\nHoe data verzamelen?\n\n\n\n\nZorg voor goede data.\n\n\n\n\nLean Six Sigma maatstaven.\n\n\n\n\n\n\n\n\nAnalyse-fase\nWat zijn de prestaties van het proces?\n3,5 uur\n\n\n\nWat zijn de invloedsfactoren?\n\n\n\n\nToetsen invloedsfactoren: is het\n\n\n\n\necht een knelpunt?\n\n\n\n\n\n\n\n\nImprove-fase\nGenereer oplossingen\n2,0 uur\n\n\n\nSelecteer oplossingen\n\n\n\n\nImplementeer oplossingen\n\n\n\n\nLean6Sigma improve-tools\n\n\n\n\n\n\n\n\nControl-fase\nHet proces borgen\n2,5 uur\n\n\n\nIn control zijn en blijven\n\n\n\n\nVerankering in het DNA\n\n\n\n\nProject afsluiten\n\n\n\nSubtotaal (circa)\n\n16,0 uur\n\n\nProef examen\n\n2,0 uur\n\n\nExamen\n\n2,0 uur\n\n\nTotaal (circa)\n\n20,0 uur\n\n\n\nNaast de Yellow Belt e-learning zijn er nog twee kleinere e-learnings te volbrengen respectievelijk over statistiek en kwaliteitsmanagement. De totale studiebelasting van de 2 modules is afgerond circa 6 uur.\n\nMinitab\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nMinitab introductie\nMinitab: introductie\n4,0 uur\n\n\n\nData verzamelen\n\n\n\n\nPrestaties weergeven\n\n\n\n\nPrestaties toetsen\n\n\n\n\n\n\n\n\n\n\nKwaliteitsmanagement\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nKwaliteitsmanagement\nWat is kwaliteit?\n1,5 uur\n\n\n\nWat is kwaliteitsmanagement?\n\n\n\n\nKwaliteitsmanagementsysteem\n\n\n\n\nKwaliteitsgoeroes",
+    "text": "Studiebelasting\nDe totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo).\n\nYellow Belt\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nWat is Lean Six Sigma?\nWat is Lean?\n2,5 uur\n\n\n\nWat is Six Sigma?\n\n\n\n\nWat is Lean Six Sigma?\n\n\n\n\n\n\n\n\nDefine-fase\nSelecteren verbeterproject\n2,5 uur\n\n\n\nHet proces definiëren\n\n\n\n\nWat wil je bereiken?\n\n\n\n\n\n\n\n\nMeasure-fase\nWaarom welke data verzamelen?\n4,0 uur\n\n\n\nHoe data verzamelen?\n\n\n\n\nZorg voor goede data.\n\n\n\n\nLean Six Sigma maatstaven.\n\n\n\n\n\n\n\n\nAnalyse-fase\nWat zijn de prestaties van het proces?\n3,5 uur\n\n\n\nWat zijn de invloedsfactoren?\n\n\n\n\nToetsen invloedsfactoren: is het\n\n\n\n\necht een knelpunt?\n\n\n\n\n\n\n\n\nImprove-fase\nGenereer oplossingen\n2,0 uur\n\n\n\nSelecteer oplossingen\n\n\n\n\nImplementeer oplossingen\n\n\n\n\nLean6Sigma improve-tools\n\n\n\n\n\n\n\n\nControl-fase\nHet proces borgen\n2,5 uur\n\n\n\nIn control zijn en blijven\n\n\n\n\nVerankering in het DNA\n\n\n\n\nProject afsluiten\n\n\n\nSubtotaal (circa)\n\n16,0 uur\n\n\nProef examen\n\n2,0 uur\n\n\nExamen\n\n2,0 uur\n\n\nTotaal (circa)\n\n20,0 uur\n\n\n\nNaast de Yellow Belt e-learning zijn er nog twee kleinere e-learnings te volbrengen respectievelijk over statistiek en kwaliteitsmanagement. De totale studiebelasting van de 2 modules is afgerond circa 6 uur.\n\nMinitab\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nMinitab introductie\nMinitab: introductie\n4,0 uur\n\n\n\nData verzamelen\n\n\n\n\nPrestaties weergeven\n\n\n\n\nPrestaties toetsen\n\n\n\n\n\n\n\n\n\n\nKwaliteitsmanagement\n\n\n\n\n\n\n\nmodule\nonderwerpen\nstudiebelasting\n\n\n\n\nKwaliteitsmanagement\nWat is kwaliteit?\n1,5 uur\n\n\n\nWat is kwaliteitsmanagement?\n\n\n\n\nKwaliteitsmanagementsysteem\n\n\n\n\nKwaliteitsgoeroes",
     "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Studiebelasting</span>"
+      "Studiebelasting"
+    ]
+  },
+  {
+    "objectID": "1_definitie_fase.html",
+    "href": "1_definitie_fase.html",
+    "title": "Definitie-fase",
+    "section": "",
+    "text": "Sinds 2,5 jaar geef ik les op de Hogeschool van Amsterdam (HvA) op de Faculteit Business en Economie (FBE) binnen het cluster Finance & Control (F&C). In dit hoofdstuk, de “Define Fase”, ligt ik hieronder eerst toe hoe ik gekomen ben tot het procesverbeter voorstel.",
+    "crumbs": [
+      "Definitie-fase"
+    ]
+  },
+  {
+    "objectID": "1_definitie_fase.html#proces-selectie",
+    "href": "1_definitie_fase.html#proces-selectie",
+    "title": "Definitie-fase",
+    "section": "Proces-selectie",
+    "text": "Proces-selectie\nMijn verzoek om de opdracht t.b.v. het Green Belt Certificaat te kunnen doen is goedgekeurd door de Finance & Control coördinator Nadine Steverink. Met de goedkeuring kwam de vraag om een onderwerp te kiezen dat te maken heeft met de opleiding. Ik had toen het idee om het project te doen over een onderdeel van de opleiding waarin ik zelf actief ben. Hierna heb ik mondeling overleg gehad met mijn collega’s Gert de Jong en Paul te Riele. De collega’s stonden niet afwijzend tegenover het idee. Ons regulier periodiek overleg geeft mij de gelegenheid om terugkoppeling te vragen op de deelproducten van het project.\nHieronder is staat een generiek proces van een onderwijs module weergegeven. Dit LSS project situeert zich in de processtap “Het uitvoeren van onderwijs”. Hieronder wordt verstaan het geven van lessen, het begeleiden van studenten en het beoordelen van leerresultaten.\n\n\n\n\n\n\nFigure 1: Generiek Module Proces",
+    "crumbs": [
+      "Definitie-fase"
+    ]
+  },
+  {
+    "objectID": "1_definitie_fase.html#project-charter",
+    "href": "1_definitie_fase.html#project-charter",
+    "title": "Definitie-fase",
+    "section": "Project Charter",
+    "text": "Project Charter\nHet project charter heeft als doel een éénduidige beschrijving van het project te geven zodat betrokkenen het doel, de rijkwijdte en de planning kennen. De werktitel van het project is “verbeteren door versnellen” (van de e-learnings).\n\n\n\n\n\n\n\nFigure 2: Project Charter\n\n\n\nMerk op de doelstelling zal na de analyse fase worden aangescherpt omdat dan pas duidelijk zal zijn wat momenteel de gemiddelde doorlooptijd is.\nIk vind sterk van de charter dat ik mij in de business case een voorstelling heb geprobeerd te maken een ordegrootte van de “kosten & baten”. We spreken over een mogelijke “verbetering” ad. €3.000 per blok. Op dit moment heb ik over de charter geen vragen.",
+    "crumbs": [
+      "Definitie-fase"
+    ]
+  },
+  {
+    "objectID": "1_definitie_fase.html#sipoc",
+    "href": "1_definitie_fase.html#sipoc",
+    "title": "Definitie-fase",
+    "section": "SIPOC",
+    "text": "SIPOC\nMet een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.\n\n\n\n\n\n\nFigure 3: Onderwijsuitvoering\n\n\n\nTer algemene toelichting:\n\nHet coördinatieteam zorgt ondermeer voor het samenstellen van het rooster.\nOnderwijs & onderzoek ondersteunt o.a. bij de inrichting en het gebruik van het LMS1.\nDe externe dienstverlener is in dit geval Skoledo waar de studenten de e-learnings volgen.\nHet examenburo verzorgt de logistiek rondom de afname van examens.\nOnder management wordt hier verstaan het hoofd van de opleiding Finance & Control.",
+    "crumbs": [
+      "Definitie-fase"
+    ]
+  },
+  {
+    "objectID": "1_definitie_fase.html#voc-ctq",
+    "href": "1_definitie_fase.html#voc-ctq",
+    "title": "Definitie-fase",
+    "section": "VOC-CTQ",
+    "text": "VOC-CTQ\nDe Voice of the Customer, is de klantenvraag waardoor het project geïnitieerd is. In dit project is het de Voice of the Business aangezien de vraag (of opdracht) afkomstig is van de HvA academy, het interne opleidingsinstituut van de HvA.\nIn de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Bloom: onthouden, toepassen en reproduceren. De taxonomie van Bloom is een referentie waarnaar, binnen de HvA, regelmatig wordt verwezen. In de taxonomie worden zes nivo’s van leren onderscheiden. Omdat het onderwerp van dit project een module is uit jaar 2, worden alleen de onderste drie nivo’s van de taxonomie benoemd.\n\n\n\n\n\n\nflowchart TD\n    A[\"VOB: wij willen dat studenten\n     aan de hand van leeruitkomsten\n     aantonen dat zij de leerdoelen\n     beheersen\"] \n        A --&gt;B[\"CTQ1: aantonen door \n        onthouden\"]\n        B --&gt;C[\"Instrument: \n        quiz\"]\n        C --&gt;D[\"ME1: Datum, Cijfer\"]\n        A --&gt;E[\"CTQ2: aantonen door \n        toepassen\"]\n        E --&gt;F[\"Instrument: \n        praktijkopdracht\"]\n        F --&gt;G[\"ME2: Datum, Cijfer\"]\n        A --&gt;H[\"CTQ3: aantonen door \n        reproduceren\"]\n        H --&gt;I[\"Instrument: \n        kennistoets\"]\n        I --&gt;J[\"ME3: Datum, Cijfer\"]\n\n\n\n\nFigure 4: Voice of the Business\n\n\n\n\n\nWaarschijnlijke toekomstige verbeteringen:\n\nIn deze versie van de VOB-CTQ staan drie meetinstrumenten (quiz, praktijkopdracht, kennistoets) genoemd. In een latere versie wordt het instrument “assessment” daaraan toegevoegd en zullen de instrumenten (dan vier) verplaatst worden naar de meetfase.\nIn deze versie van de VOB-CTQ staan de meetbare eenheden (ME) appart genoemd per CTQ. In een latere versie kunnen alle drie de CTQ’s verwijzen naar twee meetbare eenheden: datum en cijfer.\nEr dient nog een CTQ over “volgordelijkheid” te worden toegevoegd. Hiervoor dient de VOB nog te worden aangepast (met een statement over effectiviteit).",
+    "crumbs": [
+      "Definitie-fase"
+    ]
+  },
+  {
+    "objectID": "1_definitie_fase.html#prestatie-indicator",
+    "href": "1_definitie_fase.html#prestatie-indicator",
+    "title": "Definitie-fase",
+    "section": "Prestatie indicator",
+    "text": "Prestatie indicator\nDe grafische prestatie indicator dient weer te geven wat:\n\nde ideale doorlooptijd van de e-learnings is\nwat de feitelijke doorlooptijd van de e-learnings is.\n\nVoor de ideale doorlooptijd van de e-learnings is de studiegids leidend in combinatie met de daadwerkelijke opdrachten op Brightspace. Voorwat betreft de feitelijke doorlooptijd van de e-learnings is de rapportage van Skoledo leidend.\n\n\n\n\n\n\n\nFigure 5: A line plot showing progress on the e-learnings\n\n\n\n\nDe totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.\nVooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.\n\nDe blauwe lijn geeft de huidige doorlooptijd van de e-learnings weer.\nDe rode lijn geeft de nieuwe beoogde doorlooptijd van de e-learnings weer (10% korter).\n\nDe twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.",
+    "crumbs": [
+      "Definitie-fase"
+    ]
+  },
+  {
+    "objectID": "1_definitie_fase.html#footnotes",
+    "href": "1_definitie_fase.html#footnotes",
+    "title": "Definitie-fase",
+    "section": "",
+    "text": "Learning Management System, in het geval van de HvA het programma Brightspace.↩︎",
+    "crumbs": [
+      "Definitie-fase"
     ]
   },
   {
     "objectID": "8_dataset.html",
     "href": "8_dataset.html",
-    "title": "Appendix C — Dataset",
+    "title": "Dataset",
     "section": "",
     "text": "De dataset uit de status op het eind van week 13. De dataset betreft 5 klassen, totaal 116 rijen, waarbij elke rij 1 student voorstelt. Naast het student emailadres zijn er 7 andere kolommen in de dataset, zoals hieronder weergegeven.\n\nDateset kolommen (8)\n\n\ncolom\nvariabele\nmogelijke waardes\ndata type\n\n\n\n\nA\nblok\n1,3\ncategorical\n\n\nB\nstartdatum\ndatum\ncategorical\n\n\nC\nstatusdatum\ndatum\ncategorical\n\n\nD\nklas\nFC2A,FC2B,FC2C,FC2D\ncategorical\n\n\nE\nstudent\n…(hva.nl?)\ncategorical\n\n\nF\nafronding YB\ndatum\ncategorical\n\n\nG\ntoetsscore YB\n0 … 100%\nnumeric\n\n\nH\ntime2complete\n0 … 91 (13x7)\nnumeric\n\n\n\nDe dataset listing wordt hieronder weergegeven. Het veld (E) waar het student email-adres in staat is geannonimiseerd.\n\n\nTime to Complete {#cell-time2complete}\n\n\n\n\n\nA\nB\nC\nD\nE\nF\nG\nH\n\n\n\n\n0\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC14758\n2023-09-28 00:00:00\n0.98\n24\nB\n-\n\n\n1\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC14152\nNaT\nNot Taken\n-\nA\nFC2A-5\n\n\n2\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14913\n2023-10-20 00:00:00\n0.73\n46\nB\nFC2E-4\n\n\n3\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC13376\nNaT\nNot Taken\n-\nA\nFC2A-3\n\n\n4\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13357\nNaT\n0.55\n-\nB\nFC2E-5\n\n\n5\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC7043\nNaT\nNot Taken\n-\nB\nFC2B-4\n\n\n6\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC14612\n2023-11-08 00:00:00\n0.75\n65\nA\nFC2A-3\n\n\n7\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC12936\n2023-11-06 00:00:00\n0.85\n63\nB\nFC2E-1\n\n\n8\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC15800\n2023-11-10 00:00:00\n0.75\n67\nA\nFC2A-5\n\n\n9\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13527\n2023-11-07 00:00:00\n0.78\n64\nB\nFC2E-1\n\n\n10\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC14175\n2023-10-28 00:00:00\n0.73\n54\nB\nFC2B-9\n\n\n11\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14486\n2023-10-13 00:00:00\n0.83\n39\nB\nFC2E-2\n\n\n12\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC7047\n2023-10-10 00:00:00\n0.83\n36\nB\nFC2E-2\n\n\n13\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC7011\n2023-11-07 00:00:00\n0.73\n64\nB\nFC2E-5\n\n\n14\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC12607\n2023-10-26 00:00:00\n0.7\n52\nB\nFC2B-9\n\n\n15\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC13005\nNaT\nNot Taken\n-\nB\nFC2B-9\n\n\n16\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC7106\n2023-10-26 00:00:00\n0.73\n52\nB\nFC2B-6\n\n\n17\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC15708\nNaT\nNot Taken\n-\nA\nFC2A-5\n\n\n18\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC7078\n2023-11-01 00:00:00\n0.73\n58\nA\nFC2A-7\n\n\n19\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC14661\n2023-10-31 00:00:00\n0.83\n57\nB\nFC2B-8\n\n\n20\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC12945\n2023-11-23 00:00:00\n0.75\n80\nB\nFC2E-3\n\n\n21\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC12577\n2023-11-03 00:00:00\n0.93\n60\nB\nFC2E-8\n\n\n22\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC6974\n2023-10-11 00:00:00\n0.85\n37\nB\nFC2B-3\n\n\n23\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC15403\n2023-10-27 00:00:00\n0.75\n53\nB\nFC2B-2\n\n\n24\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13071\n2023-10-31 00:00:00\n0.85\n57\nB\nFC2E-6\n\n\n25\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC12964\nNaT\nNot Taken\n-\nB\nFC2E-3\n\n\n26\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC7126\n2023-10-10 00:00:00\n0.78\n36\nB\nFC2B-8\n\n\n27\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC15126\nNaT\nNot Taken\n-\nA\nFC2A-7\n\n\n28\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC14623\n2023-11-08 00:00:00\n0.93\n65\nA\nFC2A-4\n\n\n29\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC6983\n2023-11-08 00:00:00\n0.85\n65\nA\nFC2A-8\n\n\n30\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC14214\n2023-11-08 00:00:00\n0.9\n65\nA\nFC2A-7\n\n\n31\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC6895\n2023-11-06 00:00:00\n0.8\n63\nB\nFC2E-6\n\n\n32\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC7009\n2023-10-29 00:00:00\n0.8\n55\nB\nFC2B-4\n\n\n33\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC15084\n2023-10-24 00:00:00\n0.8\n50\nB\nFC2B-6\n\n\n34\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC14206\n2023-11-09 00:00:00\n0.73\n66\nA\nFC2A-4\n\n\n35\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC13572\n2023-10-27 00:00:00\n0.75\n53\nA\nFC2A-3\n\n\n36\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC13126\n2023-10-26 00:00:00\n0.85\n52\nB\nFC2B-2\n\n\n37\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC15387\n2023-10-19 00:00:00\n0.83\n45\nB\nFC2B-6\n\n\n38\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC6986\n2023-10-15 00:00:00\n0.7\n41\nA\nFC2A-5\n\n\n39\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC13070\n2023-10-28 00:00:00\n0.7\n54\nB\nFC2B-9\n\n\n40\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC14443\nNaT\nNot Taken\n-\nB\nFC2B-4\n\n\n41\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13108\n2023-10-18 00:00:00\n0.73\n44\nB\nFC2E-4\n\n\n42\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC15367\n2023-10-29 00:00:00\n0.7\n55\nB\nFC2B-6\n\n\n43\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14502\n2023-11-08 00:00:00\n0.85\n65\nB\nFC2E-8\n\n\n44\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13259\n2023-10-18 00:00:00\n0.85\n44\nB\nFC2E-3\n\n\n45\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC7014\nNaT\nNot Taken\n-\nA\nFC2A-5\n\n\n46\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC12978\n2023-11-18 00:00:00\n0.78\n75\nB\nFC2E-7\n\n\n47\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC13332\n2023-10-27 00:00:00\n0.8\n53\nB\nFC2B-8\n\n\n48\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14327\n2023-10-18 00:00:00\n0.73\n44\nB\nFC2E-2\n\n\n49\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13315\n2023-10-18 00:00:00\n0.75\n44\nB\nFC2E-8\n\n\n50\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC15011\nNaT\nNot Taken\n-\nA\nFC2A-3\n\n\n51\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC14227\n2023-10-29 00:00:00\n0.75\n55\nB\nFC2B-4\n\n\n52\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC14214\n2023-11-08 00:00:00\n0.8\n65\nA\nFC2A-4\n\n\n53\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13037\n2023-11-04 00:00:00\n0.78\n61\nB\nFC2E-2\n\n\n54\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC7085\n2023-11-12 00:00:00\n0.73\n69\nB\nFC2E-3\n\n\n55\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC7039\n2023-10-18 00:00:00\n0.95\n44\nB\nFC2E-8\n\n\n56\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC14991\n2023-10-29 00:00:00\n0.83\n55\nB\n-\n\n\n57\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14936\n2023-10-29 00:00:00\n0.73\n55\nB\nFC2E-6\n\n\n58\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC13045\n2023-11-07 00:00:00\n0.9\n64\nA\nFC2A-7\n\n\n59\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC7014\n2023-11-06 00:00:00\n0.78\n63\nB\nFC2E-6\n\n\n60\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC14613\n2023-10-23 00:00:00\n0.8\n49\nA\nFC2A-1\n\n\n61\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC13384\n2023-10-29 00:00:00\n0.75\n55\nB\nFC2B-2\n\n\n62\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC7040\n2023-11-01 00:00:00\n0.83\n58\nB\nFC2B-2\n\n\n63\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC13037\n2023-10-03 00:00:00\n0.75\n29\nB\nFC2B-3\n\n\n64\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC13549\n2023-11-09 00:00:00\n0.9\n66\nA\nFC2A-8\n\n\n65\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14648\n2023-11-06 00:00:00\n0.88\n63\nB\nFC2E-7\n\n\n66\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14562\nNaT\nNot Taken\n-\nB\nFC2E-1\n\n\n67\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC6940\nNaT\nNot Taken\n-\nA\nFC2A-8\n\n\n68\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC13603\n2023-10-27 00:00:00\n0.75\n53\nB\nFC2B-4\n\n\n69\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2A\nC7115\n2023-11-16 00:00:00\n0.83\n73\nA\nFC2A-1\n\n\n70\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC14205\n2023-11-08 00:00:00\n0.83\n65\nB\nFC2E-4\n\n\n71\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC7080\n2023-11-01 00:00:00\n0.93\n58\nB\nFC2E-1\n\n\n72\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13740\n2023-11-19 00:00:00\n0.8\n76\nB\nFC2E-5\n\n\n73\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2E\nC13481\n2023-10-18 00:00:00\n0.73\n44\nB\nFC2E-5\n\n\n74\n1\n2023-09-04 00:00:00\n2023-11-27 00:00:00\nFC2B\nC14177\n2023-10-30 00:00:00\n0.75\n56\nB\nFC2B-9\n\n\n75\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC14256\n2024-03-22 00:00:00\n0.8\n46\nA\nFC2C-4\n\n\n76\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC15808\nNaT\nNot Taken\n-\nA\nFC2C-3\n\n\n77\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC15041\n2024-03-03 00:00:00\n0.8\n27\nB\nFC2D-4\n\n\n78\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC15125\n2024-03-29 00:00:00\n0.78\n53\nB\nFC2D-9\n\n\n79\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC6953\n2024-03-31 00:00:00\n0.85\n55\nB\nFC2D-5\n\n\n80\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC14365\n2024-03-01 00:00:00\n0.85\n25\nB\nFC2D-4\n\n\n81\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC14108\n2024-04-15 00:00:00\n0.83\n70\nB\nFC2D-7\n\n\n82\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC6994\n2024-04-01 00:00:00\n0.9\n56\nA\nFC2C-5\n\n\n83\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC6897\n2024-04-08 00:00:00\n0.8\n63\nB\nFC2D-8\n\n\n84\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC13760\n2024-03-22 00:00:00\n0.8\n46\nA\nFC2C-5\n\n\n85\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC14967\n2024-04-07 00:00:00\n0.83\n62\nB\nFC2D-5\n\n\n86\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13468\n2024-03-07 00:00:00\n0.78\n31\nB\nFC2D-3\n\n\n87\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC6913\n2024-04-07 00:00:00\n0.83\n62\nB\nFC2D-7\n\n\n88\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC13052\nNaT\nNot Taken\n-\nA\nFC2C-3\n\n\n89\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC14225\n2024-03-31 00:00:00\n0.85\n55\nB\nFC2D-3\n\n\n90\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC12632\nNaT\nNot Taken\n-\nB\nFC2D-1\n\n\n91\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC14142\n2024-03-27 00:00:00\n0.75\n51\nA\nFC2C-4\n\n\n92\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC7000\n2024-04-09 00:00:00\n0.78\n64\nB\nFC2D-8\n\n\n93\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13290\n2024-04-14 00:00:00\n0.83\n69\nB\nFC2D-1\n\n\n94\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC14228\nNaT\nNot Taken\n-\nA\nFC2C-8\n\n\n95\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC14938\nNaT\nNot Taken\n-\nA\nFC2C-8\n\n\n96\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13494\n2024-03-29 00:00:00\n0.78\n53\nB\nFC2D-9\n\n\n97\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC7048\n2024-02-26 00:00:00\n0.95\n21\nB\nFC2D-4\n\n\n98\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC13315\nNaT\nNot Taken\n-\nA\nFC2C-8\n\n\n99\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13354\n2024-04-01 00:00:00\n0.75\n56\nB\nFC2D-3\n\n\n100\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC7131\nNaT\nNot Taken\n-\nA\nFC2C-3\n\n\n101\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13948\n2024-03-26 00:00:00\n0.83\n50\nB\nFC2D-3\n\n\n102\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC14380\n2024-04-10 00:00:00\n0.78\n65\nA\nFC2C-4\n\n\n103\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC12668\nNaT\nNot Taken\n-\nA\nFC2C-4\n\n\n104\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13772\n2024-02-23 00:00:00\n0.98\n18\nB\nFC2D-4\n\n\n105\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC15139\n2024-03-27 00:00:00\n0.73\n51\nB\nFC2D-8\n\n\n106\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC15135\nNaT\nNot Taken\n-\nA\nFC2C-5\n\n\n107\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13393\n2024-04-02 00:00:00\n0.7\n57\nB\nFC2D-5\n\n\n108\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC13334\nNaT\nNot Taken\n-\nA\n-\n\n\n109\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13333\nNaT\nNot Taken\n-\nB\nFC2D-7\n\n\n110\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC14841\n2024-04-07 00:00:00\n0.85\n62\nB\nFC2D-1\n\n\n111\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC7094\n2024-03-17 00:00:00\n0.85\n41\nA\nFC2C-5\n\n\n112\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13480\n2024-04-01 00:00:00\n0.78\n56\nB\nFC2D-9\n\n\n113\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC13670\n2024-03-24 00:00:00\n0.9\n48\nB\nFC2D-7\n\n\n114\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2C\nC13100\nNaT\nNot Taken\n-\nA\nFC2C-8\n\n\n115\n3\n2024-02-05 00:00:00\n2024-05-13 00:00:00\nFC2D\nC14475\n2024-04-02 00:00:00\n0.75\n57\nB\nFC2D-5",
     "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Dataset</span>"
+      "Dataset"
+    ]
+  },
+  {
+    "objectID": "6_kosten.html",
+    "href": "6_kosten.html",
+    "title": "Kosten",
+    "section": "",
+    "text": "Kosten\nAanname 1: De kosten van de module zijn als volgt berekend:\nIn 2022 realiseerde de HvA een omzet van €513,5 miljoen en een netto resultaat van €13,2 miljoen (bron:jaarverslag 2022). De kostenbasis van de HvA is daarmee €500,3 miljoen. In 2022 studeerden er 46.928 studenten aan de HvA. De kosten per student zijn daarmee €10.661 per jaar. Een regulier studiejaar bestaat uit 4 blokken. De koster per student zijn €2.665 per blok.\nAanname 2: Een klas bestaat uit 25 studenten. De kosten van een klas/blok zijn daarmee 25*€2.665 = €66.625\nAanname 3: aangenomen is dat 45% van de kosten van 1 blok/klas toe te wijzen zijn aan het vak Operations. Deze aanname is gebasseerd op het feit dat Operations 45% meetelt in het eindcijfer. De 45% bestaat uit 30% beroepsproduct en 15% kennistoets. 45% van €66.625 is €29.881, afgerond €30.000\n\n\n\nBeoordeling Module",
+    "crumbs": [
+      "Kosten"
     ]
   }
 ]

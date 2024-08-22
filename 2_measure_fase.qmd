@@ -1,0 +1,75 @@
+---
+title: "Measure-fase"
+---
+
+Het doel van de measure-fase is om te komen tot een meetplan. In dit hoofdstuk komen aan de orde: welke gegevens er beschikbaar zijn, welke gegevens er gebruikt gaan worden, wat de betrouwbaarheid is van de gevens en tenslotte hoe de gegevens verwerkt gaan worden.
+
+## Gegevens - verzamelen
+
+In de grafiek hieronder staat een vereenvoudigde grafische weergave van een vijftal gegevensbronnen waarmee men tijdens het proces "onderwijsuitvoering" te maken heeft.
+
+![Gegevensbronnen](./static/21_gegevensbronnen.jpg){fig-align="left" #fig-gegevensbronnen}
+
+1. SIS, het studenten informaties systeem, bevat de klassenlijst. SIS is ook het systeem waar, op het eind van het blok, de cijfers van de studenten worden ingevoerd.
+2. Skoledo is de leverancier van de e-learnings. Skoledo levert wekelijks de voortgang van de studenten aan alsook tussentijdse resultaten. 
+3. Brightspace bevat de studiehandleiding en de lesstof. Brightspace is ook het systeem waar de praktijkopdrachten worden ingeleverd en beoordeeld. 
+4. Testvision is het programma waarin de kennistoets wordt samengesteld en waarin de studenten de toets maken.
+5. Rooster geeft aan waar en wanneer de lessen plaatsvinden. Aanwezigheid wordt bijgehouden in een excel sheet. 
+
+Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend de gegevensbron Skoledo. 
+
+<!--Het kernbegrip uit de doelstelling is de "doorlooptijd". Meer specifiek: de doorlooptijd van de e-learnings.
+Referentie (Skoledo, 2024)
+De output van het proces (cyclustijd) -->
+
+## Meetplan
+
+In de SIPOC staan de processtappen onder elkaar. Daarmee is niet duidelijk dat sommige processtappen herhaald worden. In onderstaand schema wordt dat verduidelijkt.
+
+![Module detail](./static/22_module_detail.jpg){fig-align="left" #fig-module-detail}
+
+De duur van de module is 1 blok, ofwel 10 weken. De voorbereiding voor het blok, waaronder het maken van het lessenplan wordt voor de aanvang van de module gedaan. Er zijn 8 lesweken, 1 assessment en examenweek, en 1 week voor herkansingen (en voorbereiding volgend blok). In het schema worden stap 3.2 t/m 3.4 in het totaal 8 keer uitgevoerd.
+
+|Wat meten we|Waarom meten we|Hoe verzamelen we de data|Wanneer verzamelen|Waar in het proces |Wie verzamelt ze|
+|------------|---------------|-------------------------|------------------|-------------------|----------------|
+|datum & cijfer|CTQ1|Automatisch door het volgen van de e-learnings | iedere week      |voor processtap 3.4|  Skoledo      |
+|datum & cijfer|CTQ2|Handmatig door beoordeling praktijkopddracht   | iedere week      |voor processtap 3.4|  Vakdocent    |
+|datum & cijfer|CTQ3|Semi-automatisch door maken examen en de beoordeling daarvan| in week 9 |voor processtap 3.5|Vakdocent|
+
+: Meetplan
+
+Indachtig de doelstelling, het verlagen van de doorlooptijd van de e-learnings, beschouwen we in dit rapport uitsluitend CTQ1.
+
+\newpage
+
+## Gegevens - betrouwbaarheid
+
+V.w.b. de gegevens aangaande de e-learnings wordt gewerkt met secundaire data. Deze gegevens zijn afkomstig van Skoledo. De gegevens worden uit de Skoledo database geexporteerd. Wekelijk wordt er een rapportage  samengesteld en opgestuurd naar de docenten van het vak Operations. Er worden door de ontvanger een paar checks gedaan:
+
+- Zijn de data oplopend
+- Is de voortgang deze week hoger dan vorige week
+- Zijn alle studenten begonnen met de e-learnings
+- Welke studenten hebben de e-learnings afgerond
+
+De docent meldt de (tussentijdse) resultaten terug aan de klas. Hierdoor kunnen de studenten zelf ook checken of de gerapporteerde voortgang en (tussentijdse) resultaten overeenkomt met de gerealiseerde voortgang en (tussentijdse) resultaten.
+
+![Vakdocent en student checks](./static/24_betrouwbaarheid.jpg){fig-align="left" #fig-checks}
+
+Hoewel er dus de nodige checks en balances zijn kan niet gegarandeerd worden dat de gegevens betrouwbaar zijn. Studenten kunnen frauderen en de e-learnings door een ander laten maken. Er is geen aanleiding om te denken dat dit gebeurd. Voorzover het de student zou helpen de e-learnings te behalen helpt het de student niet om andere toetsen, zoals de praktijkopdrachten, de assessment en de kennistoets te halen.
+
+\newpage
+
+## Gegevens - verwerken
+
+In de analyse-fase wordt gebruik gemaakt van secundaire data. De data wordt aangeleverd door Skoledo. De gegevens zullen worden verwerkt met Excel. De overwegingen om de gegevens in excel te verwerken zijn:
+
+- De gegevens worden aangeleverd in Excel
+- Excel is voor iedereen (docenten en studenten) beschikbaar
+- Brede bekendheid met Excel onder de docenten
+- Voldoende statistische functies om een analyse te kunnen doen
+- Voldoende grafische mogelijkheden om een control-chart te kunnen maken
+- En, last but not least, goede kennis van Excel bij de auteur van dit rapport
+
+<!-- Een voorbeeld van een geanonimisseerd gegevensbestand is opgenomen als bijlage C.-->
+
+<!-- Bijlage? ![Excel score op LinkedIn (2021)](./static/20210815_LinkedIn_Excel.pdf){fig-align="left" #fig-linkedin-excel}-->

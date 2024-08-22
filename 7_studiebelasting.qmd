@@ -1,0 +1,62 @@
+# Studiebelasting
+
+De totale studiebelasting van deze Yellow Belt e-learing is circa 16 uren. Inclusief proefexamen en examen is de studiebelasting circa 20 uren (bron: skoledo).
+
+|module                | onderwerpen                           |studiebelasting|
+|----------------------|---------------------------------------|--------------:|
+|Wat is Lean Six Sigma?| Wat is Lean?                          | 2,5 uur       |
+|                      | Wat is Six Sigma?                     |               |
+|                      | Wat is Lean Six Sigma?                |               |
+|                      |                                       |               |
+|Define-fase           | Selecteren verbeterproject            | 2,5 uur       |
+|                      | Het proces definiëren                 |               |
+|                      | Wat wil je bereiken?                  |               |
+|                      |                                       |               |
+|Measure-fase          | Waarom welke data verzamelen?         | 4,0 uur       |
+|                      | Hoe data verzamelen?                  |               |
+|                      | Zorg voor goede data.                 |               |
+|                      | Lean Six Sigma maatstaven.            |               |
+|                      |                                       |               |
+|Analyse-fase          | Wat zijn de prestaties van het proces?| 3,5 uur       |
+|                      | Wat zijn de invloedsfactoren?         |               |
+|                      | Toetsen invloedsfactoren: is het      |               |
+|                      | echt een knelpunt?                    |               |
+|                      |                                       |               |
+|Improve-fase          | Genereer oplossingen                  | 2,0 uur       |
+|                      | Selecteer oplossingen                 |               |
+|                      | Implementeer oplossingen              |               |
+|                      | Lean6Sigma improve-tools              |               |
+|                      |                                       |               |
+|Control-fase          | Het proces borgen                     | 2,5 uur       |
+|                      | In control zijn en blijven            |               |
+|                      | Verankering in het DNA                |               |
+|                      | Project afsluiten                     |               |
+|Subtotaal (circa)     |                                       |16,0 uur       |
+|Proef examen          |                                       | 2,0 uur       |
+|Examen                |                                       | 2,0 uur       |
+|Totaal (circa)        |                                       |20,0 uur       |
+
+: Yellow Belt
+
+\newpage
+
+Naast de Yellow Belt e-learning zijn er nog twee kleinere e-learnings te volbrengen respectievelijk over statistiek en kwaliteitsmanagement. De totale studiebelasting van de 2 modules is afgerond circa 6 uur.
+
+|module                | onderwerpen                           |studiebelasting|
+|----------------------|---------------------------------------|--------------:|
+|Minitab introductie   | Minitab: introductie                  | 4,0 uur       |
+|                      | Data verzamelen                       |               |
+|                      | Prestaties weergeven                  |               |
+|                      | Prestaties toetsen                    |               |
+|                      |                                       |               |
+
+: Minitab
+
+|module                | onderwerpen                           |studiebelasting|
+|----------------------|---------------------------------------|--------------:|
+|Kwaliteitsmanagement  | Wat is kwaliteit?                     | 1,5 uur       |
+|                      | Wat is kwaliteitsmanagement?          |               |
+|                      | Kwaliteitsmanagementsysteem           |               |
+|                      | Kwaliteitsgoeroes                     |               |
+
+: Kwaliteitsmanagement

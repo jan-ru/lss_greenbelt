@@ -1,37 +1,118 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.6.1">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.1">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Analyse-fase</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
+    <title>Analyse-fase</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./4_improve_fase.html" rel="next">
-<link href="./2_measure_fase.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,215 +122,44 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script> 
+      </head>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Analyse-fase</h6>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+            <a href="./3_analyse_fase.qmd" class="btn btn-primary quarto-download-embed" download="3_analyse_fase.qmd">Download Source</a>
+          </div>
 
-</head>
-
-<body class="nav-sidebar floating nav-fixed">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blackbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Blackbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-blackbelt">    
-        <li>
-    <a class="dropdown-item" href="./2_blackbelt/index.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="./1_definitie_fase.html">
- <span class="dropdown-text">Definition Phase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./2_measure_fase.html">
- <span class="dropdown-text">Measure Phase</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-greenbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Greenbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-greenbelt">    
-        <li>
-    <a class="dropdown-item" href="./3_analyse_fase.html">
- <span class="dropdown-text">Analyse-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./4_improve_fase.html">
- <span class="dropdown-text">Improve-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./5_control_fase.html">
- <span class="dropdown-text">Control-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./6_kosten.html">
- <span class="dropdown-text">Kosten</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3_analyse_fase.html">Analyse-fase</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2_blackbelt/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./1_definitie_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Definitie-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2_measure_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Measure-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./3_analyse_fase.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Analyse-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./4_improve_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Improve-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./5_control_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Control-fase</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+     <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#analyse-technieken" id="toc-analyse-technieken" class="nav-link active" data-scroll-target="#analyse-technieken">Analyse technieken</a></li>
-  <li><a href="#prestaties-van-het-proces" id="toc-prestaties-van-het-proces" class="nav-link" data-scroll-target="#prestaties-van-het-proces">Prestaties van het proces</a></li>
-  <li><a href="#inventarisatie-invloedsfactoren" id="toc-inventarisatie-invloedsfactoren" class="nav-link" data-scroll-target="#inventarisatie-invloedsfactoren">Inventarisatie invloedsfactoren</a></li>
-  <li><a href="#meeste-impact" id="toc-meeste-impact" class="nav-link" data-scroll-target="#meeste-impact">Meeste Impact</a>
+  <li><a href="#analyse-technieken" id="toc-analyse-technieken" class="nav-link active" data-scroll-target="#analyse-technieken"><span class="toc-section-number">1</span> Analyse technieken</a></li>
+  <li><a href="#prestaties-van-het-proces" id="toc-prestaties-van-het-proces" class="nav-link" data-scroll-target="#prestaties-van-het-proces"><span class="toc-section-number">2</span> Prestaties van het proces</a></li>
+  <li><a href="#inventarisatie-invloedsfactoren" id="toc-inventarisatie-invloedsfactoren" class="nav-link" data-scroll-target="#inventarisatie-invloedsfactoren"><span class="toc-section-number">3</span> Inventarisatie invloedsfactoren</a></li>
+  <li><a href="#meeste-impact" id="toc-meeste-impact" class="nav-link" data-scroll-target="#meeste-impact"><span class="toc-section-number">4</span> Meeste Impact</a>
   <ul class="collapse">
-  <li><a href="#verschillen-per-blok" id="toc-verschillen-per-blok" class="nav-link" data-scroll-target="#verschillen-per-blok">Verschillen per blok</a></li>
-  <li><a href="#verschillen-per-klas" id="toc-verschillen-per-klas" class="nav-link" data-scroll-target="#verschillen-per-klas">Verschillen per klas</a></li>
+  <li><a href="#verschillen-per-blok" id="toc-verschillen-per-blok" class="nav-link" data-scroll-target="#verschillen-per-blok"><span class="toc-section-number">4.1</span> Verschillen per blok</a></li>
+  <li><a href="#verschillen-per-klas" id="toc-verschillen-per-klas" class="nav-link" data-scroll-target="#verschillen-per-klas"><span class="toc-section-number">4.2</span> Verschillen per klas</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="3_analyse_fase.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="3_analyse_fase.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header">
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">      <header id="title-block-header">
 <h1 class="title display-7">Analyse-fase</h1>
 
-</header>
-
-
-<p>De analyse gaat erom elementen te vinden die van invloed zijn op de prestaties van het proces. De vragen die we daartoe willen beantwoorden zijn:</p>
+</header>     <p>De analyse gaat erom elementen te vinden die van invloed zijn op de prestaties van het proces. De vragen die we daartoe willen beantwoorden zijn:</p>
 <ol type="1">
 <li>Wat verstaan we precies onder de prestaties van het proces?</li>
 <li>Hoe zijn de populatie en de steekproef gedefinieerd?</li>
@@ -257,8 +167,8 @@ window.Quarto = {
 <li>Wat zijn de variabelen (X) die de prestaties kunnen verklaren (Y)?</li>
 <li>Zijn er significante verschillen tussen individuen, groepen en klassen?</li>
 </ol>
-<section id="analyse-technieken" class="level2">
-<h2 class="anchored" data-anchor-id="analyse-technieken">Analyse technieken</h2>
+<section id="analyse-technieken" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="analyse-technieken"><span class="header-section-number">1</span> Analyse technieken</h2>
 <!--Om de eerste vraag over de taktijd te beantwoorden wordt de data grafisch weergegeven in een zogenaamde 'scatterplot'. Horizontaal wordt de tijd weergeven in weken (1-10). Verticaal wordt het aantal studenten weergegeven dat de e-learning in een bepaalde week heeft afgerond.  -->
 <p>Onder de prestatie van het proces wordt in dit rapport verstaan de mate waarin het lukt studenten binnnen de daarvoor gestelde tijd met een voldoende resultaat een onderdeel van het vak Operations te laten afronden.</p>
 <p>Vervolgens definiëren we de populatie en de steekproef. De populatie behelst alle HvA studenten die het vak Operations gevolgd hebben sinds het in de huidige vorm gegeven wordt. De steekproef behelst de studenten die zich tijdens studiejaar ’23-’24 (L23) hebben opgegeven voor een onderdeel van het vak Operations: de Yellow Belt e-learning.</p>
@@ -267,12 +177,13 @@ window.Quarto = {
 <p>Om de vierde vraag over de mogelijke invloedsfactoren te beantwoorden is gebruik gemaakt van een zogenaamd ‘visgraat diagram’. Aan de kop van de vis staat het probleem en de vis heeft 6 graten aan de hand waarvan mogelijke invloedsfactoren worden opgesomd en gegroepeerd.</p>
 <p>Om de vijfde vraag over het belang van de verschillende invloedsfactoren te kunnen beantwoorden worden een aantal hypothesis geformuleerd en statistisch getoetst.</p>
 </section>
-<section id="prestaties-van-het-proces" class="level2">
-<h2 class="anchored" data-anchor-id="prestaties-van-het-proces">Prestaties van het proces</h2>
+<section id="prestaties-van-het-proces" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="prestaties-van-het-proces"><span class="header-section-number">2</span> Prestaties van het proces</h2>
 <p>In het studiejaar ’23-’24 is het vak Operations voor Finance &amp; Control twee maal gegeven. Eénmaal in blok1 en éénmaal in blok3<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. De klassen FC2A, FC2B en FC2E kregen de module in blok 1. De klassen FC2C en FC2D kregen de module in blok 3. In het totaal hebben 116 studenten zich ingeschreven voor de e-learning waarvan 91 (78%) studenten deze hebben voltooid binnen 13 weken na de start van het blok.</p>
 <p>De inhoud van de e-learnings vormt de basis die men nodig heeft om de praktijkopdracht, en ook uiteindelijk de toets, te kunnen maken. In deze paragraaf wordt uitsluitend de prestatie van het (deel)proces van de Yellow Belt e-learning beschouwd (CTQ1).</p>
 <!--Hieronder staan vijf scatterplots weergegeven. Horizontaal staat de taktijd in dagen (einddatum - begindatum). Verticaal staat het aantal studenten (n=x). De plot linksboven betreft klas FC2_ (blok 3). De plot rechtsboven betreft klas FC2_ (blok3). Linksonder staat FC2_ (blok1). Rechtsonder staat FC2_ (blok1).
 
+:::{#08b0fd17 .cell .markdown}
 -->
 <p>Hieronder wordt eerst het aantal studenten bepaald (n). Daarna wordt bepaald hoeveel studenten de e-learning module binnen 13 weken vanaf de start van het blok hebben afgerond. Tenslotte voor deze groep studenten gekenen hoe lang zij over de e-learning hebben gedaan.</p>
 <table class="caption-top table">
@@ -525,16 +436,16 @@ Scatterplot opnemen taktijd (dagen). e-learning. Horizontaal dagen, verticaal re
 -->
 <!--[^5]: er is gerekend met de stdev.s functie in excel als ware de verdeling een normale verdeling. De verdeling is een poisson verdeling aangezien het een telling betreft van discrete events. Echter, hoe groter de n, hoe beter een poisson een normale verdeling benaderd. De aanname dat de verdeling als normale-verdeling beschouwd kan worden lijkt dan ook gerechtvaardigd.-->
 </section>
-<section id="inventarisatie-invloedsfactoren" class="level2">
-<h2 class="anchored" data-anchor-id="inventarisatie-invloedsfactoren">Inventarisatie invloedsfactoren</h2>
+<section id="inventarisatie-invloedsfactoren" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="inventarisatie-invloedsfactoren"><span class="header-section-number">3</span> Inventarisatie invloedsfactoren</h2>
 <p>Het Ishikawa diagram, ofwel visgraat diagram, is gebruikt als “kapstok” om mogelijke invloedsfactoren te identificeren. Het resultaat van deze brainstorm staat in onderstaande grafiek. Er zijn 13 mogelijke invloedsfacturen (mogelijke x’en) geïdentificeerd.</p>
 <div id="fig-visgraatdiagram" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-visgraatdiagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./static/33_visgraatdiagram.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+<a href="./static/33_visgraatdiagram.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Visgraat diagram"><img src="./static/33_visgraatdiagram.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-visgraatdiagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Visgraat diagram
+Visgraat diagram
 </figcaption>
 </figure>
 </div>
@@ -645,8 +556,8 @@ Figure&nbsp;1: Visgraat diagram
 </table>
 <!-- | xx aanwezigheid    |                         |           | Y | -->
 </section>
-<section id="meeste-impact" class="level2">
-<h2 class="anchored" data-anchor-id="meeste-impact">Meeste Impact</h2>
+<section id="meeste-impact" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="meeste-impact"><span class="header-section-number">4</span> Meeste Impact</h2>
 <p>Omdat er 8 van de 13 mogelijke invloedsfactoren buiten beschouwing worden gelaten resteren er 5:</p>
 <ul>
 <li>blok</li>
@@ -658,28 +569,115 @@ Figure&nbsp;1: Visgraat diagram
 <p>Groep, procesdocent en vakdocent staan (nog) niet in de dataset. In eerste instantie wordt daarom getest op blok en klas. In een eventueel vervolgonderzoek kan de dataset worden uitgebreid en kan ook op andere invloedsfactoren getest worden.</p>
 <p>Ten eerste toetsen we of verschillen zijn tussen <strong>blok 1</strong> en <strong>blok 3</strong>. Ten tweede toetsen we of er verschillen zijn tussen <strong>FC1A</strong>, <strong>FC1B</strong>, <strong>FC1C</strong>, <strong>FC1D</strong> en <strong>FC1E</strong>. Dat wil zeggen: komen de steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?</p>
 <p>Om de vraag te beantwoorden wordt een histogram geplot en wordt een statistiche toets gedaan.</p>
-<section id="verschillen-per-blok" class="level3">
-<h3 class="anchored" data-anchor-id="verschillen-per-blok">Verschillen per blok</h3>
-<p>Hieronder staan 2x2 histogrammen weergegeven. Bij de eerste twee histogrammen staat verticaal het aantal studenten dat de Yellow Belt e-learning heeft afgerond.</p>
-<div id="cell-fig-histogram-blok-aantal" class="cell" data-execution_count="2">
+<section id="verschillen-per-blok" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="verschillen-per-blok"><span class="header-section-number">4.1</span> Verschillen per blok</h3>
+<p>Hieronder staan 2x2 histogrammen weergegeven. Bij de eerste twee histogrammen staat verticaal het aantal studenten dat de Yellow Belt e-learning heeft afgerond. :::</p>
+<pre><code>import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from lib.my_excel_lib import get_tables
+from lib.my_custom_lib import xls2md
+
+# Init
+excel_file = 'lib/L23_FC2_blok1_blok3.xlsx'
+tables = get_tables(excel_file)
+
+table_name = 'YB_3'
+if table_name not in tables:
+  print('Error in 4_analyse_fase.qmd: ',table_name, ' not in tables')
+
+# Filter invalid records &amp; convert 'Taktijd' from object to int
+df = xls2md(tables['YB_3'])
+df_filtered = df.dropna(subset=['Afrondingsdatum'])
+df_filtered['TakTijd'] = df_filtered['TakTijd'].astype(int)</code></pre>
+<pre><code>/var/folders/bf/w9g83psn371gwt6x2x4_79lc0000gr/T/ipykernel_21261/2851156682.py:19: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_filtered['TakTijd'] = df_filtered['TakTijd'].astype(int)</code></pre>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="cell-fig-histogram-blok-aantal" class="cell" data-execution_count="2">
+<pre><code>#| label: fig-histogram-blok-aantal
+#| fig-cap: 'histogram: taktijd / blok'
+# Calculate the count of occurrences per klas
+df_summary = df_filtered.groupby('Blok')['TakTijd'].agg(['count', 'mean', 'std']).reset_index()
+
+# Adjust figure size
+plt.figure(figsize=(10,8))
+plt.close()
+
+# Create FacetGrid with sample size in facet titles
+g = sns.FacetGrid(df_filtered, col="Blok", col_wrap=3, sharex=True)
+g.map_dataframe(sns.histplot, x="TakTijd")
+
+# Add sample size to facet titles
+for ax, (_, row) in zip(g.axes.flat, df_summary.iterrows()):
+    ax.set_title(f"Blok {row['Blok']}\n"
+                f"(n = {row['count']}, x̄ = {row['mean']:.1f}, s = {row['std']:.1f})")
+
+g.set_axis_labels("taktijd (dagen)", "studenten (aantal)")
+# g.figure.suptitle('Histogram: taktijd / blok')
+
+# Adjust layout to prevent overlapping
+plt.tight_layout()
+plt.show()</code></pre>
 <div id="fig-histogram-blok-aantal" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-histogram-blok-aantal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="3_analyse_fase_files/figure-html/fig-histogram-blok-aantal-output-1.png" width="584" height="277" class="figure-img">
+<div aria-describedby="fig-histogram-blok-aantal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="3_analyse_fase_files/figure-html/fig-histogram-blok-aantal-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="histogram: taktijd / blok"><img src="3_analyse_fase_files/figure-html/fig-histogram-blok-aantal-output-1.png" width="584" height="277" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histogram-blok-aantal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: histogram: taktijd / blok
+histogram: taktijd / blok
 </figcaption>
 </figure>
 </div>
-</div>
+</div></div>
 <!-- De 2 grafieken zijn visueel moeilijk te vergelijken mede omdat in blok 1 en blok 2 een verschillend aantal studenten de e-learning hebben afgerond (n=62 vs n=29). Bij de tweede twee histogrammen staat verticaal het percentage studenten dat de Yellow Belt e-learning heeft afgerond.Het gaat hierbij om een relatief aantal, ten opczichte van het totaal in het blok. De 2 grafieken zijn daarmee visueel gemakkelijker te vergelijken.
+:::
 
 ::: {#cell-fig-histogram-blok-percentage .cell execution_count=3}
+``` {}
+#| label: fig-histogram-blok-percentage
+#| fig-cap: 'histogram: taktijd / blok'
+# Calculate the count of occurrences per klas
+df_summary = df_filtered.groupby('Blok')['TakTijd'].agg(['count', 'mean', 'std']).reset_index()
+
+# Adjust figure size
+plt.figure(figsize=(10,8))
+plt.close()
+
+# Create FacetGrid with sample size in facet titles
+g = sns.FacetGrid(df_filtered, col="Blok", col_wrap=3, sharex=True)
+
+# g.map_dataframe(sns.histplot, x="TakTijd")
+
+# Function to calculate and plot normalized histogram
+def plot_normalized_hist(x, **kwargs):
+    """Plots a normalized histogram."""
+    sns.histplot(x, stat='density', **kwargs)
+
+g.map(plot_normalized_hist, 'TakTijd')
+
+# Add sample size to facet titles
+for ax, (_, row) in zip(g.axes.flat, df_summary.iterrows()):
+    ax.set_title(f"Blok {row['Blok']}\n"
+                f"(n = 100%, x̄ = {row['mean']:.1f}, s = {row['std']:.1f})")
+    
+    # Remove y-axis ticks and labels
+    ax.set_yticks([])
+
+g.set_axis_labels("taktijd (dagen)", "studenten (percentage of total)")
+
+# Adjust layout to prevent overlapping
+plt.tight_layout()
+plt.show()
+```
 ![histogram: taktijd / blok](3_analyse_fase_files/figure-html/fig-histogram-blok-percentage-output-1.png){#fig-histogram-blok-percentage width=577 height=277}
 :::
 
 
+:::{#830d9af1 .cell .markdown}
 -->
 <p>Om te bepalen of het gemiddelde van blok 1 (55,5) significant verschillend is van het gemiddelde van blok 2 (50.7) voeren we een (onafhankelijke) t-test uit tussen de 2 steekproeven (zie: <span class="citation" data-cites="as2013BasisboekKwantitatieveMethoden">As and Klouwen (2013)</span>). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:</p>
 <p><span class="math inline">\(H_0 : \bar{x}_1 = \bar{x}_2\)</span></p>
@@ -701,28 +699,71 @@ to be title
 </div>
 </div>
 <div class="callout-body-container callout-body">
+
+</div>
+</div>
+<pre><code>from scipy import stats
+
+# filter data for Blok 1 and Blok 3
+df_blok1 = df_filtered[df_filtered['Blok'] == 1]['TakTijd']
+df_blok3 = df_filtered[df_filtered['Blok'] == 3]['TakTijd']
+
+# Perform two sample t-test
+t_statistic, p_value = stats.ttest_ind(df_blok1, df_blok3, equal_var=False, alternative='greater')
+
+# Print results
+print(f"t-statistic: {t_statistic:.4f}\n")
+print(f"p-value    : {p_value:.4f}\n")
+alpha = 0.05  # significance level
+
+# Interpret results
+if p_value &lt; alpha:
+    print("Conclusie : Nul hypothese verwerpen")
+else:
+    print("Conclusie : Nul-hypothese niet verwerpen")</code></pre>
 <p>t-statistic: 1.5972</p>
 <p>p-value : 0.0586</p>
 <p>Conclusie : Nul-hypothese niet verwerpen</p>
-</div>
-</div>
 <p>Statistisch zijn de gemiddelden van blok 1 en blok 3 niet ongelijk. Het blok waarin een student de e-learning volgt is daarmee geen belangrijke invloedsfactor voor de taktijd.</p>
 </section>
-<section id="verschillen-per-klas" class="level3">
-<h3 class="anchored" data-anchor-id="verschillen-per-klas">Verschillen per klas</h3>
+<section id="verschillen-per-klas" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="verschillen-per-klas"><span class="header-section-number">4.2</span> Verschillen per klas</h3>
 <p>Wij doen een soortgelijke analyse met betrekking tot de klas. Dat wil zeggen: komen de 5 steekproeven waarschijnlijk uit dezelfde populatie of zijn ze wezenlijk anders? Meer specifiek: is de gemiddelde duur om de e-learning af te ronden significant verschillend?</p>
-<div id="cell-fig-histogram-klas" class="cell" data-execution_count="5">
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="cell-fig-histogram-klas" class="cell" data-execution_count="5">
+<pre><code>#| label: fig-histogram-klas
+#| fig-cap: 'histogram: taktijd / klas'
+# Calculate the count of occurrences per klas
+df_summary = df_filtered.groupby('Klas')['TakTijd'].agg(['count', 'mean', 'std']).reset_index()
+
+# Adjust figure size
+plt.figure(figsize=(10,8))
+plt.close()
+
+# Create FacetGrid with sample size in facet titles
+g = sns.FacetGrid(df_filtered, col="Klas", col_wrap=3, sharex=True)
+g.map_dataframe(sns.histplot, x="TakTijd")
+
+# Add sample size to facet titles
+for ax, (_, row) in zip(g.axes.flat, df_summary.iterrows()):
+    ax.set_title(f"Blok {row['Klas']}\n"
+                f"(n = {row['count']}, x̄ = {row['mean']:.1f}, s = {row['std']:.1f})")
+
+g.set_axis_labels("taktijd (dagen)", "studenten (aantal)")
+
+# Adjust layout to prevent overlapping
+plt.tight_layout()
+plt.show()</code></pre>
 <div id="fig-histogram-klas" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-histogram-klas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="3_analyse_fase_files/figure-html/fig-histogram-klas-output-1.png" width="853" height="565" class="figure-img">
+<div aria-describedby="fig-histogram-klas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="3_analyse_fase_files/figure-html/fig-histogram-klas-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="histogram: taktijd / klas"><img src="3_analyse_fase_files/figure-html/fig-histogram-klas-output-1.png" width="853" height="565" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histogram-klas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: histogram: taktijd / klas
+histogram: taktijd / klas
 </figcaption>
 </figure>
 </div>
-</div>
+</div></div>
 <p>Om te bepalen of het gemiddelde van FC2A t/m FC2E significant van elkaar verschillen voeren we een anova test uit (zie: <span class="citation" data-cites="as2013BasisboekKwantitatieveMethoden">As and Klouwen (2013)</span>). De nul hypothese is dat de gevonden steekproef gemiddeldes statistisch gelijk zijn. Ofwel:</p>
 <p><span class="math inline">\(H_0 : \bar{x}_1 = \bar{x}_2 = \bar{x}_3 = \bar{x}_4 = \bar{x}_5\)</span></p>
 <p><span class="math inline">\(H_1 : \bar{x}_1 &lt;&gt; \bar{x}_2 &lt;&gt; \bar{x}_3 &lt;&gt; \bar{x}_4 &lt;&gt; \bar{x}_5\)</span></p>
@@ -737,14 +778,33 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
+
+</div>
+</div>
+<pre><code>df_klas = df_filtered[['Klas', 'TakTijd']]
+
+FC2A = df_klas[df_klas['Klas'] == 'FC2A']['TakTijd']
+FC2B = df_klas[df_klas['Klas'] == 'FC2B']['TakTijd']
+FC2C = df_klas[df_klas['Klas'] == 'FC2C']['TakTijd']
+FC2D = df_klas[df_klas['Klas'] == 'FC2D']['TakTijd']
+FC2E = df_klas[df_klas['Klas'] == 'FC2E']['TakTijd']
+
+# Perform one-way ANOVA
+f_statistic, p_value = stats.f_oneway(FC2A, FC2B, FC2C, FC2D, FC2E)
+
+print(f"F-statistic: {f_statistic:.4}\n")
+print(f"p-value    : {p_value:.4}\n")
+alpha = 0.05  # significance level
+
+# Interpret results
+if p_value &lt; alpha:
+    print("Conclusie : Nul hypothese verwerpen")
+else:
+    print("Conclusie : Nul-hypothese niet verwerpen")</code></pre>
 <p>F-statistic: 3.258</p>
 <p>p-value : 0.01543</p>
 <p>Conclusie : Nul hypothese verwerpen</p>
-</div>
-</div>
 <p>Statistisch zijn de gemiddelden van FC2A t/m FC2E niet gelijk. De klas waarin een student de e-learning volgt is daarmee een belangrijkere invloedsfactor voor de taktijd dan het blok waarin de student de e-learning volgt. Voor wat betreft de Improve-Fase zal dan ook gezocht worden naar mogelijkheden om de verschillen tussen klassen te verkleinen.</p>
-
-
 </section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
@@ -753,9 +813,8 @@ Note
 <li id="fn1"><p>zie <a href="https://www.hva.nl/studeren/studiekeuze/naast-je-opleiding/jaarrooster">jaarrooster 2023-2024</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -847,7 +906,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/jan-ru\.github\.io\/lss_greenbelt\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1174,52 +1233,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./2_measure_fase.html" class="pagination-link" aria-label="Measure-fase">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Measure-fase</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./4_improve_fase.html" class="pagination-link" aria-label="Improve-fase">
-        <span class="nav-page-text">Improve-fase</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- 2024 Copyright (c) Hogeschool van Amsterdam
-  </li>  
-</ul>
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="mailto:j.r.muller@hva.nl">
-      <i class="bi bi-envelope-at-fill" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.hva.nl/">
-      <i class="bi bi-globe" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
-
-
-
-
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script> 
+  
 </body></html>

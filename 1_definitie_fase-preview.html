@@ -1,37 +1,152 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.6.1">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.1">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Definitie-fase</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
+    <title>Definitie-fase</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./2_measure_fase.html" rel="next">
-<link href="./2_blackbelt/index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,197 +156,54 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+     <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">  
+      </head>
 
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Definitie-fase</h6>
 
-</head>
+            <a href="./1_definitie_fase.qmd" class="btn btn-primary quarto-download-embed" download="1_definitie_fase.qmd">Download Source</a>
+          </div>
 
-<body class="nav-sidebar floating nav-fixed">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blackbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Blackbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-blackbelt">    
-        <li>
-    <a class="dropdown-item" href="./2_blackbelt/index.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="./1_definitie_fase.html">
- <span class="dropdown-text">Definition Phase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./2_measure_fase.html">
- <span class="dropdown-text">Measure Phase</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-greenbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Greenbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-greenbelt">    
-        <li>
-    <a class="dropdown-item" href="./3_analyse_fase.html">
- <span class="dropdown-text">Analyse-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./4_improve_fase.html">
- <span class="dropdown-text">Improve-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./5_control_fase.html">
- <span class="dropdown-text">Control-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./6_kosten.html">
- <span class="dropdown-text">Kosten</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1_definitie_fase.html">Definitie-fase</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2_blackbelt/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./1_definitie_fase.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Definitie-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2_measure_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Measure-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./3_analyse_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analyse-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./4_improve_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Improve-fase</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./5_control_fase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Control-fase</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+     <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#proces-selectie" id="toc-proces-selectie" class="nav-link active" data-scroll-target="#proces-selectie">Proces-selectie</a></li>
-  <li><a href="#project-charter" id="toc-project-charter" class="nav-link" data-scroll-target="#project-charter">Project Charter</a></li>
-  <li><a href="#sipoc" id="toc-sipoc" class="nav-link" data-scroll-target="#sipoc">SIPOC</a></li>
-  <li><a href="#voc-ctq" id="toc-voc-ctq" class="nav-link" data-scroll-target="#voc-ctq">VOC-CTQ</a></li>
-  <li><a href="#prestatie-indicator" id="toc-prestatie-indicator" class="nav-link" data-scroll-target="#prestatie-indicator">Prestatie indicator</a></li>
+  <li><a href="#proces-selectie" id="toc-proces-selectie" class="nav-link active" data-scroll-target="#proces-selectie"><span class="toc-section-number">1</span> Proces-selectie</a></li>
+  <li><a href="#project-charter" id="toc-project-charter" class="nav-link" data-scroll-target="#project-charter"><span class="toc-section-number">2</span> Project Charter</a></li>
+  <li><a href="#sipoc" id="toc-sipoc" class="nav-link" data-scroll-target="#sipoc"><span class="toc-section-number">3</span> SIPOC</a></li>
+  <li><a href="#voc-ctq" id="toc-voc-ctq" class="nav-link" data-scroll-target="#voc-ctq"><span class="toc-section-number">4</span> VOC-CTQ</a></li>
+  <li><a href="#prestatie-indicator" id="toc-prestatie-indicator" class="nav-link" data-scroll-target="#prestatie-indicator"><span class="toc-section-number">5</span> Prestatie indicator</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="1_definitie_fase.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="1_definitie_fase.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header">
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">      <header id="title-block-header">
 <h1 class="title display-7">Definitie-fase</h1>
 
-</header>
-
-
-<p>Sinds 2,5 jaar geef ik les op de Hogeschool van Amsterdam (HvA) op de Faculteit Business en Economie (FBE) binnen het cluster Finance &amp; Control (F&amp;C). In dit hoofdstuk, de “Define Fase”, ligt ik hieronder eerst toe hoe ik gekomen ben tot het procesverbeter voorstel.</p>
-<section id="proces-selectie" class="level2">
-<h2 class="anchored" data-anchor-id="proces-selectie">Proces-selectie</h2>
+</header>     <p>Sinds 2,5 jaar geef ik les op de Hogeschool van Amsterdam (HvA) op de Faculteit Business en Economie (FBE) binnen het cluster Finance &amp; Control (F&amp;C). In dit hoofdstuk, de “Define Fase”, ligt ik hieronder eerst toe hoe ik gekomen ben tot het procesverbeter voorstel.</p>
+<section id="proces-selectie" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="proces-selectie"><span class="header-section-number">1</span> Proces-selectie</h2>
 <p>Mijn verzoek om de opdracht t.b.v. het Green Belt Certificaat te kunnen doen is goedgekeurd door de Finance &amp; Control coördinator Nadine Steverink. Met de goedkeuring kwam de vraag om een onderwerp te kiezen dat te maken heeft met de opleiding. Ik had toen het idee om het project te doen over een onderdeel van de opleiding waarin ik zelf actief ben. Hierna heb ik mondeling overleg gehad met mijn collega’s Gert de Jong en Paul te Riele. De collega’s stonden niet afwijzend tegenover het idee. Ons regulier periodiek overleg geeft mij de gelegenheid om terugkoppeling te vragen op de deelproducten van het project.</p>
 <p>Hieronder is staat een generiek proces van een onderwijs module weergegeven. Dit LSS project situeert zich in de processtap “Het uitvoeren van onderwijs”. Hieronder wordt verstaan het geven van lessen, het begeleiden van studenten en het beoordelen van leerresultaten.</p>
 <div id="fig-module-proces" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-module-proces-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./static/11_module_generiek.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+<a href="./static/11_module_generiek.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Generiek Module Proces"><img src="./static/11_module_generiek.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-module-proces-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Generiek Module Proces
+Generiek Module Proces
 </figcaption>
 </figure>
 </div>
@@ -262,8 +234,8 @@ Onderstaand is een GANTT chart waarin de 10 weken van het blok weergegeven staan
 \newpage
 -->
 </section>
-<section id="project-charter" class="level2">
-<h2 class="anchored" data-anchor-id="project-charter">Project Charter</h2>
+<section id="project-charter" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="project-charter"><span class="header-section-number">2</span> Project Charter</h2>
 <p>Het project charter heeft als doel een éénduidige beschrijving van het project te geven zodat betrokkenen het doel, de rijkwijdte en de planning kennen. De werktitel van het project is “verbeteren door versnellen” (van de e-learnings).</p>
 <!--
 |**Business Case**                  |**Scope**                              |
@@ -303,26 +275,26 @@ Onderstaand is een GANTT chart waarin de 10 weken van het blok weergegeven staan
 <div id="fig-project-charter" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-project-charter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./static/12_project_charter.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+<a href="./static/12_project_charter.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Project Charter"><img src="./static/12_project_charter.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-project-charter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Project Charter
+Project Charter
 </figcaption>
 </figure>
 </div>
 <p>Merk op de doelstelling zal na de analyse fase worden aangescherpt omdat dan pas duidelijk zal zijn wat momenteel de gemiddelde doorlooptijd is.</p>
 <p>Ik vind sterk van de charter dat ik mij in de business case een voorstelling heb geprobeerd te maken een ordegrootte van de “kosten &amp; baten”. We spreken over een mogelijke “verbetering” ad. €3.000 per blok. Op dit moment heb ik over de charter geen vragen.</p>
 </section>
-<section id="sipoc" class="level2">
-<h2 class="anchored" data-anchor-id="sipoc">SIPOC</h2>
+<section id="sipoc" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sipoc"><span class="header-section-number">3</span> SIPOC</h2>
 <p>Met een SIPOC wordt ingezoomt op het subproces “Uitvoeren van onderwijs” en worden daarbinnen 5 processtappen onderscheiden (3.1 t/m 3.5). Daarnaast staan in de SIPOC de belangrijkste Suppliers, Inputs, Outputs en Customers weergegeven.</p>
 <div id="fig-onderwijs" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-onderwijs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./static/13_onderwijs_geven.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img">
+<a href="./static/13_onderwijs_geven.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Onderwijsuitvoering"><img src="./static/13_onderwijs_geven.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-onderwijs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Onderwijsuitvoering
+Onderwijsuitvoering
 </figcaption>
 </figure>
 </div>
@@ -335,11 +307,31 @@ Figure&nbsp;3: Onderwijsuitvoering
 <li>Onder management wordt hier verstaan het hoofd van de opleiding Finance &amp; Control.</li>
 </ul>
 </section>
-<section id="voc-ctq" class="level2">
-<h2 class="anchored" data-anchor-id="voc-ctq">VOC-CTQ</h2>
+<section id="voc-ctq" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="voc-ctq"><span class="header-section-number">4</span> VOC-CTQ</h2>
 <p>De Voice of the Customer, is de klantenvraag waardoor het project geïnitieerd is. In dit project is het de Voice of the Business aangezien de vraag (of opdracht) afkomstig is van de HvA academy, het interne opleidingsinstituut van de HvA.<br>
 In de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Bloom: onthouden, toepassen en reproduceren. De taxonomie van Bloom is een referentie waarnaar, binnen de HvA, regelmatig wordt verwezen. In de taxonomie worden zes nivo’s van leren onderscheiden. Omdat het onderwerp van dit project een module is uit jaar 2, worden alleen de onderste drie nivo’s van de taxonomie benoemd.</p>
-<div class="cell" data-layout-align="default">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell" data-layout-align="default">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    A["VOB: wij willen dat studenten</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>     aan de hand van leeruitkomsten</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>     aantonen dat zij de leerdoelen</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>     beheersen"] </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        A --&gt;B["CTQ1: aantonen door </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        onthouden"]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        B --&gt;C["Instrument: </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        quiz"]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        C --&gt;D["ME1: Datum, Cijfer"]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        A --&gt;E["CTQ2: aantonen door </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        toepassen"]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        E --&gt;F["Instrument: </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        praktijkopdracht"]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        F --&gt;G["ME2: Datum, Cijfer"]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        A --&gt;H["CTQ3: aantonen door </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        reproduceren"]</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        H --&gt;I["Instrument: </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        kennistoets"]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        I --&gt;J["ME3: Datum, Cijfer"]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-voc-ctq" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -369,12 +361,12 @@ In de VOB-CTQ hieronder wordt verwezen naar drie termen uit de taxonomie van Blo
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-voc-ctq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Voice of the Business
+Voice of the Business
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
+</div></div>
 <p>Waarschijnlijke toekomstige verbeteringen:</p>
 <ol type="1">
 <li>In deze versie van de VOB-CTQ staan drie meetinstrumenten (quiz, praktijkopdracht, kennistoets) genoemd. In een latere versie wordt het instrument “assessment” daaraan toegevoegd en zullen de instrumenten (dan vier) verplaatst worden naar de meetfase.</li>
@@ -382,26 +374,71 @@ Figure&nbsp;4: Voice of the Business
 <li>Er dient nog een CTQ over “volgordelijkheid” te worden toegevoegd. Hiervoor dient de VOB nog te worden aangepast (met een statement over effectiviteit).</li>
 </ol>
 </section>
-<section id="prestatie-indicator" class="level2">
-<h2 class="anchored" data-anchor-id="prestatie-indicator">Prestatie indicator</h2>
+<section id="prestatie-indicator" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="prestatie-indicator"><span class="header-section-number">5</span> Prestatie indicator</h2>
 <p>De grafische prestatie indicator dient weer te geven wat:</p>
 <ul>
 <li>de ideale doorlooptijd van de e-learnings is</li>
 <li>wat de feitelijke doorlooptijd van de e-learnings is.</li>
 </ul>
 <p>Voor de ideale doorlooptijd van de e-learnings is de studiegids leidend in combinatie met de daadwerkelijke opdrachten op Brightspace. Voorwat betreft de feitelijke doorlooptijd van de e-learnings is de rapportage van Skoledo leidend.</p>
-<div id="cell-fig-lineplot" class="cell" data-execution_count="1">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="cell-fig-lineplot" class="cell" data-execution_count="1">
+<pre><code>#| label: fig-lineplot
+#| fig-cap: A line plot showing progress on the e-learnings
+import matplotlib.pyplot as plt
+
+# Data for plotting
+weeks_first_line = [0,10]  # Week 1 through 10
+hours_first_line = [0,25]  # 0 to 25 hours, linear increase
+
+weeks_second_line = [0,9]  # Week 1 through 9
+hours_second_line = [0,25]  # 0 to 25 hours, linear increase ending at week 9
+
+# Create a line plot
+plt.figure(figsize=(10, 5))  # Set the figure size
+plt.plot(weeks_first_line, hours_first_line, marker='o', linestyle='-', color='b', label="huidige doorlooptijd")  # First line
+plt.plot(weeks_second_line, hours_second_line, marker='o', linestyle='-', color='r', label="gewenste doorlooptijd")  # Second line
+
+# Setting the labels for the axes
+plt.xlabel('Doorlooptijd (weken)')
+plt.ylabel('Studiebelasting (uren/blok)')
+
+# Setting the range for the axes
+plt.xlim(0, 10)  # X-axis from week 1 to 10
+plt.ylim(0, 25)  # Y-axis from 0 to 25 hours
+plt.xticks(range(1, 11))  # X-axis ticks at every week from 1 to 10
+
+# Adding a title
+plt.title('Doorlooptijd e-learnings')
+
+# Adding an arrow with a label
+plt.annotate(
+    'doelstelling:\n10% verlagen',  # text to display
+    xy=(8, 22.5),  # point to annotate (arrow head)
+    xytext=(9, 22.5),  # start point of the text (arrow tail)
+    arrowprops=dict(arrowstyle='-&gt;', lw=1.5, color='green'),  # style of the arrow
+    ha='left',  # horizontal alignment of the text
+    va='center',  # vertical alignment
+    # rotation=45  # text angle
+)
+
+# Display the grid and legend
+plt.grid(True)
+plt.legend()
+
+# Show the plot
+plt.show()</code></pre>
 <div id="fig-lineplot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lineplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="1_definitie_fase_files/figure-html/fig-lineplot-output-1.png" width="826" height="449" class="figure-img">
+<div aria-describedby="fig-lineplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="1_definitie_fase_files/figure-html/fig-lineplot-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="A line plot showing progress on the e-learnings"><img src="1_definitie_fase_files/figure-html/fig-lineplot-output-1.png" width="826" height="449" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lineplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: A line plot showing progress on the e-learnings
+A line plot showing progress on the e-learnings
 </figcaption>
 </figure>
 </div>
-</div>
+</div></div>
 <p>De totale studiebelasting voor de e-learnings is circa 25 uur (zie bijlage B). De duur van een blok is 10 weken.</p>
 <p>Vooralsnog bestaat de grafische prestatie indicator uit twee fictieve lijnen.</p>
 <ul>
@@ -409,8 +446,6 @@ Figure&nbsp;5: A line plot showing progress on the e-learnings
 <li>De <span style="color:red;">rode</span> lijn geeft de nieuwe beoogde doorlooptijd van de e-learnings weer (10% korter).</li>
 </ul>
 <p>De twee lijnen zullen worden aangepast zodra de studiegids en het programma in detail gelezen zijn. Naast de oude en nieuwe ideale doorlooptijd wordt in het resultaten hoofdstuk ook de feitelijke doorlooptijd getoond.</p>
-
-
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
@@ -418,9 +453,8 @@ Figure&nbsp;5: A line plot showing progress on the e-learnings
 <li id="fn1"><p>Learning Management System, in het geval van de HvA het programma Brightspace.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -512,7 +546,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/jan-ru\.github\.io\/lss_greenbelt\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -839,52 +873,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./2_blackbelt/index.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./2_measure_fase.html" class="pagination-link" aria-label="Measure-fase">
-        <span class="nav-page-text">Measure-fase</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- 2024 Copyright (c) Hogeschool van Amsterdam
-  </li>  
-</ul>
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="mailto:j.r.muller@hva.nl">
-      <i class="bi bi-envelope-at-fill" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.hva.nl/">
-      <i class="bi bi-globe" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
-
-
-
-
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","openEffect":"zoom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script> 
+  
 </body></html>

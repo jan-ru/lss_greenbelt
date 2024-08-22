@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.6.1">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.1">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>index</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
+    <title>Improve-fase</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -39,159 +122,62 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+     
+      </head>
 
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Improve-fase</h6>
 
-</head>
+            <a href="./4_improve_fase.qmd" class="btn btn-primary quarto-download-embed" download="4_improve_fase.qmd">Download Source</a>
+          </div>
 
-<body class="nav-fixed">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blackbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Blackbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-blackbelt">    
-        <li>
-    <a class="dropdown-item" href="./2_blackbelt/index.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="./1_definitie_fase.html">
- <span class="dropdown-text">Definition Phase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./2_measure_fase.html">
- <span class="dropdown-text">Measure Phase</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-greenbelt" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Greenbelt</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-greenbelt">    
-        <li>
-    <a class="dropdown-item" href="./3_analyse_fase.html">
- <span class="dropdown-text">Analyse-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./4_improve_fase.html">
- <span class="dropdown-text">Improve-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./5_control_fase.html">
- <span class="dropdown-text">Control-fase</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./6_kosten.html">
- <span class="dropdown-text">Kosten</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+     <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#mogelijke-oplossingen" id="toc-mogelijke-oplossingen" class="nav-link active" data-scroll-target="#mogelijke-oplossingen"><span class="toc-section-number">1</span> Mogelijke oplossingen</a></li>
+  <li><a href="#generatie-van-oplossingen" id="toc-generatie-van-oplossingen" class="nav-link" data-scroll-target="#generatie-van-oplossingen"><span class="toc-section-number">2</span> Generatie van oplossingen</a></li>
+  <li><a href="#korte-termijn-oplossing" id="toc-korte-termijn-oplossing" class="nav-link" data-scroll-target="#korte-termijn-oplossing"><span class="toc-section-number">3</span> Korte termijn oplossing</a></li>
+  <li><a href="#implementatieplan" id="toc-implementatieplan" class="nav-link" data-scroll-target="#implementatieplan"><span class="toc-section-number">4</span> Implementatieplan</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">      <header id="title-block-header">
+<h1 class="title display-7">Improve-fase</h1>
 
-<header id="title-block-header">
-
-
-</header>
-
-
-<section id="introduction" class="level1 unnumbered">
-<h1 class="unnumbered">Introduction</h1>
-<!--
-Het paard achter de wagen spannen.
-en 
-
--->
-<p>De basis op orde.</p>
-<p>Ten behoeve van dit rapport worden de volgende definities gehanteerd:</p>
+</header>     <p>In het vorige hoordstuk zijn er __ variabelen geïdentificeerd die mogelijk van invloed zijn op de taktijd. Door voor elk van deze variabelen de correlatiecoefficiënt uit te rekenen is gekeken naar het relatieve belang van deze __ variabelen. De variabelen waarbij de correlatiecoefficient lager uitviel dan x.x zijn buiten beschouwing gelaten. De variabelen waarbij de correlatiecoefficient hoger uitviel dan x.x zijn aangemerkt als relevante invloedsfactoren.</p>
+<section id="mogelijke-oplossingen" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="mogelijke-oplossingen"><span class="header-section-number">1</span> Mogelijke oplossingen</h2>
+<p>Methode om oplossingen te genereren: In het vorige</p>
 <ul>
-<li>Cyclustijd: de tijd tussen twee opeenvolgende modules, is 10 weken (70 dagen).</li>
-<li>Doorlooptijd: de totale tijd om het vak af te ronden is 9 weken (63 dagen), gerekend vanaf de start van het blok.</li>
-<li>Taktijd: de maximale tijd om de e-learnings af te ronden is 8 weken (56 dagen), gerekend vanaf de start van het blok.</li>
+<li>Eerder beginnen</li>
+<li></li>
 </ul>
-<p>De redenatie is dat de e-learning nodig is om de praktijkopdracht te kunnenn maken, en ook nodig is om de kennistoets te kunnen maken.</p>
-<ul>
-<li>Unit of analysis.</li>
-<li>Populatie</li>
-<li>Steekproefomvang</li>
-<li>Representatief</li>
-</ul>
-<!--
-Betrouwbaarheid op twee manieren uitlegbaar. Wordt gemeten wat we willen meten? Is het gegeven zelf betrouwbaar.
-
-De nauwkeurigheid van het meetsysteem.
-
-Absoluut of relatief?
--->
-
-
 </section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<section id="generatie-van-oplossingen" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="generatie-van-oplossingen"><span class="header-section-number">2</span> Generatie van oplossingen</h2>
+<p>Indien de e-learning niet af is mag je geen examen doen. Indien er geen voortgang is op de e-learning krijg je geen feedback</p>
+</section>
+<section id="korte-termijn-oplossing" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="korte-termijn-oplossing"><span class="header-section-number">3</span> Korte termijn oplossing</h2>
+<p>Benoemen dat er momenteel meerdere interpretaties zijn:<br>
+- De e-learnings moeten af voor het einde van het blok - De e-learnings moeten af voor het examen - De e-learnings …</p>
+</section>
+<section id="implementatieplan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="implementatieplan"><span class="header-section-number">4</span> Implementatieplan</h2>
+<p>plaatje van een kalender (zoals voorbereiding jaarverslag) blok 1, blok 3 Het docenten team ’24-’25 bestaat grotendeels uit dezelfde docenten als voorgaand jaar.</p>
+<p>Doelstelling (herzien)</p>
+<p>Vervolgonderzoek</p>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -283,7 +269,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/jan-ru\.github\.io\/lss_greenbelt\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -610,40 +596,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- 2024 Copyright (c) Hogeschool van Amsterdam
-  </li>  
-</ul>
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="mailto:j.r.muller@hva.nl">
-      <i class="bi bi-envelope-at-fill" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.hva.nl/">
-      <i class="bi bi-globe" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
-
-
-
-
+</script>  </div> <!-- /content --> 
+  
 </body></html>

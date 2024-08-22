@@ -1,0 +1,38 @@
+---
+title: "Improve-fase"
+---
+
+In het vorige hoordstuk zijn er __ variabelen geïdentificeerd die mogelijk van invloed zijn op de taktijd.
+Door voor elk van deze variabelen de correlatiecoefficiënt uit te rekenen is gekeken naar het relatieve belang van deze __ variabelen.
+De variabelen waarbij de correlatiecoefficient lager uitviel dan x.x zijn buiten beschouwing gelaten.
+De variabelen waarbij de correlatiecoefficient hoger uitviel dan x.x zijn aangemerkt als relevante invloedsfactoren.
+
+## Mogelijke oplossingen
+
+Methode om oplossingen te genereren:
+In het vorige 
+
+- Eerder beginnen
+- 
+
+## Generatie van oplossingen
+
+Indien de e-learning niet af is mag je geen examen doen.
+Indien er geen voortgang is op de e-learning krijg je geen feedback
+
+## Korte termijn oplossing
+
+Benoemen dat er momenteel meerdere interpretaties zijn:  
+- De e-learnings moeten af voor het einde van het blok
+- De e-learnings moeten af voor het examen
+- De e-learnings ...
+
+## Implementatieplan
+
+
+plaatje van een kalender (zoals voorbereiding jaarverslag) blok 1, blok 3
+Het docenten team '24-'25 bestaat grotendeels uit dezelfde docenten als voorgaand jaar.
+
+Doelstelling (herzien)
+
+Vervolgonderzoek
