@@ -1,5 +1,5 @@
 project:
-  type: book
+  type: website
   output-dir: output
 
 book:
@@ -30,7 +30,7 @@ book:
           url: www.vlerick.com
           ror: 056t38c37
 
-  date: "8/8/2024"
+  date: "8/21/2024"
   date-format: "DD/MM/YYYY"
  
   chapters:
@@ -46,6 +46,60 @@ book:
     - 7_studiebelasting.qmd
     - 8_dataset.qmd
 
+website:
+  title: ""
+  page-navigation: true
+  navbar:
+    collapse-below: lg
+    background: light
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Blackbelt
+        menu:
+          - text: Overview
+            href: 2_blackbelt/index.qmd
+          - text: "---"
+          - text: Definition Phase
+            href: 1_definitie_fase.qmd
+          - text: Measure Phase
+            href: 2_measure_fase.qmd
+      - text: "Greenbelt"
+        menu:
+          - 3_analyse_fase.qmd
+          - 4_improve_fase.qmd
+          - 5_control_fase.qmd
+          - 6_kosten.qmd
+
+  sidebar:
+    - id: blackbelt
+      title: "Blackbelt"
+      style: "floating"
+      contents:
+        - 2_blackbelt/index.qmd
+        - 1_definitie_fase.qmd
+        - 2_measure_fase.qmd
+        - 3_analyse_fase.qmd
+        - 4_improve_fase.qmd
+        - 5_control_fase.qmd
+        
+    - id: bijlagen
+      title: "Bijlagen"
+      style: "floating"
+      contents:
+        - 6_kosten.qmd
+        - 7_studiebelasting.qmd
+        - 8_dataset.qmd
+
+  page-footer:
+    center:
+      - text: "2024 Copyright (c) Hogeschool van Amsterdam"
+    right:
+      - icon: envelope-at-fill
+        href: mailto:j.r.muller@hva.nl
+      - icon: globe
+        href: https://www.hva.nl/
+
 format:
   pdf:
     papersize: a4
@@ -57,9 +111,10 @@ format:
     lof: true
     lot: true
   html: 
-    title-block-banner: true
-    number-sections: true
-    date-modified: "8/8/2024"
+    title-block-banner: false
+    title-block-style: none
+    number-sections: false
+    date-modified: "8/21/2024"
     toc: true
     output-dir: output
   #  comments:

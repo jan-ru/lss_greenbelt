@@ -15,7 +15,7 @@ In het vorige
 - Eerder beginnen
 - 
 
-## Generatie van oplossingen
+## Genereren van oplossingen
 
 Indien de e-learning niet af is mag je geen examen doen.
 Indien er geen voortgang is op de e-learning krijg je geen feedback

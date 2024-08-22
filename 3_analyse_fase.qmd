@@ -188,7 +188,7 @@ from lib.my_excel_lib import get_tables
 from lib.my_custom_lib import xls2md
 
 # Init
-excel_file = 'data/L23_FC2_blok1_blok3.xlsx'
+excel_file = 'lib/L23_FC2_blok1_blok3.xlsx'
 tables = get_tables(excel_file)
 
 table_name = 'YB_3'
